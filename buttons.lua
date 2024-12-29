@@ -19,6 +19,8 @@ function createButton(parent, text, xIndex, yIndex, method)
 		method()
 	end)
 	btn:RegisterForClicks("AnyDown")
+
+	return btn
 end
 
 function createButtonContainer(parent, text, width, height)

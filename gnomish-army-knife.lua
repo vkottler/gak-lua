@@ -1,10 +1,9 @@
 -- https://wowprogramming.com/docs/api_categories.html
 -- |cAARRGGBB
 
-local project = "gnomish-army-knife"
-
 -- Create UI menu.
-local ui = createButtonContainer(UIParent, project, 2, 5)
+local ui =
+	createButtonContainer(UIParent, project .. " (" .. version .. ")", 2, 5)
 ui:SetPoint("CENTER", UIParent, "CENTER", 0, 0)
 
 -- Initially hidden.
@@ -38,7 +37,7 @@ ActionBarManagementInit(ui)
 -- Utility buttons.
 createButton(ui, "Set UI", 0, 4, function()
 	print("Set UI")
-end)
+end):Disable()
 createButton(ui, "Reload", 1, 4, function()
 	ConsoleExec("reloadUI")
 end)
