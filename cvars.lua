@@ -31,7 +31,7 @@ local function auditCVars()
 	print(matchCount, "/", table.getn(visited), "variables match.")
 end
 
-local function setCVars()
+function setCVars()
 	local count = 0
 
 	for key, val in pairs(expectedCVars) do
@@ -50,11 +50,6 @@ local function setCVars()
 end
 
 function CVarManagementInit(ui)
-	createButton(ui, "Audit CVar's", 0, 0, function()
-		auditCVars()
-	end)
-
-	createButton(ui, "Set CVar's", 1, 0, function()
-		setCVars()
-	end)
+	createButton(ui, "Audit CVar's", 0, 0, auditCVars)
+	createButton(ui, "Set CVar's", 1, 0, setCVars)
 end

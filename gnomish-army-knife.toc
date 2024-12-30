@@ -17,5 +17,6 @@ cvars.lua
 create_macros.lua
 macros.lua
 bars.lua
+layouts.lua
 
 gnomish-army-knife.lua

@@ -80,7 +80,7 @@ local function auditKeybinds()
 	-- end
 end
 
-local function setKeybinds()
+function setKeybinds()
 	-- Fix command bindings.
 	for command, _ in pairs(bindings) do
 		checkCommand(command, true)
@@ -90,11 +90,6 @@ local function setKeybinds()
 end
 
 function KeybindManagementInit(ui)
-	createButton(ui, "Audit Keybinds", 0, 1, function()
-		auditKeybinds()
-	end)
-
-	createButton(ui, "Set Keybinds", 1, 1, function()
-		setKeybinds()
-	end)
+	createButton(ui, "Audit Keybinds", 0, 1, auditKeybinds)
+	createButton(ui, "Set Keybinds", 1, 1, setKeybinds)
 end

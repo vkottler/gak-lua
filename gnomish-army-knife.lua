@@ -3,7 +3,7 @@
 
 -- Create UI menu.
 local ui =
-	createButtonContainer(UIParent, project .. " (" .. version .. ")", 2, 5)
+	createButtonContainer(UIParent, project .. " (" .. version .. ")", 2, 6)
 ui:SetPoint("CENTER", UIParent, "CENTER", 0, 0)
 
 -- Initially hidden.
@@ -25,7 +25,7 @@ SlashCmdList["GNOMISH_ARMY_KNIFE"] = ToggleGnomishArmyKnife
 
 -- Custom keybinds.
 BINDING_HEADER_GAK = project
-BINDING_NAME_TOGGLEGAK = "Toggle gnomish-army-knife Window"
+BINDING_NAME_TOGGLEGAK = "Toggle " .. project .. " Window"
 
 -- Initialize application.
 initHelpHarmBar(ui)
@@ -33,11 +33,16 @@ CVarManagementInit(ui)
 KeybindManagementInit(ui)
 MacroManagementInit(ui)
 ActionBarManagementInit(ui)
+LayoutManagementInit(ui)
 
 -- Utility buttons.
-createButton(ui, "Set UI", 0, 4, function()
-	print("Set UI")
-end):Disable()
-createButton(ui, "Reload", 1, 4, function()
+createButton(ui, "Set All", 0, 5, function()
+	setCVars()
+	setKeybinds()
+	setMacros()
+	setActionBars()
+	setLayouts()
+end)
+createButton(ui, "Reload", 1, 5, function()
 	ConsoleExec("reloadUI")
 end)
