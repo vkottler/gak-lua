@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.0
-    hash=c4baebf63582408bef930e324a69cff2
+    hash=8ecbd05a199e92e38fb37b41558ce138
     =====================================
 -->
 
@@ -19,3 +19,11 @@ GamePadEmulateCtrl | `PADLTRIGGER`
 GamePadRunThreshold | 0
 GamePadCameraYawSpeed | 1.75
 advancedCombatLogging | 1
+autoLootDefault | 1
+autoLootRate | 50
+enableMultiActionBars | 15
+SoftTargetEnemy | 3
+SoftTargetFriend | 3
+SoftTargetInteract | 3
+SoftTargetIconFriend | 1
+SoftTargetNameplateInteract | 1

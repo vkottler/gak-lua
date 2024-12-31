@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.0
-    hash=7788ad62e3e317cb3bf9c6ee3046d164
+    hash=d3523362fb9f04be0815b6dc6409a928
     =====================================
 -->
 
@@ -45,6 +45,16 @@
 #showtooltip Bear Form
 /cast [noform:1] Bear Form
 /changeactionbar 1
+```
+
+---
+
+![icon image](https://wow.zamimg.com/images/wow/icons/large/ability_racial_twoforms.jpg)
+
+canc
+
+```
+/cancelform
 ```
 
 ---
@@ -156,6 +166,16 @@ self
 ```
 #showtooltip
 /cast [@player] Ironbark
+```
+
+---
+
+flap
+
+```
+#showtooltip Moonkin Form
+/cast [noform:4] Moonkin Form
+/cast [form:4] Flap
 ```
 
 ---

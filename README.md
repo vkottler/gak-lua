@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.0
-    hash=bd0572e55b3ae1779f65586648a9d887
+    hash=69452c265a574de0e3ca31bc49b5964b
     =====================================
 -->
 
@@ -33,5 +33,6 @@
     * [Monk](monk_macros.md)
     * [Druid](druid_macros.md)
     * [Demonhunter](demonhunter_macros.md)
+    * [Evoker](evoker_macros.md)
 
 ---
