@@ -17,21 +17,7 @@ local function doesCVarMatch(key, log)
 	return result
 end
 
-local function auditCVars()
-	local visited = {}
-	local matchCount = 0
-
-	for key, val in pairs(expectedCVars) do
-		if doesCVarMatch(key, true) then
-			matchCount = matchCount + 1
-		end
-		table.insert(visited, key)
-	end
-
-	print(matchCount, "/", table.getn(visited), "variables match.")
-end
-
-function setCVars()
+function GakSetCVars()
 	local count = 0
 
 	for key, val in pairs(expectedCVars) do
@@ -49,7 +35,21 @@ function setCVars()
 	print("Attempted", count, "variable updates.")
 end
 
-function CVarManagementInit(ui)
-	createButton(ui, "Audit CVar's", 0, 0, auditCVars)
-	createButton(ui, "Set CVar's", 1, 0, setCVars)
+local function auditCVars()
+	local visited = {}
+	local matchCount = 0
+
+	for key, val in pairs(expectedCVars) do
+		if doesCVarMatch(key, true) then
+			matchCount = matchCount + 1
+		end
+		table.insert(visited, key)
+	end
+
+	print(matchCount, "/", table.getn(visited), "variables match.")
+end
+
+function GakCVarManagementInit(frame)
+	GakCreateButton(frame, "Audit CVar's", 0, 0, auditCVars)
+	GakCreateButton(frame, "Set CVar's", 1, 0, GakSetCVars)
 end

@@ -2,6 +2,6 @@
   <Binding name="TOGGLEGAK"
            description="Toggle gnomish-army-knife Window"
            header="gnomish-army-knife">
-    ToggleGnomishArmyKnife()
+    GakToggle()
   </Binding>
 </Bindings>

@@ -1,32 +1,35 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.0
--- hash=b3706078a4a36145c36c610fb0c81e89
+-- hash=a20b636a45f2936a2bfcc8b8c7d123b4
 -- =====================================
-function createGlobalMacros()
-CreateMacro("gak", "inv_misc_enggizmos_swissarmy", [[
-/gnomish-army-knife]])
+function GakCreateGlobalMacros()
 CreateMacro("13", "inv_misc_questionmark", [[
 #showtooltip
 /use 13]])
 CreateMacro("14", "inv_misc_questionmark", [[
 #showtooltip
 /use 14]])
-CreateMacro("hs", "inv_misc_questionmark", [[
-#showtooltip
-/use Healthstone]])
-CreateMacro("gg", "achievement_bg_takexflags_ab", [[
-/run LeaveBattlefield()]])
-CreateMacro("pet", "inv_leatherworking_70_petleash", [[
-/petdismiss]])
 CreateMacro("canc", "creatureportrait_creature_iceblock", [[
 /stopcasting
 /cancelaura Slow Fall
 /cancelaura Levitate]])
-	print("Created 7 global macros.")
+CreateMacro("dis", "ability_marksmanship", [[
+/dismount
+/cancelform]])
+CreateMacro("gak", "inv_misc_enggizmos_swissarmy", [[
+/gnomish-army-knife]])
+CreateMacro("gg", "achievement_bg_takexflags_ab", [[
+/run LeaveBattlefield()]])
+CreateMacro("hs", "inv_misc_questionmark", [[
+#showtooltip
+/use Healthstone]])
+CreateMacro("pet", "inv_leatherworking_70_petleash", [[
+/petdismiss]])
+	print("Created 8 global macros.")
 end
 
-function createCharacterMacros()
+function GakCreateCharacterMacros()
 	local class_str = select(2, UnitClass("player"))
 
 	if class_str == "WARRIOR" then
@@ -303,6 +306,10 @@ function createCharacterMacros()
 /changeactionbar 1]], 1)
 		CreateMacro("canc", "ability_racial_twoforms", [[
 /cancelform]], 1)
+		CreateMacro("flap", "inv_misc_questionmark", [[
+#showtooltip Moonkin Form
+/cast [noform:4] Moonkin Form
+/cast [form:4] Flap]], 1)
 		CreateMacro("help", "inv_misc_questionmark", [[
 #showtooltip Wild Charge
 /targetfriend [harm]
@@ -311,19 +318,16 @@ function createCharacterMacros()
 /cleartarget]], 1)
 		CreateMacro("self", "inv_misc_questionmark", [[
 #showtooltip
-/cast [@player] Rejuvenation]], 1)
-		CreateMacro("self", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Mark of the Wild]], 1)
-		CreateMacro("self", "inv_misc_questionmark", [[
-#showtooltip
 /cast [@player] Lifebloom]], 1)
 		CreateMacro("self", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Remove Corruption]], 1)
 		CreateMacro("self", "inv_misc_questionmark", [[
 #showtooltip
-/cast [@player] Efflorescence]], 1)
+/cast [@player] Mark of the Wild]], 1)
+		CreateMacro("self", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Rejuvenation]], 1)
 		CreateMacro("self", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Wild Growth]], 1)
@@ -342,11 +346,16 @@ function createCharacterMacros()
 		CreateMacro("self", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Ironbark]], 1)
-		CreateMacro("flap", "inv_misc_questionmark", [[
-#showtooltip Moonkin Form
-/cast [noform:4] Moonkin Form
-/cast [form:4] Flap]], 1)
-		print("Created 18", select(1, UnitClass("player")), "macros.")
+		CreateMacro("self", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Grove Guardians]], 1)
+		CreateMacro("self", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Ursol's Vortex]], 1)
+		CreateMacro("self", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Efflorescence]], 1)
+		print("Created 20", select(1, UnitClass("player")), "macros.")
 	end
 
 	if class_str == "DEMONHUNTER" then

@@ -80,7 +80,7 @@ local function auditKeybinds()
 	-- end
 end
 
-function setKeybinds()
+function GakSetKeybinds()
 	-- Fix command bindings.
 	for command, _ in pairs(bindings) do
 		checkCommand(command, true)
@@ -89,7 +89,7 @@ function setKeybinds()
 	SaveBindings(1)
 end
 
-function KeybindManagementInit(ui)
-	createButton(ui, "Audit Keybinds", 0, 1, auditKeybinds)
-	createButton(ui, "Set Keybinds", 1, 1, setKeybinds)
+function GakKeybindManagementInit(ui)
+	GakCreateButton(ui, "Audit Keybinds", 0, 1, auditKeybinds)
+	GakCreateButton(ui, "Set Keybinds", 1, 1, GakSetKeybinds)
 end

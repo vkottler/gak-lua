@@ -3,7 +3,7 @@ local buttonHeight = 40
 local headerHeight = 30
 local padding = 10
 
-function createButton(parent, text, xIndex, yIndex, method)
+function GakCreateButton(parent, text, xIndex, yIndex, method)
 	local btn = CreateFrame("Button", nil, parent, "UIPanelButtonTemplate")
 
 	-- Set dimensions.
@@ -23,7 +23,7 @@ function createButton(parent, text, xIndex, yIndex, method)
 	return btn
 end
 
-function createButtonContainer(parent, text, width, height)
+function GakCreateButtonContainer(parent, text, width, height)
 	local frame =
 		CreateFrame("Frame", text, parent, "BasicFrameTemplateWithInset")
 

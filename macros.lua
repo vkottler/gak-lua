@@ -1,4 +1,4 @@
-function setMacros()
+function GakSetMacros()
 	-- https://wowpedia.fandom.com/wiki/API_DeleteMacro
 
 	-- Delete global macros.
@@ -15,12 +15,12 @@ function setMacros()
 		DeleteMacro(i)
 	end
 
-	createGlobalMacros()
-	createCharacterMacros()
+	GakCreateGlobalMacros()
+	GakCreateCharacterMacros()
 end
 
-function MacroManagementInit(ui)
-	createButton(ui, "Audit Macros", 0, 2, function()
+function GakMacroManagementInit(ui)
+	GakCreateButton(ui, "Audit Macros", 0, 2, function()
 		-- https://wowpedia.fandom.com/wiki/API_GetNumMacros
 		local macros = { GetNumMacros() }
 
@@ -35,5 +35,5 @@ function MacroManagementInit(ui)
 		end
 	end)
 
-	createButton(ui, "Set Macros", 1, 2, setMacros)
+	GakCreateButton(ui, "Set Macros", 1, 2, GakSetMacros)
 end

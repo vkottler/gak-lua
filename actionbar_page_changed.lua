@@ -6,7 +6,7 @@ local function handleSetColor(frame)
 	end
 end
 
-function initHelpHarmBar(_)
+function GakHelpHarmBarInit(_)
 	local parent = MultiBarBottomLeft
 
 	local frame = CreateFrame("Frame", "HelpHarm", parent)

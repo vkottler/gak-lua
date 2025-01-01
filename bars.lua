@@ -1,11 +1,13 @@
-function setActionBars()
-	print("Set Action Bars")
-end
+function GakActionBarManagementInit(ui)
+	GakCreateButton(ui, "Audit Action Bars", 0, 3, function()
+		for i = 1, GAK_MAX_ACTIONBAR do
+			if GetActionInfo(i) then
+				print(i, GetActionInfo(i))
+			end
+		end
+	end)
 
-function ActionBarManagementInit(ui)
-	createButton(ui, "Audit Action Bars", 0, 3, function()
-		print("Audit Action Bars")
-	end):Disable()
+	GakCreateButton(ui, "Set Action Bars", 1, 3, GakSetActionBars)
 
-	createButton(ui, "Set Action Bars", 1, 3, setActionBars):Disable()
+	GakCreateButton(ui, "Clear Action Bars", 0, 4, GakClearActionBars)
 end

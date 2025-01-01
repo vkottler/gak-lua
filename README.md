@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.0
-    hash=69452c265a574de0e3ca31bc49b5964b
+    hash=7687a731e4924335bf48319f5b85186b
     =====================================
 -->
 
@@ -36,3 +36,5 @@
     * [Evoker](evoker_macros.md)
 
 ---
+
+([build system](https://github.com/vkottler/gnomish-army-knife))
