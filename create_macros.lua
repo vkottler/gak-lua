@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.0
--- hash=8d60064aeaf4899bf959b639ee55e0c5
+-- hash=433ea88a9eb454f2fb4fb988dc5d8d0d
 -- =====================================
 function GakCreateGlobalMacros()
 CreateMacro("13", "inv_misc_questionmark", [[
@@ -24,9 +24,12 @@ CreateMacro("gg", "achievement_bg_takexflags_ab", [[
 CreateMacro("hs", "inv_misc_questionmark", [[
 #showtooltip
 /use Healthstone]])
+CreateMacro("mana", "inv_drink_milk_01", [[
+/use Conjured Mana Bun
+/use Quicksilver Sipper]])
 CreateMacro("pet", "inv_leatherworking_70_petleash", [[
 /petdismiss]])
-	print("Created 8 global macros.")
+	print("Created 9 global macros.")
 end
 
 function GakCreateCharacterMacros()

@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.0
-    hash=383eb6becff4d784a1584c37ea6fd774
+    hash=2241545500d146ab919fdb2f5f494347
     =====================================
 -->
 
@@ -78,6 +78,17 @@ hs
 ```
 #showtooltip
 /use Healthstone
+```
+
+---
+
+![icon image](https://wow.zamimg.com/images/wow/icons/large/inv_drink_milk_01.jpg)
+
+mana
+
+```
+/use Conjured Mana Bun
+/use Quicksilver Sipper
 ```
 
 ---
