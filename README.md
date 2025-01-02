@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.0
-    hash=7687a731e4924335bf48319f5b85186b
+    hash=78f799055a5cfb0ebb75861dc44a65f8
     =====================================
 -->
 
@@ -21,19 +21,19 @@
     * [GamePad <-> Keyboard Mapping](keymap.md)
 * Macros
     * [Global](global_macros.md)
-    * [Warrior](warrior_macros.md)
-    * [Paladin](paladin_macros.md)
-    * [Hunter](hunter_macros.md)
-    * [Rogue](rogue_macros.md)
+    * [Demonhunter](demonhunter_macros.md)
     * [Priest](priest_macros.md)
+    * [Rogue](rogue_macros.md)
+    * [Monk](monk_macros.md)
+    * [Warrior](warrior_macros.md)
+    * [Warlock](warlock_macros.md)
+    * [Evoker](evoker_macros.md)
+    * [Mage](mage_macros.md)
+    * [Paladin](paladin_macros.md)
+    * [Druid](druid_macros.md)
     * [Deathknight](deathknight_macros.md)
     * [Shaman](shaman_macros.md)
-    * [Mage](mage_macros.md)
-    * [Warlock](warlock_macros.md)
-    * [Monk](monk_macros.md)
-    * [Druid](druid_macros.md)
-    * [Demonhunter](demonhunter_macros.md)
-    * [Evoker](evoker_macros.md)
+    * [Hunter](hunter_macros.md)
 
 ---
 
