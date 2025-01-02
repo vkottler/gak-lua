@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.0
--- hash=0df161f855ce9ac4d3dfe1f1329c972d
+-- hash=3773f675f2cba9659ab2aef08509505e
 -- =====================================
 expectedCVars = {}
 expectedCVars["GamePadEnable"] = 1
@@ -19,3 +19,4 @@ expectedCVars["SoftTargetFriend"] = 3
 expectedCVars["SoftTargetInteract"] = 3
 expectedCVars["SoftTargetIconFriend"] = 1
 expectedCVars["SoftTargetNameplateInteract"] = 1
+expectedCVars["SoftTargetIconEnemy"] = 0

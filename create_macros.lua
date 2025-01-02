@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.0
--- hash=4c2c1d7b501594ce74137670bd10f5d6
+-- hash=8d60064aeaf4899bf959b639ee55e0c5
 -- =====================================
 function GakCreateGlobalMacros()
 CreateMacro("13", "inv_misc_questionmark", [[
@@ -30,6 +30,29 @@ CreateMacro("pet", "inv_leatherworking_70_petleash", [[
 end
 
 function GakCreateCharacterMacros()
+	-- Create a racial macro.
+	local our_race = select(2, UnitRace("player"))
+	if our_race == "Orc" then
+		CreateMacro("1", "inv_misc_questionmark", [[
+#showtooltip
+/cast Blood Fury]], 1)
+	end
+	if our_race == "NightElf" then
+		CreateMacro("1", "inv_misc_questionmark", [[
+#showtooltip
+/cast Shadowmeld]], 1)
+	end
+	if our_race == "BloodElf" then
+		CreateMacro("1", "inv_misc_questionmark", [[
+#showtooltip
+/cast Arcane Torrent]], 1)
+	end
+	if our_race == "HighmountainTauren" then
+		CreateMacro("1", "inv_misc_questionmark", [[
+#showtooltip
+/cast Bull Rush]], 1)
+	end
+
 	local class_str = select(2, UnitClass("player"))
 
 	if class_str == "DEMONHUNTER" then
@@ -259,18 +282,18 @@ function GakCreateCharacterMacros()
 	end
 
 	if class_str == "DRUID" then
-		CreateMacro(" ", "inv_misc_questionmark", [[
+		CreateMacro("2", "inv_misc_questionmark", [[
 #showtooltip
 /cast [indoors] !Cat Form; !Travel Form]], 1)
-		CreateMacro(" ", "inv_misc_questionmark", [[
+		CreateMacro("3", "inv_misc_questionmark", [[
 #showtooltip Prowl
 /cast [nocombat] !Prowl
 /changeactionbar 1]], 1)
-		CreateMacro(" ", "inv_misc_questionmark", [[
+		CreateMacro("4", "inv_misc_questionmark", [[
 #showtooltip Cat Form
 /cast [noform:2] Cat Form
 /changeactionbar 1]], 1)
-		CreateMacro(" ", "inv_misc_questionmark", [[
+		CreateMacro("5", "inv_misc_questionmark", [[
 #showtooltip Bear Form
 /cast [noform:1] Bear Form
 /changeactionbar 1]], 1)

@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.0
-    hash=8ecbd05a199e92e38fb37b41558ce138
+    hash=3e5b8140e9e5dc414c079813066af696
     =====================================
 -->
 
@@ -27,3 +27,4 @@ SoftTargetFriend | 3
 SoftTargetInteract | 3
 SoftTargetIconFriend | 1
 SoftTargetNameplateInteract | 1
+SoftTargetIconEnemy | 0
