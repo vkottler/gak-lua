@@ -2,13 +2,13 @@
     =====================================
     generator=datazen
     version=3.2.0
-    hash=16bd4c40b257f0c6443e15e8db2621a4
+    hash=2c4f7e59e3d14180f67cbf1d3bbaf127
     =====================================
 -->
 
 # Warlock Macros
 
-([back](README.md))
+([back](../README.md))
 
 soul
 
@@ -55,6 +55,24 @@ self
 ```
 #showtooltip
 /cast [@player] Shadowfury
+```
+
+---
+
+self
+
+```
+#showtooltip
+/cast [@player] Soulstone
+```
+
+---
+
+self
+
+```
+#showtooltip
+/cast [@player] Unending Breath
 ```
 
 ---

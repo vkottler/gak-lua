@@ -2,19 +2,19 @@
     =====================================
     generator=datazen
     version=3.2.0
-    hash=c4204421fb56911350da064fa86e0a8e
+    hash=30510148df43e6e844b648bfde7f3b3d
     =====================================
 -->
 
-# Monk Macros
+# Hunter Macros
 
-([back](README.md))
+([back](../README.md))
 
 self
 
 ```
 #showtooltip
-/cast [@player] Soothing Mist
+/cast [@player] Binding Shot
 ```
 
 ---
@@ -23,7 +23,7 @@ self
 
 ```
 #showtooltip
-/cast [@player] Enveloping Mist
+/cast [@player] Roar of Sacrifice
 ```
 
 ---
@@ -32,7 +32,7 @@ self
 
 ```
 #showtooltip
-/cast [@player] Detox
+/cast [@player] Steel Trap
 ```
 
 ---
@@ -41,7 +41,7 @@ self
 
 ```
 #showtooltip
-/cast [@player] Vivify
+/cast [@player] Freezing Trap
 ```
 
 ---
@@ -50,7 +50,7 @@ self
 
 ```
 #showtooltip
-/cast [@player] Ring of Peace
+/cast [@player] Tar Trap
 ```
 
 ---
@@ -59,7 +59,7 @@ self
 
 ```
 #showtooltip
-/cast [@player] Summon Jade Serpent Statue
+/cast [@player] Flare
 ```
 
 ---
@@ -68,7 +68,7 @@ self
 
 ```
 #showtooltip
-/cast [@player] Renewing Mist
+/cast [@player] Command Pet
 ```
 
 ---
@@ -77,16 +77,7 @@ self
 
 ```
 #showtooltip
-/cast [@player] Tiger's Lust
-```
-
----
-
-self
-
-```
-#showtooltip
-/cast [@player] Life Cocoon
+/cast [@player] High Explosive Trap
 ```
 
 ---

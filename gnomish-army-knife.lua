@@ -3,7 +3,7 @@
 
 -- Create UI menu.
 local gak_ui =
-	GakCreateButtonContainer(UIParent, project .. " (" .. version .. ")", 2, 7)
+	GakCreateButtonContainer(UIParent, project .. " (" .. version .. ")", 3, 7)
 gak_ui:SetPoint("CENTER", UIParent, "CENTER", 0, 0)
 
 -- Initially hidden.
@@ -34,6 +34,9 @@ local function GakMain(frame)
 	GakMacroManagementInit(frame)
 	GakActionBarManagementInit(frame)
 	GakLayoutManagementInit(frame)
+
+	-- Resume work on this later.
+	-- GakTargetInfoInit(frame)
 
 	-- Utility buttons.
 	GakCreateButton(frame, "Set All", 0, 6, function()

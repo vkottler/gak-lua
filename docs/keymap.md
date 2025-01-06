@@ -2,13 +2,13 @@
     =====================================
     generator=datazen
     version=3.2.0
-    hash=eaa081cb33f811c537bdd1a150b3ffa8
+    hash=d4360ed8a1a7e05e8c4a61c408b76f1e
     =====================================
 -->
 
 # GamePad <-> Keyboard Mapping
 
-([back](README.md))
+([back](../README.md))
 
 ---
 

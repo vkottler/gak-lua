@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.0
--- hash=433ea88a9eb454f2fb4fb988dc5d8d0d
+-- hash=c2145b846d02a1c181bf37823d5e06ff
 -- =====================================
 function GakCreateGlobalMacros()
 CreateMacro("13", "inv_misc_questionmark", [[
@@ -45,6 +45,16 @@ function GakCreateCharacterMacros()
 #showtooltip
 /cast Shadowmeld]], 1)
 	end
+	if our_race == "Undead" then
+		CreateMacro("1", "inv_misc_questionmark", [[
+#showtooltip
+/cast Will of the Forsaken]], 1)
+	end
+	if our_race == "Goblin" then
+		CreateMacro("1", "inv_misc_questionmark", [[
+#showtooltip
+/cast Rocket Jump]], 1)
+	end
 	if our_race == "BloodElf" then
 		CreateMacro("1", "inv_misc_questionmark", [[
 #showtooltip
@@ -54,6 +64,11 @@ function GakCreateCharacterMacros()
 		CreateMacro("1", "inv_misc_questionmark", [[
 #showtooltip
 /cast Bull Rush]], 1)
+	end
+	if our_race == "Dracthyr" then
+		CreateMacro("1", "inv_misc_questionmark", [[
+#showtooltip
+/cast Wing Buffet]], 1)
 	end
 
 	local class_str = select(2, UnitClass("player"))
@@ -213,7 +228,13 @@ function GakCreateCharacterMacros()
 		CreateMacro("self", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Shadowfury]], 1)
-		print("Created 5", select(1, UnitClass("player")), "macros.")
+		CreateMacro("self", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Soulstone]], 1)
+		CreateMacro("self", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Unending Breath]], 1)
+		print("Created 7", select(1, UnitClass("player")), "macros.")
 	end
 
 	if class_str == "EVOKER" then
@@ -351,7 +372,10 @@ function GakCreateCharacterMacros()
 		CreateMacro("self", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Efflorescence]], 1)
-		print("Created 20", select(1, UnitClass("player")), "macros.")
+		CreateMacro("self", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Thorns]], 1)
+		print("Created 21", select(1, UnitClass("player")), "macros.")
 	end
 
 	if class_str == "DEATHKNIGHT" then
@@ -383,7 +407,10 @@ function GakCreateCharacterMacros()
 		CreateMacro("self", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Healing Surge]], 1)
-		print("Created 3", select(1, UnitClass("player")), "macros.")
+		CreateMacro("self", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Earth Shield]], 1)
+		print("Created 4", select(1, UnitClass("player")), "macros.")
 	end
 
 	if class_str == "HUNTER" then

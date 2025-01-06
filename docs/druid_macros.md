@@ -2,13 +2,13 @@
     =====================================
     generator=datazen
     version=3.2.0
-    hash=a29ab6f577db7e94debe97181f2d462e
+    hash=177b1150a80182f7522d5ba93c5e77b3
     =====================================
 -->
 
 # Druid Macros
 
-([back](README.md))
+([back](../README.md))
 
 2
 
@@ -194,6 +194,15 @@ self
 ```
 #showtooltip
 /cast [@player] Efflorescence
+```
+
+---
+
+self
+
+```
+#showtooltip
+/cast [@player] Thorns
 ```
 
 ---

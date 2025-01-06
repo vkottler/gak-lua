@@ -2,13 +2,13 @@
     =====================================
     generator=datazen
     version=3.2.0
-    hash=ce5abb9bd05819067401c046949e2c12
+    hash=e0a9b3ce75e39136bade33cb913e86de
     =====================================
 -->
 
 # Keyboard Keybinds
 
-([back](README.md))
+([back](../README.md))
 
 Command | Key | Modifiers
 --------|-----|----------

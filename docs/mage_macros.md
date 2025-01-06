@@ -2,13 +2,13 @@
     =====================================
     generator=datazen
     version=3.2.0
-    hash=55132b9c72fc1e53962215f06edefdcc
+    hash=d458b0681edb2c959032b29d33abad87
     =====================================
 -->
 
 # Mage Macros
 
-([back](README.md))
+([back](../README.md))
 
 canc
 

@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.0
-    hash=78f799055a5cfb0ebb75861dc44a65f8
+    hash=3932b32c63fbcbd58be521b25fc5bd1f
     =====================================
 -->
 
@@ -14,26 +14,27 @@
 
 ## Documentation
 
-* [CVar Table](cvar.md)
+* [CVar Table](docs/cvar.md)
 * Keybinds
-    * [GamePad](gamepad_keybinds.md)
-    * [Keyboard](keyboard_keybinds.md)
-    * [GamePad <-> Keyboard Mapping](keymap.md)
+    * [GamePad](docs/gamepad_keybinds.md)
+    * [Keyboard](docs/keyboard_keybinds.md)
+    * [GamePad <-> Keyboard Mapping](docs/keymap.md)
 * Macros
-    * [Global](global_macros.md)
-    * [Demonhunter](demonhunter_macros.md)
-    * [Priest](priest_macros.md)
-    * [Rogue](rogue_macros.md)
-    * [Monk](monk_macros.md)
-    * [Warrior](warrior_macros.md)
-    * [Warlock](warlock_macros.md)
-    * [Evoker](evoker_macros.md)
-    * [Mage](mage_macros.md)
-    * [Paladin](paladin_macros.md)
-    * [Druid](druid_macros.md)
-    * [Deathknight](deathknight_macros.md)
-    * [Shaman](shaman_macros.md)
-    * [Hunter](hunter_macros.md)
+    * [Global](docs/global_macros.md)
+    * [Demonhunter](docs/demonhunter_macros.md)
+    * [Priest](docs/priest_macros.md)
+    * [Rogue](docs/rogue_macros.md)
+    * [Monk](docs/monk_macros.md)
+    * [Warrior](docs/warrior_macros.md)
+    * [Warlock](docs/warlock_macros.md)
+    * [Evoker](docs/evoker_macros.md)
+    * [Mage](docs/mage_macros.md)
+    * [Paladin](docs/paladin_macros.md)
+    * [Druid](docs/druid_macros.md)
+    * [Deathknight](docs/deathknight_macros.md)
+    * [Shaman](docs/shaman_macros.md)
+    * [Hunter](docs/hunter_macros.md)
+* [Action Bar Layout](docs/bars.md)
 
 ---
 

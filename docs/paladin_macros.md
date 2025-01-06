@@ -2,13 +2,13 @@
     =====================================
     generator=datazen
     version=3.2.0
-    hash=fe1b987876e6f3c54dec78c13f746ee6
+    hash=5bda3c208f83f99a61ee96d316a4a3bd
     =====================================
 -->
 
 # Paladin Macros
 
-([back](README.md))
+([back](../README.md))
 
 self
 

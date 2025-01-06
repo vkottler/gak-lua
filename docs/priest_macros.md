@@ -2,13 +2,13 @@
     =====================================
     generator=datazen
     version=3.2.0
-    hash=8bc505c65e692d0f31bf3f7a79326be6
+    hash=ddc10407959501040538c6bc06b9b285
     =====================================
 -->
 
 # Priest Macros
 
-([back](README.md))
+([back](../README.md))
 
 harm
 

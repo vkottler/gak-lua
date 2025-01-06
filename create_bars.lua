@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.0
--- hash=498cb18e62ab5dcdadc609e638f0533d
+-- hash=6ee6988a244b697c7ade46ca6fe4f760
 -- =====================================
 -- https://wowpedia.fandom.com/wiki/Action_slot
 GAK_MAX_ACTIONBAR = 180
@@ -1440,6 +1440,9 @@ C_Spell.PickupSpell(1079)]])
 			print("(spec) Couldn't bind slot 82:", [[
 C_Spell.PickupSpell(22568)]])
 		end
+	end
+
+	if id == 262 then
 	end
 	print("Placed " .. spec_bind_count .. " " .. name .. " (" .. id .. ") actions.")
 end

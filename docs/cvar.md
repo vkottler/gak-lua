@@ -2,13 +2,13 @@
     =====================================
     generator=datazen
     version=3.2.0
-    hash=3e5b8140e9e5dc414c079813066af696
+    hash=57bd6bba8b353d110f866b92449bc9c9
     =====================================
 -->
 
 # [CVar](https://wowpedia.fandom.com/wiki/Console_variables)'s
 
-([back](README.md))
+([back](../README.md))
 
 Name | Value
 ---- | -----
@@ -18,6 +18,7 @@ GamePadEmulateShift | `PADLSHOULDER`
 GamePadEmulateCtrl | `PADLTRIGGER`
 GamePadRunThreshold | 0
 GamePadCameraYawSpeed | 1.75
+AutoPushSpellToActionBar | 0
 advancedCombatLogging | 1
 autoLootDefault | 1
 autoLootRate | 50

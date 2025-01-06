@@ -9,7 +9,7 @@ end
 function GakHelpHarmBarInit(_)
 	local parent = MultiBarBottomLeft
 
-	local frame = CreateFrame("Frame", "HelpHarm", parent)
+	local frame = CreateFrame("Frame", "GakHelpHarm", parent)
 	frame:SetPoint("TOPLEFT")
 	frame:SetSize(parent:GetWidth() / 2, parent:GetHeight() / 2)
 	frame.tex = frame:CreateTexture()

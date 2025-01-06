@@ -1,3 +1,8 @@
+-- enable/disable combat log based on event registration (enter/leave arena
+-- etc.)
+-- https://wowpedia.fandom.com/wiki/API_LoggingCombat
+
+-- arena names, any way to get spec name? and also do party?
 -- local U = UnitIsUnit
 -- hooksecurefunc("CompactUnitFrame_UpdateName", function(F)
 -- 	if IsActiveBattlefieldArena() and F.unit:find("nameplate") then

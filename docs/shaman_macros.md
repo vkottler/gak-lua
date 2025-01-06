@@ -2,13 +2,13 @@
     =====================================
     generator=datazen
     version=3.2.0
-    hash=76da7305fe0ef5cda1059beb644357b5
+    hash=db0eb9e97ae1c33a3854bc5d43d7f763
     =====================================
 -->
 
 # Shaman Macros
 
-([back](README.md))
+([back](../README.md))
 
 self
 
@@ -33,6 +33,15 @@ self
 ```
 #showtooltip
 /cast [@player] Healing Surge
+```
+
+---
+
+self
+
+```
+#showtooltip
+/cast [@player] Earth Shield
 ```
 
 ---
