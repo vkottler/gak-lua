@@ -2,6 +2,8 @@
 
 ([back](../README.md))
 
+![Combined](im/bars_combined.png)
+
 ---
 
 ## Main Bars I
