@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.0
-    hash=57bd6bba8b353d110f866b92449bc9c9
+    hash=79966bcfb4fe42fdd631194a354e4bd0
     =====================================
 -->
 
@@ -28,4 +28,8 @@ SoftTargetFriend | 3
 SoftTargetInteract | 3
 SoftTargetIconFriend | 1
 SoftTargetNameplateInteract | 1
+floatingCombatTextCombatDamage | 0
+floatingCombatTextCombatHealing | 0
+cameraSmoothStyle | 1
+hideAdventureJournalAlerts | 1
 SoftTargetIconEnemy | 0

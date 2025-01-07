@@ -1,33 +1,33 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.0
--- hash=c2145b846d02a1c181bf37823d5e06ff
+-- hash=27f2878262130186868d7433b6474ee7
 -- =====================================
 function GakCreateGlobalMacros()
-CreateMacro("13", "inv_misc_questionmark", [[
+	CreateMacro("13", "inv_misc_questionmark", [[
 #showtooltip
 /use 13]])
-CreateMacro("14", "inv_misc_questionmark", [[
+	CreateMacro("14", "inv_misc_questionmark", [[
 #showtooltip
 /use 14]])
-CreateMacro("canc", "creatureportrait_creature_iceblock", [[
+	CreateMacro("canc", "creatureportrait_creature_iceblock", [[
 /stopcasting
 /cancelaura Slow Fall
 /cancelaura Levitate]])
-CreateMacro("dis", "ability_marksmanship", [[
+	CreateMacro("dis", "ability_marksmanship", [[
 /dismount
 /cancelform]])
-CreateMacro("gak", "inv_misc_enggizmos_swissarmy", [[
+	CreateMacro("gak", "inv_misc_enggizmos_swissarmy", [[
 /gnomish-army-knife]])
-CreateMacro("gg", "achievement_bg_takexflags_ab", [[
+	CreateMacro("gg", "achievement_bg_takexflags_ab", [[
 /run LeaveBattlefield()]])
-CreateMacro("hs", "inv_misc_questionmark", [[
+	CreateMacro("hs", "inv_misc_questionmark", [[
 #showtooltip
 /use Healthstone]])
-CreateMacro("mana", "inv_drink_milk_01", [[
+	CreateMacro("mana", "inv_drink_milk_01", [[
 /use Conjured Mana Bun
 /use Quicksilver Sipper]])
-CreateMacro("pet", "inv_leatherworking_70_petleash", [[
+	CreateMacro("pet", "inv_leatherworking_70_petleash", [[
 /petdismiss]])
 	print("Created 9 global macros.")
 end
@@ -35,40 +35,98 @@ end
 function GakCreateCharacterMacros()
 	-- Create a racial macro.
 	local our_race = select(2, UnitRace("player"))
+
 	if our_race == "Orc" then
 		CreateMacro("1", "inv_misc_questionmark", [[
 #showtooltip
 /cast Blood Fury]], 1)
+		CreateMacro("2", "inv_misc_questionmark", [[
+/run print("no second racial")]], 1)
 	end
+
 	if our_race == "NightElf" then
 		CreateMacro("1", "inv_misc_questionmark", [[
 #showtooltip
 /cast Shadowmeld]], 1)
+		CreateMacro("2", "inv_misc_questionmark", [[
+/run print("no second racial")]], 1)
 	end
+
 	if our_race == "Undead" then
 		CreateMacro("1", "inv_misc_questionmark", [[
 #showtooltip
 /cast Will of the Forsaken]], 1)
+		CreateMacro("2", "inv_misc_questionmark", [[
+#showtooltip
+/cast Cannibalize]], 1)
 	end
+
+	if our_race == "Gnome" then
+		CreateMacro("1", "inv_misc_questionmark", [[
+#showtooltip
+/cast Escape Artist]], 1)
+		CreateMacro("2", "inv_misc_questionmark", [[
+/run print("no second racial")]], 1)
+	end
+
+	if our_race == "Troll" then
+		CreateMacro("1", "inv_misc_questionmark", [[
+#showtooltip
+/cast Berserking]], 1)
+		CreateMacro("2", "inv_misc_questionmark", [[
+/run print("no second racial")]], 1)
+	end
+
 	if our_race == "Goblin" then
 		CreateMacro("1", "inv_misc_questionmark", [[
 #showtooltip
 /cast Rocket Jump]], 1)
+		CreateMacro("2", "inv_misc_questionmark", [[
+#showtooltip
+/cast Rocket Barrage]], 1)
 	end
+
 	if our_race == "BloodElf" then
 		CreateMacro("1", "inv_misc_questionmark", [[
 #showtooltip
 /cast Arcane Torrent]], 1)
+		CreateMacro("2", "inv_misc_questionmark", [[
+/run print("no second racial")]], 1)
 	end
+
+	if our_race == "Worgen" then
+		CreateMacro("1", "inv_misc_questionmark", [[
+#showtooltip
+/cast Darkflight]], 1)
+		CreateMacro("2", "inv_misc_questionmark", [[
+#showtooltip
+/cast Two Forms]], 1)
+	end
+
 	if our_race == "HighmountainTauren" then
 		CreateMacro("1", "inv_misc_questionmark", [[
 #showtooltip
 /cast Bull Rush]], 1)
+		CreateMacro("2", "inv_misc_questionmark", [[
+/run print("no second racial")]], 1)
 	end
+
 	if our_race == "Dracthyr" then
 		CreateMacro("1", "inv_misc_questionmark", [[
 #showtooltip
 /cast Wing Buffet]], 1)
+		CreateMacro("2", "inv_misc_questionmark", [[
+#showtooltip
+/cast Soar]], 1)
+	end
+
+	if our_race == "EarthenDwarf" then
+		CreateMacro("1", "inv_misc_questionmark", [[
+#showtooltip
+/cast Azerite Surge]], 1)
+		CreateMacro("2", "inv_misc_questionmark", [[
+#showtooltip
+/cast Quiet Contemplation]], 1)
 	end
 
 	local class_str = select(2, UnitClass("player"))
@@ -306,21 +364,25 @@ function GakCreateCharacterMacros()
 	end
 
 	if class_str == "DRUID" then
-		CreateMacro("2", "inv_misc_questionmark", [[
+		CreateMacro("3", "inv_misc_questionmark", [[
 #showtooltip
 /cast [indoors] !Cat Form; !Travel Form]], 1)
-		CreateMacro("3", "inv_misc_questionmark", [[
+		CreateMacro("4", "inv_misc_questionmark", [[
 #showtooltip Prowl
 /cast [nocombat] !Prowl
 /changeactionbar 1]], 1)
-		CreateMacro("4", "inv_misc_questionmark", [[
+		CreateMacro("5", "inv_misc_questionmark", [[
 #showtooltip Cat Form
 /cast [noform:2] Cat Form
 /changeactionbar 1]], 1)
-		CreateMacro("5", "inv_misc_questionmark", [[
+		CreateMacro("6", "inv_misc_questionmark", [[
 #showtooltip Bear Form
 /cast [noform:1] Bear Form
 /changeactionbar 1]], 1)
+		CreateMacro("beam", "inv_misc_questionmark", [[
+#showtooltip
+/cast Solar Beam
+/cast Mass Entanglement]], 1)
 		CreateMacro("canc", "ability_racial_twoforms", [[
 /cancelform]], 1)
 		CreateMacro("flap", "inv_misc_questionmark", [[
@@ -335,16 +397,13 @@ function GakCreateCharacterMacros()
 /cleartarget]], 1)
 		CreateMacro("self", "inv_misc_questionmark", [[
 #showtooltip
-/cast [@player] Lifebloom]], 1)
+/cast [@player] Mark of the Wild]], 1)
 		CreateMacro("self", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Remove Corruption]], 1)
 		CreateMacro("self", "inv_misc_questionmark", [[
 #showtooltip
-/cast [@player] Mark of the Wild]], 1)
-		CreateMacro("self", "inv_misc_questionmark", [[
-#showtooltip
-/cast [@player] Rejuvenation]], 1)
+/cast [@player] Lifebloom]], 1)
 		CreateMacro("self", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Wild Growth]], 1)
@@ -375,7 +434,10 @@ function GakCreateCharacterMacros()
 		CreateMacro("self", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Thorns]], 1)
-		print("Created 21", select(1, UnitClass("player")), "macros.")
+		CreateMacro("self", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Rejuvenation]], 1)
+		print("Created 22", select(1, UnitClass("player")), "macros.")
 	end
 
 	if class_str == "DEATHKNIGHT" then
