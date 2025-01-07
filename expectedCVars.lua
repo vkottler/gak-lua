@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.0
--- hash=4d74c962e10048334e421737c80251ab
+-- hash=891207cc45e716f446d69e0ea1b4a4b1
 -- =====================================
 expectedCVars = {}
 expectedCVars["GamePadEnable"] = 1
@@ -24,4 +24,5 @@ expectedCVars["floatingCombatTextCombatDamage"] = 0
 expectedCVars["floatingCombatTextCombatHealing"] = 0
 expectedCVars["cameraSmoothStyle"] = 1
 expectedCVars["hideAdventureJournalAlerts"] = 1
+expectedCVars["spellBookHidePassives"] = 1
 expectedCVars["SoftTargetIconEnemy"] = 0
