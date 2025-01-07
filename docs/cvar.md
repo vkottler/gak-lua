@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.0
-    hash=fe0a1311210d9e002d57e79bba44a34d
+    hash=33c7be7f1095216deb74e99cd0f25842
     =====================================
 -->
 
@@ -33,4 +33,6 @@ floatingCombatTextCombatHealing | 0
 cameraSmoothStyle | 1
 hideAdventureJournalAlerts | 1
 spellBookHidePassives | 1
+pvpFramesDisplayClassColor | 1
+raidFramesDisplayClassColor | 1
 SoftTargetIconEnemy | 0
