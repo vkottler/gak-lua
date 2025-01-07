@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.0
-    hash=33c7be7f1095216deb74e99cd0f25842
+    hash=1af08ceada04a8a8943a34ecc827355d
     =====================================
 -->
 
@@ -31,8 +31,12 @@ SoftTargetNameplateInteract | 1
 floatingCombatTextCombatDamage | 0
 floatingCombatTextCombatHealing | 0
 cameraSmoothStyle | 1
+countdownForCooldowns | 1
 hideAdventureJournalAlerts | 1
+showTutorials | 0
 spellBookHidePassives | 1
 pvpFramesDisplayClassColor | 1
+pvpFramesDisplayPowerBars | 1
 raidFramesDisplayClassColor | 1
+raidFramesDisplayPowerBars | 1
 SoftTargetIconEnemy | 0

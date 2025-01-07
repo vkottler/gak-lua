@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.0
--- hash=0c70950e021737c1286b3729562e1c5a
+-- hash=76be46f41059c2b8ae46cccfa477949f
 -- =====================================
 expectedCVars = {}
 expectedCVars["GamePadEnable"] = 1
@@ -23,8 +23,12 @@ expectedCVars["SoftTargetNameplateInteract"] = 1
 expectedCVars["floatingCombatTextCombatDamage"] = 0
 expectedCVars["floatingCombatTextCombatHealing"] = 0
 expectedCVars["cameraSmoothStyle"] = 1
+expectedCVars["countdownForCooldowns"] = 1
 expectedCVars["hideAdventureJournalAlerts"] = 1
+expectedCVars["showTutorials"] = 0
 expectedCVars["spellBookHidePassives"] = 1
 expectedCVars["pvpFramesDisplayClassColor"] = 1
+expectedCVars["pvpFramesDisplayPowerBars"] = 1
 expectedCVars["raidFramesDisplayClassColor"] = 1
+expectedCVars["raidFramesDisplayPowerBars"] = 1
 expectedCVars["SoftTargetIconEnemy"] = 0
