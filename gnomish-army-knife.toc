@@ -22,5 +22,6 @@ macros.lua
 create_bars.lua
 bars.lua
 layouts.lua
+chat.lua
 
 gnomish-army-knife.lua

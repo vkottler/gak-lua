@@ -8,11 +8,27 @@ function table_contains(tbl, x)
 	return found
 end
 
+local function checkBindCommand(key, command, fix)
+	-- https://wowwiki-archive.fandom.com/wiki/API_GetBindingKey
+	if not table_contains({ GetBindingKey(command) }, key) then
+		if fix then
+			if SetBinding(key, command) then
+				print(key, "->", command, "success")
+			else
+				print(key, "->", command, "fail")
+			end
+		else
+			print(key, "not bound to", command, "!")
+		end
+	end
+end
+
 local function checkCommand(command, fix)
 	if bindings[command] then
 		local gamepad = bindings[command][1]
 		local key = keymap[gamepad]
 
+		-- Build full bind string (handle modifiers).
 		gamepad_parts = {}
 		key_parts = {}
 		if bindings[command][2] then
@@ -24,34 +40,8 @@ local function checkCommand(command, fix)
 		table.insert(gamepad_parts, gamepad)
 		table.insert(key_parts, key)
 
-		local gamepad_str = table.concat(gamepad_parts, "-")
-		local key_str = table.concat(key_parts, "-")
-
-		-- https://wowwiki-archive.fandom.com/wiki/API_GetBindingKey
-		bound = { GetBindingKey(command) }
-
-		if not table_contains(bound, gamepad_str) then
-			if fix then
-				if SetBinding(gamepad_str, command) then
-					print(gamepad_str, "->", command, "success")
-				else
-					print(gamepad_str, "->", command, "fail")
-				end
-			else
-				print(gamepad_str, "not bound to", command, "!")
-			end
-		end
-		if not table_contains(bound, key_str) then
-			if fix then
-				if SetBinding(key_str, command) then
-					print(key_str, "->", command, "success")
-				else
-					print(key_str, "->", command, "fail")
-				end
-			else
-				print(key_str, "not bound to", command, "!")
-			end
-		end
+		checkBindCommand(table.concat(gamepad_parts, "-"), command, fix)
+		checkBindCommand(table.concat(key_parts, "-"), command, fix)
 	else
 		print("No binding for command", command, "!")
 	end

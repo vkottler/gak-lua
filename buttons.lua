@@ -29,14 +29,20 @@ function GakCreateButtonContainer(parent, text, width, height)
 
 	-- Set dimensions.
 	frame:SetSize(
-		width * (buttonWidth + padding),
+		(width * buttonWidth) + (width - 0.5) * padding,
 		headerHeight + (height * buttonHeight) + padding
 	)
 
 	-- Add a title.
 	frame.TitleBg:SetHeight(30)
 	frame.title = frame:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
-	frame.title:SetPoint("TOPLEFT", frame.TitleBg, "TOPLEFT", 5, -5)
+	frame.title:SetPoint(
+		"TOPLEFT",
+		frame.TitleBg,
+		"TOPLEFT",
+		padding / 2,
+		-(padding / 2)
+	)
 	frame.title:SetText(text)
 
 	-- Handle mouse move.

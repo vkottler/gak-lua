@@ -34,6 +34,7 @@ local function GakMain(frame)
 	GakMacroManagementInit(frame)
 	GakActionBarManagementInit(frame)
 	GakLayoutManagementInit(frame)
+	GakChatManagementInit(frame)
 
 	-- Resume work on this later.
 	-- GakTargetInfoInit(frame)
