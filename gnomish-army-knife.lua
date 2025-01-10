@@ -58,3 +58,4 @@ gak_ui:SetScript("OnEvent", function(frame, event, name)
 	end
 end)
 gak_ui:RegisterEvent("ADDON_LOADED")
+GakUi = gak_ui
