@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.0
--- hash=e161bb2cbcbd20f929967bfd6a3709df
+-- hash=c60d02d01f8c470b66f1e8ce95bed6ca
 -- =====================================
 -- https://wowpedia.fandom.com/wiki/Action_slot
 GAK_MAX_ACTIONBAR = 180
@@ -202,358 +202,6 @@ PickupMacro(8)]])
 	end
 
 	if class_str == "MONK" then
-		C_Spell.PickupSpell(115175)
-		if GetCursorInfo() then
-			PlaceAction(1)
-			class_bind_count = class_bind_count + 1
-		else
-			print("(class) Couldn't bind slot 1:", [[
-C_Spell.PickupSpell(115175)]])
-		end
-		C_Spell.PickupSpell(115151)
-		if GetCursorInfo() then
-			PlaceAction(2)
-			class_bind_count = class_bind_count + 1
-		else
-			print("(class) Couldn't bind slot 2:", [[
-C_Spell.PickupSpell(115151)]])
-		end
-		C_Spell.PickupSpell(115450)
-		if GetCursorInfo() then
-			PlaceAction(3)
-			class_bind_count = class_bind_count + 1
-		else
-			print("(class) Couldn't bind slot 3:", [[
-C_Spell.PickupSpell(115450)]])
-		end
-		C_Spell.PickupSpell(322101)
-		if GetCursorInfo() then
-			PlaceAction(4)
-			class_bind_count = class_bind_count + 1
-		else
-			print("(class) Couldn't bind slot 4:", [[
-C_Spell.PickupSpell(322101)]])
-		end
-		C_Spell.PickupSpell(119996)
-		if GetCursorInfo() then
-			PlaceAction(5)
-			class_bind_count = class_bind_count + 1
-		else
-			print("(class) Couldn't bind slot 5:", [[
-C_Spell.PickupSpell(119996)]])
-		end
-		C_Spell.PickupSpell(116841)
-		if GetCursorInfo() then
-			PlaceAction(6)
-			class_bind_count = class_bind_count + 1
-		else
-			print("(class) Couldn't bind slot 6:", [[
-C_Spell.PickupSpell(116841)]])
-		end
-		C_Spell.PickupSpell(116670)
-		if GetCursorInfo() then
-			PlaceAction(7)
-			class_bind_count = class_bind_count + 1
-		else
-			print("(class) Couldn't bind slot 7:", [[
-C_Spell.PickupSpell(116670)]])
-		end
-		C_Spell.PickupSpell(124682)
-		if GetCursorInfo() then
-			PlaceAction(8)
-			class_bind_count = class_bind_count + 1
-		else
-			print("(class) Couldn't bind slot 8:", [[
-C_Spell.PickupSpell(124682)]])
-		end
-		C_Spell.PickupSpell(115313)
-		if GetCursorInfo() then
-			PlaceAction(9)
-			class_bind_count = class_bind_count + 1
-		else
-			print("(class) Couldn't bind slot 9:", [[
-C_Spell.PickupSpell(115313)]])
-		end
-		C_Spell.PickupSpell(388615)
-		if GetCursorInfo() then
-			PlaceAction(10)
-			class_bind_count = class_bind_count + 1
-		else
-			print("(class) Couldn't bind slot 10:", [[
-C_Spell.PickupSpell(388615)]])
-		end
-		C_Spell.PickupSpell(101643)
-		if GetCursorInfo() then
-			PlaceAction(11)
-			class_bind_count = class_bind_count + 1
-		else
-			print("(class) Couldn't bind slot 11:", [[
-C_Spell.PickupSpell(101643)]])
-		end
-		C_Spell.PickupSpell(116849)
-		if GetCursorInfo() then
-			PlaceAction(12)
-			class_bind_count = class_bind_count + 1
-		else
-			print("(class) Couldn't bind slot 12:", [[
-C_Spell.PickupSpell(116849)]])
-		end
-		PickupMacro(120 + 2)
-		if GetCursorInfo() then
-			PlaceAction(13)
-			class_bind_count = class_bind_count + 1
-		else
-			print("(class) Couldn't bind slot 13:", [[
-PickupMacro(120 + 2)]])
-		end
-		PickupMacro(120 + 8)
-		if GetCursorInfo() then
-			PlaceAction(14)
-			class_bind_count = class_bind_count + 1
-		else
-			print("(class) Couldn't bind slot 14:", [[
-PickupMacro(120 + 8)]])
-		end
-		PickupMacro(120 + 4)
-		if GetCursorInfo() then
-			PlaceAction(15)
-			class_bind_count = class_bind_count + 1
-		else
-			print("(class) Couldn't bind slot 15:", [[
-PickupMacro(120 + 4)]])
-		end
-		C_Spell.PickupSpell(322101)
-		if GetCursorInfo() then
-			PlaceAction(16)
-			class_bind_count = class_bind_count + 1
-		else
-			print("(class) Couldn't bind slot 16:", [[
-C_Spell.PickupSpell(322101)]])
-		end
-		C_Spell.PickupSpell(119996)
-		if GetCursorInfo() then
-			PlaceAction(17)
-			class_bind_count = class_bind_count + 1
-		else
-			print("(class) Couldn't bind slot 17:", [[
-C_Spell.PickupSpell(119996)]])
-		end
-		PickupMacro(120 + 9)
-		if GetCursorInfo() then
-			PlaceAction(18)
-			class_bind_count = class_bind_count + 1
-		else
-			print("(class) Couldn't bind slot 18:", [[
-PickupMacro(120 + 9)]])
-		end
-		PickupMacro(120 + 5)
-		if GetCursorInfo() then
-			PlaceAction(19)
-			class_bind_count = class_bind_count + 1
-		else
-			print("(class) Couldn't bind slot 19:", [[
-PickupMacro(120 + 5)]])
-		end
-		PickupMacro(120 + 3)
-		if GetCursorInfo() then
-			PlaceAction(20)
-			class_bind_count = class_bind_count + 1
-		else
-			print("(class) Couldn't bind slot 20:", [[
-PickupMacro(120 + 3)]])
-		end
-		PickupMacro(120 + 7)
-		if GetCursorInfo() then
-			PlaceAction(21)
-			class_bind_count = class_bind_count + 1
-		else
-			print("(class) Couldn't bind slot 21:", [[
-PickupMacro(120 + 7)]])
-		end
-		C_Spell.PickupSpell(388615)
-		if GetCursorInfo() then
-			PlaceAction(22)
-			class_bind_count = class_bind_count + 1
-		else
-			print("(class) Couldn't bind slot 22:", [[
-C_Spell.PickupSpell(388615)]])
-		end
-		C_Spell.PickupSpell(101643)
-		if GetCursorInfo() then
-			PlaceAction(23)
-			class_bind_count = class_bind_count + 1
-		else
-			print("(class) Couldn't bind slot 23:", [[
-C_Spell.PickupSpell(101643)]])
-		end
-		PickupMacro(120 + 10)
-		if GetCursorInfo() then
-			PlaceAction(24)
-			class_bind_count = class_bind_count + 1
-		else
-			print("(class) Couldn't bind slot 24:", [[
-PickupMacro(120 + 10)]])
-		end
-		C_Spell.PickupSpell(100784)
-		if GetCursorInfo() then
-			PlaceAction(25)
-			class_bind_count = class_bind_count + 1
-		else
-			print("(class) Couldn't bind slot 25:", [[
-C_Spell.PickupSpell(100784)]])
-		end
-		C_Spell.PickupSpell(117952)
-		if GetCursorInfo() then
-			PlaceAction(26)
-			class_bind_count = class_bind_count + 1
-		else
-			print("(class) Couldn't bind slot 26:", [[
-C_Spell.PickupSpell(117952)]])
-		end
-		C_Spell.PickupSpell(115546)
-		if GetCursorInfo() then
-			PlaceAction(28)
-			class_bind_count = class_bind_count + 1
-		else
-			print("(class) Couldn't bind slot 28:", [[
-C_Spell.PickupSpell(115546)]])
-		end
-		C_Spell.PickupSpell(115008)
-		if GetCursorInfo() then
-			PlaceAction(32)
-			class_bind_count = class_bind_count + 1
-		else
-			print("(class) Couldn't bind slot 32:", [[
-C_Spell.PickupSpell(115008)]])
-		end
-		C_Spell.PickupSpell(119381)
-		if GetCursorInfo() then
-			PlaceAction(38)
-			class_bind_count = class_bind_count + 1
-		else
-			print("(class) Couldn't bind slot 38:", [[
-C_Spell.PickupSpell(119381)]])
-		end
-		C_Spell.PickupSpell(212051)
-		if GetCursorInfo() then
-			PlaceAction(41)
-			class_bind_count = class_bind_count + 1
-		else
-			print("(class) Couldn't bind slot 41:", [[
-C_Spell.PickupSpell(212051)]])
-		end
-		C_Spell.PickupSpell(115078)
-		if GetCursorInfo() then
-			PlaceAction(44)
-			class_bind_count = class_bind_count + 1
-		else
-			print("(class) Couldn't bind slot 44:", [[
-C_Spell.PickupSpell(115078)]])
-		end
-		C_Spell.PickupSpell(101546)
-		if GetCursorInfo() then
-			PlaceAction(49)
-			class_bind_count = class_bind_count + 1
-		else
-			print("(class) Couldn't bind slot 49:", [[
-C_Spell.PickupSpell(101546)]])
-		end
-		C_Spell.PickupSpell(100780)
-		if GetCursorInfo() then
-			PlaceAction(50)
-			class_bind_count = class_bind_count + 1
-		else
-			print("(class) Couldn't bind slot 50:", [[
-C_Spell.PickupSpell(100780)]])
-		end
-		C_Spell.PickupSpell(116680)
-		if GetCursorInfo() then
-			PlaceAction(55)
-			class_bind_count = class_bind_count + 1
-		else
-			print("(class) Couldn't bind slot 55:", [[
-C_Spell.PickupSpell(116680)]])
-		end
-		C_Spell.PickupSpell(116095)
-		if GetCursorInfo() then
-			PlaceAction(56)
-			class_bind_count = class_bind_count + 1
-		else
-			print("(class) Couldn't bind slot 56:", [[
-C_Spell.PickupSpell(116095)]])
-		end
-		C_Spell.PickupSpell(122783)
-		if GetCursorInfo() then
-			PlaceAction(57)
-			class_bind_count = class_bind_count + 1
-		else
-			print("(class) Couldn't bind slot 57:", [[
-C_Spell.PickupSpell(122783)]])
-		end
-		C_Spell.PickupSpell(115203)
-		if GetCursorInfo() then
-			PlaceAction(58)
-			class_bind_count = class_bind_count + 1
-		else
-			print("(class) Couldn't bind slot 58:", [[
-C_Spell.PickupSpell(115203)]])
-		end
-		C_Spell.PickupSpell(115294)
-		if GetCursorInfo() then
-			PlaceAction(59)
-			class_bind_count = class_bind_count + 1
-		else
-			print("(class) Couldn't bind slot 59:", [[
-C_Spell.PickupSpell(115294)]])
-		end
-		C_Spell.PickupSpell(107428)
-		if GetCursorInfo() then
-			PlaceAction(61)
-			class_bind_count = class_bind_count + 1
-		else
-			print("(class) Couldn't bind slot 61:", [[
-C_Spell.PickupSpell(107428)]])
-		end
-		C_Spell.PickupSpell(116844)
-		if GetCursorInfo() then
-			PlaceAction(62)
-			class_bind_count = class_bind_count + 1
-		else
-			print("(class) Couldn't bind slot 62:", [[
-C_Spell.PickupSpell(116844)]])
-		end
-		C_Spell.PickupSpell(322109)
-		if GetCursorInfo() then
-			PlaceAction(63)
-			class_bind_count = class_bind_count + 1
-		else
-			print("(class) Couldn't bind slot 63:", [[
-C_Spell.PickupSpell(322109)]])
-		end
-		C_Spell.PickupSpell(325197)
-		if GetCursorInfo() then
-			PlaceAction(64)
-			class_bind_count = class_bind_count + 1
-		else
-			print("(class) Couldn't bind slot 64:", [[
-C_Spell.PickupSpell(325197)]])
-		end
-		C_Spell.PickupSpell(116705)
-		if GetCursorInfo() then
-			PlaceAction(67)
-			class_bind_count = class_bind_count + 1
-		else
-			print("(class) Couldn't bind slot 67:", [[
-C_Spell.PickupSpell(116705)]])
-		end
-		PickupMacro(120 + 6)
-		if GetCursorInfo() then
-			PlaceAction(68)
-			class_bind_count = class_bind_count + 1
-		else
-			print("(class) Couldn't bind slot 68:", [[
-PickupMacro(120 + 6)]])
-		end
 	end
 
 	if class_str == "WARRIOR" then
@@ -1158,6 +806,425 @@ C_Spell.PickupSpell(7328)]])
 		else
 			print("(spec) Couldn't bind slot 41:", [[
 C_Spell.PickupSpell(5502)]])
+		end
+	end
+
+	if id == 270 then
+		C_Spell.PickupSpell(116705)
+		if GetCursorInfo() then
+			PlaceAction(67)
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot 67:", [[
+C_Spell.PickupSpell(116705)]])
+		end
+		C_Spell.PickupSpell(107428)
+		if GetCursorInfo() then
+			PlaceAction(61)
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot 61:", [[
+C_Spell.PickupSpell(107428)]])
+		end
+		C_Spell.PickupSpell(116670)
+		if GetCursorInfo() then
+			PlaceAction(7)
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot 7:", [[
+C_Spell.PickupSpell(116670)]])
+		end
+		PickupMacro(120 + 6)
+		if GetCursorInfo() then
+			PlaceAction(19)
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot 19:", [[
+PickupMacro(120 + 6)]])
+		end
+		C_Spell.PickupSpell(115175)
+		if GetCursorInfo() then
+			PlaceAction(1)
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot 1:", [[
+C_Spell.PickupSpell(115175)]])
+		end
+		PickupMacro(120 + 3)
+		if GetCursorInfo() then
+			PlaceAction(13)
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot 13:", [[
+PickupMacro(120 + 3)]])
+		end
+		C_Spell.PickupSpell(116680)
+		if GetCursorInfo() then
+			PlaceAction(55)
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot 55:", [[
+C_Spell.PickupSpell(116680)]])
+		end
+		C_Spell.PickupSpell(101546)
+		if GetCursorInfo() then
+			PlaceAction(49)
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot 49:", [[
+C_Spell.PickupSpell(101546)]])
+		end
+		C_Spell.PickupSpell(100784)
+		if GetCursorInfo() then
+			PlaceAction(25)
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot 25:", [[
+C_Spell.PickupSpell(100784)]])
+		end
+		PickupMacro(120 + 7)
+		if GetCursorInfo() then
+			PlaceAction(68)
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot 68:", [[
+PickupMacro(120 + 7)]])
+		end
+		C_Spell.PickupSpell(116844)
+		if GetCursorInfo() then
+			PlaceAction(62)
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot 62:", [[
+C_Spell.PickupSpell(116844)]])
+		end
+		C_Spell.PickupSpell(124682)
+		if GetCursorInfo() then
+			PlaceAction(8)
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot 8:", [[
+C_Spell.PickupSpell(124682)]])
+		end
+		PickupMacro(120 + 4)
+		if GetCursorInfo() then
+			PlaceAction(20)
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot 20:", [[
+PickupMacro(120 + 4)]])
+		end
+		C_Spell.PickupSpell(115151)
+		if GetCursorInfo() then
+			PlaceAction(2)
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot 2:", [[
+C_Spell.PickupSpell(115151)]])
+		end
+		PickupMacro(120 + 9)
+		if GetCursorInfo() then
+			PlaceAction(14)
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot 14:", [[
+PickupMacro(120 + 9)]])
+		end
+		C_Spell.PickupSpell(116095)
+		if GetCursorInfo() then
+			PlaceAction(56)
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot 56:", [[
+C_Spell.PickupSpell(116095)]])
+		end
+		C_Spell.PickupSpell(100780)
+		if GetCursorInfo() then
+			PlaceAction(50)
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot 50:", [[
+C_Spell.PickupSpell(100780)]])
+		end
+		C_Spell.PickupSpell(117952)
+		if GetCursorInfo() then
+			PlaceAction(26)
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot 26:", [[
+C_Spell.PickupSpell(117952)]])
+		end
+		C_Spell.PickupSpell(322109)
+		if GetCursorInfo() then
+			PlaceAction(63)
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot 63:", [[
+C_Spell.PickupSpell(322109)]])
+		end
+		C_Spell.PickupSpell(115313)
+		if GetCursorInfo() then
+			PlaceAction(9)
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot 9:", [[
+C_Spell.PickupSpell(115313)]])
+		end
+		PickupMacro(120 + 8)
+		if GetCursorInfo() then
+			PlaceAction(21)
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot 21:", [[
+PickupMacro(120 + 8)]])
+		end
+		C_Spell.PickupSpell(115450)
+		if GetCursorInfo() then
+			PlaceAction(3)
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot 3:", [[
+C_Spell.PickupSpell(115450)]])
+		end
+		PickupMacro(120 + 5)
+		if GetCursorInfo() then
+			PlaceAction(15)
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot 15:", [[
+PickupMacro(120 + 5)]])
+		end
+		C_Spell.PickupSpell(122783)
+		if GetCursorInfo() then
+			PlaceAction(57)
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot 57:", [[
+C_Spell.PickupSpell(122783)]])
+		end
+		C_Spell.PickupSpell(325197)
+		if GetCursorInfo() then
+			PlaceAction(64)
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot 64:", [[
+C_Spell.PickupSpell(325197)]])
+		end
+		C_Spell.PickupSpell(388615)
+		if GetCursorInfo() then
+			PlaceAction(10)
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot 10:", [[
+C_Spell.PickupSpell(388615)]])
+		end
+		C_Spell.PickupSpell(388615)
+		if GetCursorInfo() then
+			PlaceAction(22)
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot 22:", [[
+C_Spell.PickupSpell(388615)]])
+		end
+		C_Spell.PickupSpell(322101)
+		if GetCursorInfo() then
+			PlaceAction(4)
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot 4:", [[
+C_Spell.PickupSpell(322101)]])
+		end
+		C_Spell.PickupSpell(322101)
+		if GetCursorInfo() then
+			PlaceAction(16)
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot 16:", [[
+C_Spell.PickupSpell(322101)]])
+		end
+		C_Spell.PickupSpell(115203)
+		if GetCursorInfo() then
+			PlaceAction(58)
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot 58:", [[
+C_Spell.PickupSpell(115203)]])
+		end
+		C_Spell.PickupSpell(115546)
+		if GetCursorInfo() then
+			PlaceAction(28)
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot 28:", [[
+C_Spell.PickupSpell(115546)]])
+		end
+		
+		if GetCursorInfo() then
+			PlaceAction(65)
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot 65:", [[
+]])
+		end
+		C_Spell.PickupSpell(101643)
+		if GetCursorInfo() then
+			PlaceAction(11)
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot 11:", [[
+C_Spell.PickupSpell(101643)]])
+		end
+		C_Spell.PickupSpell(101643)
+		if GetCursorInfo() then
+			PlaceAction(23)
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot 23:", [[
+C_Spell.PickupSpell(101643)]])
+		end
+		C_Spell.PickupSpell(119996)
+		if GetCursorInfo() then
+			PlaceAction(5)
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot 5:", [[
+C_Spell.PickupSpell(119996)]])
+		end
+		C_Spell.PickupSpell(119996)
+		if GetCursorInfo() then
+			PlaceAction(17)
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot 17:", [[
+C_Spell.PickupSpell(119996)]])
+		end
+		C_Spell.PickupSpell(115294)
+		if GetCursorInfo() then
+			PlaceAction(59)
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot 59:", [[
+C_Spell.PickupSpell(115294)]])
+		end
+		
+		if GetCursorInfo() then
+			PlaceAction(66)
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot 66:", [[
+]])
+		end
+		C_Spell.PickupSpell(116849)
+		if GetCursorInfo() then
+			PlaceAction(12)
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot 12:", [[
+C_Spell.PickupSpell(116849)]])
+		end
+		PickupMacro(120 + 11)
+		if GetCursorInfo() then
+			PlaceAction(24)
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot 24:", [[
+PickupMacro(120 + 11)]])
+		end
+		C_Spell.PickupSpell(116841)
+		if GetCursorInfo() then
+			PlaceAction(6)
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot 6:", [[
+C_Spell.PickupSpell(116841)]])
+		end
+		PickupMacro(120 + 10)
+		if GetCursorInfo() then
+			PlaceAction(18)
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot 18:", [[
+PickupMacro(120 + 10)]])
+		end
+		
+		if GetCursorInfo() then
+			PlaceAction(60)
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot 60:", [[
+]])
+		end
+		
+		if GetCursorInfo() then
+			PlaceAction(43)
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot 43:", [[
+]])
+		end
+		
+		if GetCursorInfo() then
+			PlaceAction(37)
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot 37:", [[
+]])
+		end
+		
+		if GetCursorInfo() then
+			PlaceAction(31)
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot 31:", [[
+]])
+		end
+		C_Spell.PickupSpell(115078)
+		if GetCursorInfo() then
+			PlaceAction(44)
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot 44:", [[
+C_Spell.PickupSpell(115078)]])
+		end
+		C_Spell.PickupSpell(119381)
+		if GetCursorInfo() then
+			PlaceAction(38)
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot 38:", [[
+C_Spell.PickupSpell(119381)]])
+		end
+		C_Spell.PickupSpell(115008)
+		if GetCursorInfo() then
+			PlaceAction(32)
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot 32:", [[
+C_Spell.PickupSpell(115008)]])
+		end
+		
+		if GetCursorInfo() then
+			PlaceAction(46)
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot 46:", [[
+]])
+		end
+		
+		if GetCursorInfo() then
+			PlaceAction(47)
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot 47:", [[
+]])
+		end
+		C_Spell.PickupSpell(212051)
+		if GetCursorInfo() then
+			PlaceAction(41)
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot 41:", [[
+C_Spell.PickupSpell(212051)]])
 		end
 	end
 
