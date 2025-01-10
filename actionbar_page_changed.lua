@@ -6,21 +6,27 @@ local function handleSetColor(frame)
 	end
 end
 
+GakHelpHarmFrame = nil
+
 function GakHelpHarmBarInit(_)
-	local parent = MultiBarBottomLeft
+	if not GakHelpHarmFrame then
+		local parent = MultiBarBottomLeft
 
-	local frame = CreateFrame("Frame", "GakHelpHarm", parent)
-	frame:SetPoint("TOPLEFT")
-	frame:SetSize(parent:GetWidth() / 2, parent:GetHeight() / 2)
-	frame.tex = frame:CreateTexture()
-	frame.tex:SetAllPoints()
+		local frame = CreateFrame("Frame", "GakHelpHarm", parent)
+		frame:SetPoint("TOPLEFT")
+		frame:SetSize(parent:GetWidth() / 2, parent:GetHeight() / 2)
+		frame.tex = frame:CreateTexture()
+		frame.tex:SetAllPoints()
 
-	-- Initialize the color correctly.
-	handleSetColor(frame)
-
-	-- Register event.
-	frame:SetScript("OnEvent", function(_, event)
+		-- Initialize the color correctly.
 		handleSetColor(frame)
-	end)
-	frame:RegisterEvent("ACTIONBAR_PAGE_CHANGED")
+
+		-- Register event.
+		frame:SetScript("OnEvent", function(_, event)
+			handleSetColor(frame)
+		end)
+		frame:RegisterEvent("ACTIONBAR_PAGE_CHANGED")
+
+		GakHelpHarmFrame = frame
+	end
 end

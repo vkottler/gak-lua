@@ -35,9 +35,7 @@ local function GakMain(frame)
 	GakActionBarManagementInit(frame)
 	GakLayoutManagementInit(frame)
 	GakChatManagementInit(frame)
-
-	-- Resume work on this later.
-	-- GakTargetInfoInit(frame)
+	GakTargetInfoInit(frame)
 
 	-- Utility buttons.
 	GakCreateButton(frame, "Set All", 0, 6, function()
