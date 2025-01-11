@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.0
--- hash=2c79669955372e7982c71f33f6837170
+-- hash=8be34211833fa57492d651df51a99231
 -- =====================================
 expectedCVars = {}
 expectedCVars["GamePadEnable"] = 1
@@ -40,3 +40,4 @@ expectedCVars["nameplateShowFriends"] = 1
 expectedCVars["nameplateShowSelf"] = 1
 expectedCVars["nameplateShowEnemies"] = 1
 expectedCVars["nameplateShowDebuffsOnFriendly"] = 1
+expectedCVars["lossOfControl"] = 0

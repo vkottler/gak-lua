@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.0
-    hash=5bda3c208f83f99a61ee96d316a4a3bd
+    hash=1e942287da1427fdb843865a51015420
     =====================================
 -->
 
@@ -15,6 +15,51 @@ self
 ```
 #showtooltip
 /cast [@player] Flash of Light
+```
+
+---
+
+self
+
+```
+#showtooltip
+/cast [@player] Holy Shock
+```
+
+---
+
+self
+
+```
+#showtooltip
+/cast [@player] Holy Light
+```
+
+---
+
+self
+
+```
+#showtooltip
+/cast [@player] Beacon of Light
+```
+
+---
+
+self
+
+```
+#showtooltip
+/cast [@player] Cleanse
+```
+
+---
+
+self
+
+```
+#showtooltip
+/cast [@player] Barrier of Faith
 ```
 
 ---
@@ -59,7 +104,25 @@ self
 
 ```
 #showtooltip
+/cast [@player] Blessing of Summer
+```
+
+---
+
+self
+
+```
+#showtooltip
 /cast [@player] Final Reckoning
+```
+
+---
+
+self
+
+```
+#showtooltip
+/cast [@player] Holy Bulwark
 ```
 
 ---

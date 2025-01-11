@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.0
--- hash=27f2878262130186868d7433b6474ee7
+-- hash=45da1dfbc042e14e8355295ba02c7c1a
 -- =====================================
 function GakCreateGlobalMacros()
 	CreateMacro("13", "inv_misc_questionmark", [[
@@ -347,6 +347,21 @@ function GakCreateCharacterMacros()
 /cast [@player] Flash of Light]], 1)
 		CreateMacro("self", "inv_misc_questionmark", [[
 #showtooltip
+/cast [@player] Holy Shock]], 1)
+		CreateMacro("self", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Holy Light]], 1)
+		CreateMacro("self", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Beacon of Light]], 1)
+		CreateMacro("self", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Cleanse]], 1)
+		CreateMacro("self", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Barrier of Faith]], 1)
+		CreateMacro("self", "inv_misc_questionmark", [[
+#showtooltip
 /cast [@player] Word of Glory]], 1)
 		CreateMacro("self", "inv_misc_questionmark", [[
 #showtooltip
@@ -359,8 +374,14 @@ function GakCreateCharacterMacros()
 /cast [@player] Blessing of Freedom]], 1)
 		CreateMacro("self", "inv_misc_questionmark", [[
 #showtooltip
+/cast [@player] Blessing of Summer]], 1)
+		CreateMacro("self", "inv_misc_questionmark", [[
+#showtooltip
 /cast [@player] Final Reckoning]], 1)
-		print("Created 6", select(1, UnitClass("player")), "macros.")
+		CreateMacro("self", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Holy Bulwark]], 1)
+		print("Created 13", select(1, UnitClass("player")), "macros.")
 	end
 
 	if class_str == "DRUID" then
