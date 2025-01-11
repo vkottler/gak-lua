@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.0
-    hash=1af08ceada04a8a8943a34ecc827355d
+    hash=2bbf97197c495a6f033c65109941f217
     =====================================
 -->
 
@@ -40,3 +40,11 @@ pvpFramesDisplayPowerBars | 1
 raidFramesDisplayClassColor | 1
 raidFramesDisplayPowerBars | 1
 SoftTargetIconEnemy | 0
+NameplatePersonalShowAlways | 1
+nameplateSelfTopInset | 0.45
+nameplateSelfBottomInset | 0.45
+nameplateSelfScale | 1.0
+nameplateShowFriends | 1
+nameplateShowSelf | 1
+nameplateShowEnemies | 1
+nameplateShowDebuffsOnFriendly | 1
