@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.0
-    hash=6774fb54769db5458bafa72bb6e9a60a
+    hash=ed2388e5d92e4824155bcb091b80a1d6
     =====================================
 -->
 
@@ -48,4 +48,6 @@ nameplateShowFriends | 1
 nameplateShowSelf | 1
 nameplateShowEnemies | 1
 nameplateShowDebuffsOnFriendly | 1
+nameplateHideHealthAndPower | 0
+combinedBags | 1
 lossOfControl | 0
