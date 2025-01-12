@@ -20,11 +20,11 @@ function GakAuditLayouts()
 	else
 		local active = layouts["layouts"][layouts["activeLayout"] - 2]
 		if active["layoutName"] == expected then
-			print(
-				"Active layout matches expected: "
-					.. active["layoutName"]
-					.. "."
-			)
+			-- print(
+			-- 	"Active layout matches expected: "
+			-- 		.. active["layoutName"]
+			-- 		.. "."
+			-- )
 			match = true
 		else
 			print(active["layoutName"] .. " != " .. expected)

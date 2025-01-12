@@ -40,7 +40,6 @@ local function GakMain(frame)
 	GakCreateButton(frame, "Set All", 0, 6, function()
 		GakSetCVars()
 		GakSetKeybinds()
-		GakSetMacros()
 		GakSetActionBars()
 		GakSetLayouts()
 	end)
@@ -121,8 +120,12 @@ gak_ui:SetScript("OnEvent", function(frame, event, name, ...)
 	elseif event == "ADDON_LOADED" and name == project then
 		GakMain(frame)
 		frame:UnregisterEvent("ADDON_LOADED")
+	elseif event == "EDIT_MODE_LAYOUTS_UPDATED" then
+		-- print(select(1, ...)) always 'false' ?
+		GakAuditLayouts()
 	end
 end)
 gak_ui:RegisterEvent("ADDON_LOADED")
 gak_ui:RegisterEvent("PLAYER_LOGIN")
+gak_ui:RegisterEvent("EDIT_MODE_LAYOUTS_UPDATED")
 -- other options: FIRST_FRAME_RENDERED, PLAYER_ENTERING_WORLD, VARIABLES_LOADED

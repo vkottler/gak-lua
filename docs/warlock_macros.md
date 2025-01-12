@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.0
-    hash=2c4f7e59e3d14180f67cbf1d3bbaf127
+    hash=9c19068a79cca03c81972e4cd66aad38
     =====================================
 -->
 
@@ -23,9 +23,21 @@ soul
 soul
 
 ```
+#showtooltip Demonic Healthstone
+/cast Soulburn
+/use Demonic Healthstone
+/use Healthstone
+```
+
+---
+
+soul
+
+```
 #showtooltip Healthstone
 /cast Soulburn
 /use Healthstone
+/use Demonic Healthstone
 ```
 
 ---

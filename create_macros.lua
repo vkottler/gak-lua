@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.0
--- hash=5655042782581584f1e47dee61a56cf2
+-- hash=24ea771017bf654429b595b91cf8b48f
 -- =====================================
 function GakCreateGlobalMacros()
 	CreateMacro("13", "inv_misc_questionmark", [[
@@ -272,9 +272,15 @@ function GakCreateCharacterMacros()
 /cast Soulburn
 /cast Demonic Circle: Teleport]], 1)
 		CreateMacro("soul", "inv_misc_questionmark", [[
+#showtooltip Demonic Healthstone
+/cast Soulburn
+/use Demonic Healthstone
+/use Healthstone]], 1)
+		CreateMacro("soul", "inv_misc_questionmark", [[
 #showtooltip Healthstone
 /cast Soulburn
-/use Healthstone]], 1)
+/use Healthstone
+/use Demonic Healthstone]], 1)
 		CreateMacro("soul", "inv_misc_questionmark", [[
 #showtooltip Demonic Gateway
 /cast Soulburn
@@ -292,7 +298,7 @@ function GakCreateCharacterMacros()
 		CreateMacro("self", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Unending Breath]], 1)
-		print("Created 7", select(1, UnitClass("player")), "macros.")
+		print("Created 8", select(1, UnitClass("player")), "macros.")
 	end
 
 	if class_str == "EVOKER" then
