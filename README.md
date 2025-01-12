@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.0
-    hash=3932b32c63fbcbd58be521b25fc5bd1f
+    hash=a534b3b186ccc69f93ceb177b217d464
     =====================================
 -->
 
@@ -35,6 +35,7 @@
     * [Shaman](docs/shaman_macros.md)
     * [Hunter](docs/hunter_macros.md)
 * [Action Bar Layout](docs/bars.md)
+* [Various Import Strings](docs/copy_strings.md)
 
 ---
 

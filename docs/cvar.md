@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.0
-    hash=ed2388e5d92e4824155bcb091b80a1d6
+    hash=1bd5aac9afad8bf06d961a640741c338
     =====================================
 -->
 
@@ -28,6 +28,8 @@ SoftTargetFriend | 3
 SoftTargetInteract | 3
 SoftTargetIconFriend | 1
 SoftTargetNameplateInteract | 1
+scriptErrors | 1
+scriptWarnings | 1
 floatingCombatTextCombatDamage | 0
 floatingCombatTextCombatHealing | 0
 cameraSmoothStyle | 1
@@ -48,6 +50,7 @@ nameplateShowFriends | 1
 nameplateShowSelf | 1
 nameplateShowEnemies | 1
 nameplateShowDebuffsOnFriendly | 1
-nameplateHideHealthAndPower | 0
+nameplateHideHealthAndPower | 1
+occludedSilhouettePlayer | 1
 combinedBags | 1
 lossOfControl | 0

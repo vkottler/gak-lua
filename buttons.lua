@@ -24,6 +24,8 @@ function GakCreateButton(parent, text, xIndex, yIndex, method)
 	return btn
 end
 
+-- singleton (not checked, not sure best way to raise error)
+GakUi = nil
 function GakCreateButtonContainer(parent, text, width, height)
 	local frame = CreateFrame("Frame", "GakUi", parent, "ButtonFrameTemplate")
 
@@ -78,6 +80,7 @@ function GakCreateButtonContainer(parent, text, width, height)
 	end)
 
 	-- Register special frame.
+	GakUi = frame
 	table.insert(UISpecialFrames, "GakUi")
 
 	return frame

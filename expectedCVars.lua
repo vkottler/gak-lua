@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.0
--- hash=e8cce062e03e594264e764d8287e1bfb
+-- hash=e4df5da4697a708a90093223dc58ea30
 -- =====================================
 expectedCVars = {}
 expectedCVars["GamePadEnable"] = 1
@@ -20,6 +20,8 @@ expectedCVars["SoftTargetFriend"] = 3
 expectedCVars["SoftTargetInteract"] = 3
 expectedCVars["SoftTargetIconFriend"] = 1
 expectedCVars["SoftTargetNameplateInteract"] = 1
+expectedCVars["scriptErrors"] = 1
+expectedCVars["scriptWarnings"] = 1
 expectedCVars["floatingCombatTextCombatDamage"] = 0
 expectedCVars["floatingCombatTextCombatHealing"] = 0
 expectedCVars["cameraSmoothStyle"] = 1
@@ -40,6 +42,7 @@ expectedCVars["nameplateShowFriends"] = 1
 expectedCVars["nameplateShowSelf"] = 1
 expectedCVars["nameplateShowEnemies"] = 1
 expectedCVars["nameplateShowDebuffsOnFriendly"] = 1
-expectedCVars["nameplateHideHealthAndPower"] = 0
+expectedCVars["nameplateHideHealthAndPower"] = 1
+expectedCVars["occludedSilhouettePlayer"] = 1
 expectedCVars["combinedBags"] = 1
 expectedCVars["lossOfControl"] = 0
