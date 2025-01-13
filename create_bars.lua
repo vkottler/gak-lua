@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.0
--- hash=57a92f203610fc39a38326e649b4daf5
+-- hash=712576d060491ad1277fc64eb3c17323
 -- =====================================
 -- https://wowpedia.fandom.com/wiki/Action_slot
 GAK_MAX_ACTIONBAR = 180
@@ -3853,13 +3853,13 @@ C_Spell.PickupSpell("Lightning Lasso")]])
 			print("(spec) Couldn't bind slot 26:", [[
 C_Spell.PickupSpell("Greater Purge")]])
 		end
-		PickupMacro(120 + 19)
+		PickupMacro(120 + 20)
 		if GetCursorInfo() then
 			PlaceAction(69)
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot 69:", [[
-PickupMacro(120 + 19)]])
+PickupMacro(120 + 20)]])
 		end
 		C_Spell.PickupSpell("Spirit Link Totem")
 		if GetCursorInfo() then

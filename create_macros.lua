@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.0
--- hash=ecbce390cad9e34576986137e1286051
+-- hash=261c76474b8af346cec04851b3dbff7d
 -- =====================================
 function GakCreateGlobalMacros()
 	CreateMacro("13", "inv_misc_questionmark", [[
@@ -547,8 +547,14 @@ function GakCreateCharacterMacros()
 /cast [@player] Earthgrab Totem]], 1)
 		CreateMacro("self", "inv_misc_questionmark", [[
 #showtooltip
+/cast [@player] Earthquake]], 1)
+		CreateMacro("self", "inv_misc_questionmark", [[
+#showtooltip
 /cast [@player] Spirit Link Totem]], 1)
-		print("Created 17", select(1, UnitClass("player")), "macros.")
+		CreateMacro("self", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Liquid Magma Totem]], 1)
+		print("Created 19", select(1, UnitClass("player")), "macros.")
 	end
 
 	if class_str == "HUNTER" then

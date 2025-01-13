@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.0
-    hash=53451382610e3a8cb98a133e47ad6d56
+    hash=9f931c6c125c4902e1fbbfa345b82772
     =====================================
 -->
 
@@ -158,7 +158,25 @@ self
 
 ```
 #showtooltip
+/cast [@player] Earthquake
+```
+
+---
+
+self
+
+```
+#showtooltip
 /cast [@player] Spirit Link Totem
+```
+
+---
+
+self
+
+```
+#showtooltip
+/cast [@player] Liquid Magma Totem
 ```
 
 ---
