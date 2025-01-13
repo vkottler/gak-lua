@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.0
-    hash=db0eb9e97ae1c33a3854bc5d43d7f763
+    hash=53451382610e3a8cb98a133e47ad6d56
     =====================================
 -->
 
@@ -41,7 +41,124 @@ self
 
 ```
 #showtooltip
+/cast [@player] Healing Wave
+```
+
+---
+
+self
+
+```
+#showtooltip
+/cast [@player] Purify Spirit
+```
+
+---
+
+self
+
+```
+#showtooltip
+/cast [@player] Primordial Wave
+```
+
+---
+
+self
+
+```
+#showtooltip
 /cast [@player] Earth Shield
+```
+
+---
+
+self
+
+```
+#showtooltip
+/cast [@player] Thunderstorm
+```
+
+---
+
+self
+
+```
+#showtooltip
+/cast [@player] Chain Heal
+```
+
+---
+
+self
+
+```
+#showtooltip
+/cast [@player] Surging Totem
+```
+
+---
+
+self
+
+```
+#showtooltip
+/cast [@player] Totemic Projection
+```
+
+---
+
+self
+
+```
+#showtooltip
+/cast [@player] Earthen Wall Totem
+```
+
+---
+
+self
+
+```
+#showtooltip
+/cast [@player] Riptide
+```
+
+---
+
+self
+
+```
+#showtooltip
+/cast [@player] Unleash Life
+```
+
+---
+
+self
+
+```
+#showtooltip
+/cast [@player] Capacitor Totem
+```
+
+---
+
+self
+
+```
+#showtooltip
+/cast [@player] Earthgrab Totem
+```
+
+---
+
+self
+
+```
+#showtooltip
+/cast [@player] Spirit Link Totem
 ```
 
 ---

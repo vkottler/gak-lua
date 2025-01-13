@@ -32,6 +32,11 @@ function GakActionBarManagementInit(ui)
 				print(i, GetActionInfo(i))
 			end
 		end
+		for i = 1, NUM_PET_ACTION_SLOTS, 1 do
+			if GetPetActionInfo(i) then
+				print("(pet)", i, GetPetActionInfo(i))
+			end
+		end
 	end)
 
 	GakCreateButton(ui, "Set Action Bars", 1, 3, GakSetActionBars)
