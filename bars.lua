@@ -44,4 +44,8 @@ function GakActionBarManagementInit(ui)
 	GakCreateButton(ui, "Clear Action Bars", 0, 4, GakClearActionBars)
 
 	GakCreateButton(ui, "Clear Keyboard", 1, 4, clearKeyboardBinds)
+
+	GakCreateButton(ui, "Set Shared Bars", 2, 2, GakSetGlobalActions)
+	GakCreateButton(ui, "Set Class Bars", 2, 3, GakSetClassActions)
+	GakCreateButton(ui, "Set Spec Bars", 2, 4, GakSetSpecializationActions)
 end

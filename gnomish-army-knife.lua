@@ -3,7 +3,7 @@
 
 -- Create UI menu.
 local gak_ui =
-	GakCreateButtonContainer(UIParent, project .. " (" .. version .. ")", 3, 7)
+	GakCreateButtonContainer(UIParent, project .. " (" .. version .. ")", 4, 7)
 gak_ui:SetPoint("CENTER", UIParent, "CENTER", 0, 0)
 
 function GakToggle()
@@ -40,8 +40,11 @@ local function GakMain(frame)
 	GakCreateButton(frame, "Set All", 0, 6, function()
 		GakSetCVars()
 		GakSetKeybinds()
-		GakSetMacros()
+
+		-- Setting action bars also sets character macros.
+		GakSetGlobalMacros()
 		GakSetActionBars()
+
 		GakSetLayouts()
 	end)
 	GakCreateButton(frame, "Reload", 1, 6, function()
@@ -52,7 +55,7 @@ local function GakMain(frame)
 	GakButtonsByAddon["WowLua"] = GakCreateButton(
 		frame,
 		"/wowlua",
-		2,
+		3,
 		1,
 		function()
 			SlashCmdList["WOWLUA"]("")
@@ -61,7 +64,7 @@ local function GakMain(frame)
 	GakButtonsByAddon["BetterBlizzPlates"] = GakCreateButton(
 		frame,
 		"/bbp",
-		2,
+		3,
 		2,
 		function()
 			SlashCmdList["BBP"]("")
@@ -70,7 +73,7 @@ local function GakMain(frame)
 	GakButtonsByAddon["BigDebuffs"] = GakCreateButton(
 		frame,
 		"/bigdebuffs",
-		2,
+		3,
 		3,
 		function()
 			SlashCmdList["BigDebuffs"]("")
@@ -79,7 +82,7 @@ local function GakMain(frame)
 	GakButtonsByAddon["Myslot"] = GakCreateButton(
 		frame,
 		"/myslot",
-		2,
+		3,
 		4,
 		function()
 			SlashCmdList["MYSLOT"]("")
@@ -88,7 +91,7 @@ local function GakMain(frame)
 	GakButtonsByAddon["Diminish"] = GakCreateButton(
 		frame,
 		"/diminish",
-		2,
+		3,
 		5,
 		function()
 			SlashCmdList["DIMINISH"]("")

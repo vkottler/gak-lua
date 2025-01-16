@@ -1,6 +1,6 @@
-function GakSetMacros()
-	-- https://wowpedia.fandom.com/wiki/API_DeleteMacro
+-- https://wowpedia.fandom.com/wiki/API_DeleteMacro
 
+function GakSetGlobalMacros()
 	-- Delete global macros.
 	local numGlobal = select(1, GetNumMacros())
 	print("Deleting", numGlobal, "global macros.")
@@ -8,6 +8,10 @@ function GakSetMacros()
 		DeleteMacro(i)
 	end
 
+	GakCreateGlobalMacros()
+end
+
+function GakSetCharacterMacros()
 	-- Delete character-specific macros.
 	local numCharSpecific = select(2, GetNumMacros())
 	print("Deleting", numCharSpecific, "character-specific macros.")
@@ -15,12 +19,16 @@ function GakSetMacros()
 		DeleteMacro(i)
 	end
 
-	GakCreateGlobalMacros()
 	GakCreateCharacterMacros()
 end
 
+function GakSetAllMacros()
+	GakSetGlobalMacros()
+	GakSetCharacterMacros()
+end
+
 function GakMacroManagementInit(ui)
-	GakCreateButton(ui, "Audit Macros", 0, 2, function()
+	GakCreateButton(ui, "Audit Macros", 0, 0, function()
 		-- https://wowpedia.fandom.com/wiki/API_GetNumMacros
 		local macros = { GetNumMacros() }
 
@@ -35,5 +43,7 @@ function GakMacroManagementInit(ui)
 		end
 	end)
 
-	GakCreateButton(ui, "Set Macros", 1, 2, GakSetMacros)
+	GakCreateButton(ui, "Set All Macros", 1, 0, GakSetAllMacros)
+	GakCreateButton(ui, "Set Shared Macros", 2, 0, GakSetGlobalMacros)
+	GakCreateButton(ui, "Set Char Macros", 2, 1, GakSetCharacterMacros)
 end

@@ -1,11 +1,6 @@
 -- https://github.com/vkottler/gak-lua/wiki/Layouts
 -- get these in YAML?
 
-function GakSetLayouts()
-	-- https://wowpedia.fandom.com/wiki/API_C_EditMode.SaveLayouts
-	print("Set Layouts")
-end
-
 function GakAuditLayouts()
 	local width, height = GetPhysicalScreenSize()
 	local expected = width .. "x" .. height
@@ -45,6 +40,13 @@ function GakAuditLayouts()
 			print("No layout '" .. expected .. "' found!")
 		end
 	end
+end
+
+function GakSetLayouts()
+	-- https://wowpedia.fandom.com/wiki/API_C_EditMode.SaveLayouts
+
+	-- May as well still run the audit for now.
+	GakAuditLayouts()
 end
 
 function GakLayoutManagementInit(ui)
