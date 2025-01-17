@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.0
--- hash=094939a14976f4fbaea16c800f38ed54
+-- hash=1f0313c93b297cd394dc6ab4a28a5b4f
 -- =====================================
 -- https://wowpedia.fandom.com/wiki/Action_slot
 GAK_MAX_ACTIONBAR = 180
@@ -4577,13 +4577,13 @@ C_Spell.PickupSpell("Ancestral Vision")]])
 	end
 
 	if id == 263 then
-		C_Spell.PickupSpell("Lava Burst")
+		C_Spell.PickupSpell("Sundering")
 		if GetCursorInfo() then
 			PlaceAction(61)
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot 61:", [[
-C_Spell.PickupSpell("Lava Burst")]])
+C_Spell.PickupSpell("Sundering")]])
 		end
 		C_Spell.PickupSpell("Lava Lash")
 		if GetCursorInfo() then
@@ -4673,37 +4673,37 @@ C_Spell.PickupSpell("Lightning Bolt")]])
 			print("(spec) Couldn't bind slot 14:", [[
 C_Spell.PickupSpell("Lightning Bolt")]])
 		end
-		C_Spell.PickupSpell("Sundering")
+		C_Spell.PickupSpell("Primordial Wave")
 		if GetCursorInfo() then
 			PlaceAction(56)
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot 56:", [[
-C_Spell.PickupSpell("Sundering")]])
+C_Spell.PickupSpell("Primordial Wave")]])
 		end
-		C_Spell.PickupSpell("Doom Winds")
+		C_Spell.PickupSpell("Feral Spirit")
 		if GetCursorInfo() then
 			PlaceAction(63)
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot 63:", [[
-C_Spell.PickupSpell("Doom Winds")]])
+C_Spell.PickupSpell("Feral Spirit")]])
 		end
-		C_Spell.PickupSpell("Primordial Wave")
+		C_Spell.PickupSpell("Doom Winds")
 		if GetCursorInfo() then
 			PlaceAction(9)
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot 9:", [[
-C_Spell.PickupSpell("Primordial Wave")]])
+C_Spell.PickupSpell("Doom Winds")]])
 		end
-		C_Spell.PickupSpell("Primordial Wave")
+		C_Spell.PickupSpell("Doom Winds")
 		if GetCursorInfo() then
 			PlaceAction(21)
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot 21:", [[
-C_Spell.PickupSpell("Primordial Wave")]])
+C_Spell.PickupSpell("Doom Winds")]])
 		end
 		C_Spell.PickupSpell("Chain Lightning")
 		if GetCursorInfo() then
@@ -4745,29 +4745,29 @@ C_Spell.PickupSpell("Burrow")]])
 			print("(spec) Couldn't bind slot 10:", [[
 PickupMacro(120 + 10)]])
 		end
-		C_Spell.PickupSpell("Thunderstorm")
+		C_Spell.PickupSpell(51490)
 		if GetCursorInfo() then
 			PlaceAction(22)
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot 22:", [[
-C_Spell.PickupSpell("Thunderstorm")]])
+C_Spell.PickupSpell(51490)]])
 		end
-		PickupMacro(120 + 9)
+		PickupMacro(120 + 18)
 		if GetCursorInfo() then
 			PlaceAction(4)
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot 4:", [[
-PickupMacro(120 + 9)]])
+PickupMacro(120 + 18)]])
 		end
-		C_Spell.PickupSpell("Earth Shield")
+		C_Spell.PickupSpell("Earthgrab Totem")
 		if GetCursorInfo() then
 			PlaceAction(16)
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot 16:", [[
-C_Spell.PickupSpell("Earth Shield")]])
+C_Spell.PickupSpell("Earthgrab Totem")]])
 		end
 		C_Spell.PickupSpell("Earth Elemental")
 		if GetCursorInfo() then
@@ -4777,21 +4777,21 @@ C_Spell.PickupSpell("Earth Shield")]])
 			print("(spec) Couldn't bind slot 65:", [[
 C_Spell.PickupSpell("Earth Elemental")]])
 		end
-		PickupMacro(120 + 17)
+		C_Spell.PickupSpell("Healing Stream Totem")
 		if GetCursorInfo() then
 			PlaceAction(11)
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot 11:", [[
-PickupMacro(120 + 17)]])
+C_Spell.PickupSpell("Healing Stream Totem")]])
 		end
-		C_Spell.PickupSpell("Capacitor Totem")
+		C_Spell.PickupSpell("Healing Stream Totem")
 		if GetCursorInfo() then
 			PlaceAction(23)
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot 23:", [[
-C_Spell.PickupSpell("Capacitor Totem")]])
+C_Spell.PickupSpell("Healing Stream Totem")]])
 		end
 		PickupMacro(120 + 5)
 		if GetCursorInfo() then
@@ -4825,21 +4825,21 @@ C_Spell.PickupSpell("Flametongue Weapon")]])
 			print("(spec) Couldn't bind slot 66:", [[
 C_Spell.PickupSpell("Totemic Recall")]])
 		end
-		PickupMacro(120 + 18)
+		PickupMacro(120 + 17)
 		if GetCursorInfo() then
 			PlaceAction(12)
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot 12:", [[
-PickupMacro(120 + 18)]])
+PickupMacro(120 + 17)]])
 		end
-		C_Spell.PickupSpell("Earthgrab Totem")
+		C_Spell.PickupSpell("Capacitor Totem")
 		if GetCursorInfo() then
 			PlaceAction(24)
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot 24:", [[
-C_Spell.PickupSpell("Earthgrab Totem")]])
+C_Spell.PickupSpell("Capacitor Totem")]])
 		end
 		PickupMacro(120 + 13)
 		if GetCursorInfo() then
@@ -4880,14 +4880,6 @@ C_Spell.PickupSpell("Lightning Shield")]])
 		else
 			print("(spec) Couldn't bind slot 30:", [[
 C_Spell.PickupSpell("Windfury Weapon")]])
-		end
-		C_Spell.PickupSpell("Feral Spirit")
-		if GetCursorInfo() then
-			PlaceAction(31)
-			spec_bind_count = spec_bind_count + 1
-		else
-			print("(spec) Couldn't bind slot 31:", [[
-C_Spell.PickupSpell("Feral Spirit")]])
 		end
 		C_Spell.PickupSpell("Gust of Wind")
 		if GetCursorInfo() then

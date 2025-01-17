@@ -31,7 +31,7 @@ function GakCreateButtonContainer(parent, text, width, height)
 
 	-- Set dimensions.
 	frame:SetSize(
-		(width * buttonWidth) + (width - 0.5) * padding,
+		(width * buttonWidth) + (width * padding / 2),
 		headerHeight + (height * buttonHeight) + padding + footerHeight
 	)
 
