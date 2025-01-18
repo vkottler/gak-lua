@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.0
--- hash=261c76474b8af346cec04851b3dbff7d
+-- hash=819d55c22847d9c1fde8b0ecedd266df
 -- =====================================
 function GakCreateGlobalMacros()
 	CreateMacro("13", "inv_misc_questionmark", [[
@@ -194,26 +194,32 @@ function GakCreateCharacterMacros()
 /cast [@player] Power Word: Life]], 1)
 		CreateMacro("self", "inv_misc_questionmark", [[
 #showtooltip
+/cast [@player] Power Word: Fortitude]], 1)
+		CreateMacro("self", "inv_misc_questionmark", [[
+#showtooltip
 /cast [@player] Angelic Feather]], 1)
 		CreateMacro("self", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Levitate]], 1)
+		CreateMacro("self", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Rapture]], 1)
 		CreateMacro(" ", "inv_misc_questionmark", [[
 #showtooltip
 /cast !Shadowform]], 1)
-		print("Created 16", select(1, UnitClass("player")), "macros.")
+		print("Created 18", select(1, UnitClass("player")), "macros.")
 	end
 
 	if class_str == "ROGUE" then
-		CreateMacro("1", "inv_misc_questionmark", [[
+		CreateMacro("a1", "inv_misc_questionmark", [[
 #showtooltip Shadowstep
 /cast [@arena1] Shadowstep
 /cast [@arena1] Kick]], 1)
-		CreateMacro("2", "inv_misc_questionmark", [[
+		CreateMacro("a2", "inv_misc_questionmark", [[
 #showtooltip Shadowstep
 /cast [@arena2] Shadowstep
 /cast [@arena2] Kick]], 1)
-		CreateMacro("3", "inv_misc_questionmark", [[
+		CreateMacro("a3", "inv_misc_questionmark", [[
 #showtooltip Shadowstep
 /cast [@arena3] Shadowstep
 /cast [@arena3] Kick]], 1)

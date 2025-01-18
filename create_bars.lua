@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.0
--- hash=1f0313c93b297cd394dc6ab4a28a5b4f
+-- hash=c324424b18213c55c9c562cbe3ea04cb
 -- =====================================
 -- https://wowpedia.fandom.com/wiki/Action_slot
 GAK_MAX_ACTIONBAR = 180
@@ -879,13 +879,13 @@ C_Spell.PickupSpell("Flash of Light")]])
 			print("(spec) Couldn't bind slot 1:", [[
 PickupMacro(120 + 5)]])
 		end
-		PickupMacro(120 + 4)
+		C_Spell.PickupSpell("Holy Shock")
 		if GetCursorInfo() then
 			PlaceAction(13)
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot 13:", [[
-PickupMacro(120 + 4)]])
+C_Spell.PickupSpell("Holy Shock")]])
 		end
 		C_Spell.PickupSpell("Crusader Strike")
 		if GetCursorInfo() then
@@ -1174,6 +1174,14 @@ C_Spell.PickupSpell("Divine Protection")]])
 		else
 			print("(spec) Couldn't bind slot 30:", [[
 C_Spell.PickupSpell("Absolution")]])
+		end
+		PickupMacro(120 + 4)
+		if GetCursorInfo() then
+			PlaceAction(44)
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot 44:", [[
+PickupMacro(120 + 4)]])
 		end
 		PickupMacro(120 + 3)
 		if GetCursorInfo() then
@@ -4585,21 +4593,21 @@ C_Spell.PickupSpell("Ancestral Vision")]])
 			print("(spec) Couldn't bind slot 61:", [[
 C_Spell.PickupSpell("Sundering")]])
 		end
-		C_Spell.PickupSpell("Lava Lash")
+		C_Spell.PickupSpell("Crash Lightning")
 		if GetCursorInfo() then
 			PlaceAction(7)
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot 7:", [[
-C_Spell.PickupSpell("Lava Lash")]])
+C_Spell.PickupSpell("Crash Lightning")]])
 		end
-		C_Spell.PickupSpell("Lava Lash")
+		C_Spell.PickupSpell("Crash Lightning")
 		if GetCursorInfo() then
 			PlaceAction(19)
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot 19:", [[
-C_Spell.PickupSpell("Lava Lash")]])
+C_Spell.PickupSpell("Crash Lightning")]])
 		end
 		C_Spell.PickupSpell("Stormstrike")
 		if GetCursorInfo() then
@@ -4641,21 +4649,21 @@ C_Spell.PickupSpell("Feral Lunge")]])
 			print("(spec) Couldn't bind slot 62:", [[
 C_Spell.PickupSpell("Frost Shock")]])
 		end
-		C_Spell.PickupSpell("Crash Lightning")
+		C_Spell.PickupSpell("Primordial Wave")
 		if GetCursorInfo() then
 			PlaceAction(8)
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot 8:", [[
-C_Spell.PickupSpell("Crash Lightning")]])
+C_Spell.PickupSpell("Primordial Wave")]])
 		end
-		C_Spell.PickupSpell("Crash Lightning")
+		C_Spell.PickupSpell("Primordial Wave")
 		if GetCursorInfo() then
 			PlaceAction(20)
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot 20:", [[
-C_Spell.PickupSpell("Crash Lightning")]])
+C_Spell.PickupSpell("Primordial Wave")]])
 		end
 		C_Spell.PickupSpell("Lightning Bolt")
 		if GetCursorInfo() then
@@ -4673,13 +4681,13 @@ C_Spell.PickupSpell("Lightning Bolt")]])
 			print("(spec) Couldn't bind slot 14:", [[
 C_Spell.PickupSpell("Lightning Bolt")]])
 		end
-		C_Spell.PickupSpell("Primordial Wave")
+		C_Spell.PickupSpell("Lava Lash")
 		if GetCursorInfo() then
 			PlaceAction(56)
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot 56:", [[
-C_Spell.PickupSpell("Primordial Wave")]])
+C_Spell.PickupSpell("Lava Lash")]])
 		end
 		C_Spell.PickupSpell("Feral Spirit")
 		if GetCursorInfo() then

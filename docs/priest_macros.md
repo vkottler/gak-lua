@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.0
-    hash=ddc10407959501040538c6bc06b9b285
+    hash=963b5567e28c01b3f79e3dcd9df211bb
     =====================================
 -->
 
@@ -139,6 +139,15 @@ self
 
 ```
 #showtooltip
+/cast [@player] Power Word: Fortitude
+```
+
+---
+
+self
+
+```
+#showtooltip
 /cast [@player] Angelic Feather
 ```
 
@@ -149,6 +158,15 @@ self
 ```
 #showtooltip
 /cast [@player] Levitate
+```
+
+---
+
+self
+
+```
+#showtooltip
+/cast [@player] Rapture
 ```
 
 ---
