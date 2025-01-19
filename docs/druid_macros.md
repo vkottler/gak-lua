@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.0
-    hash=745591e72555dc000e345420b16912f5
+    hash=84fc4b1986c5b72450d9f12f4f749db4
     =====================================
 -->
 
@@ -176,7 +176,7 @@ self
 
 ```
 #showtooltip
-/cast [@player] Grove Guardians
+/cast [@player,known:Nourish] Nourish; [@player] Grove Guardians
 ```
 
 ---
@@ -212,7 +212,43 @@ self
 
 ```
 #showtooltip
+/cast [@player] Innervate
+```
+
+---
+
+self
+
+```
+#showtooltip
 /cast [@player] Rejuvenation
+```
+
+---
+
+ch
+
+```
+#showtooltip
+/cast [known:Mass Entanglement] Mass Entanglement; Ursol's Vortex
+```
+
+---
+
+ch
+
+```
+#showtooltip
+/cast [known:Nourish] Nourish; Grove Guardians
+```
+
+---
+
+ch
+
+```
+#showtooltip
+/cast [known:Convoke the Spirits] Convoke the Spirits; Incarnation: Tree of Life
 ```
 
 ---

@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.0
--- hash=819d55c22847d9c1fde8b0ecedd266df
+-- hash=e4d8204f728810696b6ce23e5ca737ad
 -- =====================================
 function GakCreateGlobalMacros()
 	CreateMacro("13", "inv_misc_questionmark", [[
@@ -32,24 +32,37 @@ function GakCreateGlobalMacros()
 	print("Created 9 global macros.")
 end
 
+local function createFirstRacialMacro()
+		CreateMacro("1", "inv_misc_questionmark", [[
+/run print("no first racial")]], 1)
+end
+
+local function createSecondRacialMacro()
+		CreateMacro("2", "inv_misc_questionmark", [[
+/run print("no second racial")]], 1)
+end
+
 function GakCreateCharacterMacros()
 	-- Create a racial macro.
 	local our_race = select(2, UnitRace("player"))
+	local racial_macros_created = false
 
 	if our_race == "Orc" then
 		CreateMacro("1", "inv_misc_questionmark", [[
 #showtooltip
 /cast Blood Fury]], 1)
-		CreateMacro("2", "inv_misc_questionmark", [[
-/run print("no second racial")]], 1)
+		createSecondRacialMacro()
+		print("Created macros for '" .. our_race .. "'.")
+		racial_macros_created = true
 	end
 
 	if our_race == "NightElf" then
 		CreateMacro("1", "inv_misc_questionmark", [[
 #showtooltip
 /cast Shadowmeld]], 1)
-		CreateMacro("2", "inv_misc_questionmark", [[
-/run print("no second racial")]], 1)
+		createSecondRacialMacro()
+		print("Created macros for '" .. our_race .. "'.")
+		racial_macros_created = true
 	end
 
 	if our_race == "Undead" then
@@ -59,22 +72,37 @@ function GakCreateCharacterMacros()
 		CreateMacro("2", "inv_misc_questionmark", [[
 #showtooltip
 /cast Cannibalize]], 1)
+		print("Created macros for '" .. our_race .. "'.")
+		racial_macros_created = true
+	end
+
+	if our_race == "Scourge" then
+		CreateMacro("1", "inv_misc_questionmark", [[
+#showtooltip
+/cast Will of the Forsaken]], 1)
+		CreateMacro("2", "inv_misc_questionmark", [[
+#showtooltip
+/cast Cannibalize]], 1)
+		print("Created macros for '" .. our_race .. "'.")
+		racial_macros_created = true
 	end
 
 	if our_race == "Gnome" then
 		CreateMacro("1", "inv_misc_questionmark", [[
 #showtooltip
 /cast Escape Artist]], 1)
-		CreateMacro("2", "inv_misc_questionmark", [[
-/run print("no second racial")]], 1)
+		createSecondRacialMacro()
+		print("Created macros for '" .. our_race .. "'.")
+		racial_macros_created = true
 	end
 
 	if our_race == "Troll" then
 		CreateMacro("1", "inv_misc_questionmark", [[
 #showtooltip
 /cast Berserking]], 1)
-		CreateMacro("2", "inv_misc_questionmark", [[
-/run print("no second racial")]], 1)
+		createSecondRacialMacro()
+		print("Created macros for '" .. our_race .. "'.")
+		racial_macros_created = true
 	end
 
 	if our_race == "Goblin" then
@@ -84,14 +112,17 @@ function GakCreateCharacterMacros()
 		CreateMacro("2", "inv_misc_questionmark", [[
 #showtooltip
 /cast Rocket Barrage]], 1)
+		print("Created macros for '" .. our_race .. "'.")
+		racial_macros_created = true
 	end
 
 	if our_race == "BloodElf" then
 		CreateMacro("1", "inv_misc_questionmark", [[
 #showtooltip
 /cast Arcane Torrent]], 1)
-		CreateMacro("2", "inv_misc_questionmark", [[
-/run print("no second racial")]], 1)
+		createSecondRacialMacro()
+		print("Created macros for '" .. our_race .. "'.")
+		racial_macros_created = true
 	end
 
 	if our_race == "Worgen" then
@@ -101,14 +132,17 @@ function GakCreateCharacterMacros()
 		CreateMacro("2", "inv_misc_questionmark", [[
 #showtooltip
 /cast Two Forms]], 1)
+		print("Created macros for '" .. our_race .. "'.")
+		racial_macros_created = true
 	end
 
 	if our_race == "HighmountainTauren" then
 		CreateMacro("1", "inv_misc_questionmark", [[
 #showtooltip
 /cast Bull Rush]], 1)
-		CreateMacro("2", "inv_misc_questionmark", [[
-/run print("no second racial")]], 1)
+		createSecondRacialMacro()
+		print("Created macros for '" .. our_race .. "'.")
+		racial_macros_created = true
 	end
 
 	if our_race == "Dracthyr" then
@@ -118,6 +152,8 @@ function GakCreateCharacterMacros()
 		CreateMacro("2", "inv_misc_questionmark", [[
 #showtooltip
 /cast Soar]], 1)
+		print("Created macros for '" .. our_race .. "'.")
+		racial_macros_created = true
 	end
 
 	if our_race == "EarthenDwarf" then
@@ -127,6 +163,14 @@ function GakCreateCharacterMacros()
 		CreateMacro("2", "inv_misc_questionmark", [[
 #showtooltip
 /cast Quiet Contemplation]], 1)
+		print("Created macros for '" .. our_race .. "'.")
+		racial_macros_created = true
+	end
+
+	if not racial_macros_created then
+		createFirstRacialMacro()
+		createSecondRacialMacro()
+		print("Racial macros not configured for '".. our_race .."'.")
 	end
 
 	local class_str = select(2, UnitClass("player"))
@@ -204,7 +248,7 @@ function GakCreateCharacterMacros()
 		CreateMacro("self", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Rapture]], 1)
-		CreateMacro(" ", "inv_misc_questionmark", [[
+		CreateMacro("form", "inv_misc_questionmark", [[
 #showtooltip
 /cast !Shadowform]], 1)
 		print("Created 18", select(1, UnitClass("player")), "macros.")
@@ -467,7 +511,7 @@ function GakCreateCharacterMacros()
 /cast [@player] Ironbark]], 1)
 		CreateMacro("self", "inv_misc_questionmark", [[
 #showtooltip
-/cast [@player] Grove Guardians]], 1)
+/cast [@player,known:Nourish] Nourish; [@player] Grove Guardians]], 1)
 		CreateMacro("self", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Ursol's Vortex]], 1)
@@ -479,8 +523,20 @@ function GakCreateCharacterMacros()
 /cast [@player] Thorns]], 1)
 		CreateMacro("self", "inv_misc_questionmark", [[
 #showtooltip
+/cast [@player] Innervate]], 1)
+		CreateMacro("self", "inv_misc_questionmark", [[
+#showtooltip
 /cast [@player] Rejuvenation]], 1)
-		print("Created 22", select(1, UnitClass("player")), "macros.")
+		CreateMacro("ch", "inv_misc_questionmark", [[
+#showtooltip
+/cast [known:Mass Entanglement] Mass Entanglement; Ursol's Vortex]], 1)
+		CreateMacro("ch", "inv_misc_questionmark", [[
+#showtooltip
+/cast [known:Nourish] Nourish; Grove Guardians]], 1)
+		CreateMacro("ch", "inv_misc_questionmark", [[
+#showtooltip
+/cast [known:Convoke the Spirits] Convoke the Spirits; Incarnation: Tree of Life]], 1)
+		print("Created 26", select(1, UnitClass("player")), "macros.")
 	end
 
 	if class_str == "DEATHKNIGHT" then
