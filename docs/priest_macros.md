@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.0
-    hash=e219d1f0cf02aae984bb6eceaeaf4548
+    hash=cfee6a98998b9176b1a547f63e581e11
     =====================================
 -->
 
@@ -27,6 +27,17 @@ harm
 #showtooltip Penance
 /targetenemy [help]
 /cast [harm] Penance
+/cleartarget
+```
+
+---
+
+harm
+
+```
+#showtooltip Shadowfiend
+/targetenemy [help]
+/cast [harm] Shadowfiend
 /cleartarget
 ```
 

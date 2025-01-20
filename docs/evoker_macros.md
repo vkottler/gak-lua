@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.0
-    hash=a57e6da64473b7c4f0dbaf6ebb3b464e
+    hash=d517284f102d0a39543af4919e4343af
     =====================================
 -->
 
@@ -37,6 +37,87 @@ help
 /targetfriend [harm]
 /cast [help] Living Flame
 /cleartarget
+```
+
+---
+
+self
+
+```
+#showtooltip
+/cast [@player] Echo
+```
+
+---
+
+self
+
+```
+#showtooltip
+/cast [@player] Reversion
+```
+
+---
+
+self
+
+```
+#showtooltip
+/cast [@player] Living Flame
+```
+
+---
+
+self
+
+```
+#showtooltip
+/cast [@player] Verdant Embrace
+```
+
+---
+
+self
+
+```
+#showtooltip
+/cast [@player] Emerald Blossom
+```
+
+---
+
+self
+
+```
+#showtooltip
+/cast [@player] Naturalize
+```
+
+---
+
+self
+
+```
+#showtooltip
+/cast [@player] Cauterizing Flame
+```
+
+---
+
+self
+
+```
+#showtooltip
+/cast [@player] Spiritbloom
+```
+
+---
+
+self
+
+```
+#showtooltip
+/cast [@player] Time Dilation
 ```
 
 ---

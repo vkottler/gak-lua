@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.0
--- hash=e4d8204f728810696b6ce23e5ca737ad
+-- hash=b7be5db9f5178731a7a85fbd6ab76cbf
 -- =====================================
 function GakCreateGlobalMacros()
 	CreateMacro("13", "inv_misc_questionmark", [[
@@ -199,6 +199,11 @@ function GakCreateCharacterMacros()
 /targetenemy [help]
 /cast [harm] Penance
 /cleartarget]], 1)
+		CreateMacro("harm", "inv_misc_questionmark", [[
+#showtooltip Shadowfiend
+/targetenemy [help]
+/cast [harm] Shadowfiend
+/cleartarget]], 1)
 		CreateMacro("help", "inv_misc_questionmark", [[
 #showtooltip Penance
 /targetfriend [harm]
@@ -251,7 +256,7 @@ function GakCreateCharacterMacros()
 		CreateMacro("form", "inv_misc_questionmark", [[
 #showtooltip
 /cast !Shadowform]], 1)
-		print("Created 18", select(1, UnitClass("player")), "macros.")
+		print("Created 19", select(1, UnitClass("player")), "macros.")
 	end
 
 	if class_str == "ROGUE" then
@@ -365,7 +370,34 @@ function GakCreateCharacterMacros()
 /targetfriend [harm]
 /cast [help] Living Flame
 /cleartarget]], 1)
-		print("Created 3", select(1, UnitClass("player")), "macros.")
+		CreateMacro("self", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Echo]], 1)
+		CreateMacro("self", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Reversion]], 1)
+		CreateMacro("self", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Living Flame]], 1)
+		CreateMacro("self", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Verdant Embrace]], 1)
+		CreateMacro("self", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Emerald Blossom]], 1)
+		CreateMacro("self", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Naturalize]], 1)
+		CreateMacro("self", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Cauterizing Flame]], 1)
+		CreateMacro("self", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Spiritbloom]], 1)
+		CreateMacro("self", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Time Dilation]], 1)
+		print("Created 12", select(1, UnitClass("player")), "macros.")
 	end
 
 	if class_str == "MAGE" then
