@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.0
--- hash=68a8c6ef768626fca5c3b2d0244a6d18
+-- hash=f71057d6182f23fd62f467abd2d9e792
 -- =====================================
 -- https://wowpedia.fandom.com/wiki/Action_slot
 GAK_MAX_ACTIONBAR = 180
@@ -5367,6 +5367,14 @@ C_Spell.PickupSpell("Renewing Blaze")]])
 		else
 			print("(spec) Couldn't bind slot 59:", [[
 C_Spell.PickupSpell("Tail Swipe")]])
+		end
+		C_Spell.PickupSpell("Zephyr")
+		if GetCursorInfo() then
+			PlaceAction(66)
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot 66:", [[
+C_Spell.PickupSpell("Zephyr")]])
 		end
 		PickupMacro(120 + 14)
 		if GetCursorInfo() then
