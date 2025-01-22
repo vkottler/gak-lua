@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.0
--- hash=b7be5db9f5178731a7a85fbd6ab76cbf
+-- hash=9d75e229379cec3c568b9c52a7668661
 -- =====================================
 function GakCreateGlobalMacros()
 	CreateMacro("13", "inv_misc_questionmark", [[
@@ -13,7 +13,8 @@ function GakCreateGlobalMacros()
 	CreateMacro("canc", "creatureportrait_creature_iceblock", [[
 /stopcasting
 /cancelaura Slow Fall
-/cancelaura Levitate]])
+/cancelaura Levitate
+/cleartarget]])
 	CreateMacro("dis", "ability_marksmanship", [[
 /dismount
 /cancelform]])
@@ -652,6 +653,12 @@ function GakCreateCharacterMacros()
 	end
 
 	if class_str == "HUNTER" then
+		CreateMacro("3", "inv_misc_questionmark", [[
+#showtooltip
+/cast Kill Shot]], 1)
+		CreateMacro("4", "inv_misc_questionmark", [[
+#showtooltip
+/cast Command Pet]], 1)
 		CreateMacro("self", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Binding Shot]], 1)
@@ -676,6 +683,9 @@ function GakCreateCharacterMacros()
 		CreateMacro("self", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] High Explosive Trap]], 1)
-		print("Created 8", select(1, UnitClass("player")), "macros.")
+		CreateMacro("self", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Volley]], 1)
+		print("Created 11", select(1, UnitClass("player")), "macros.")
 	end
 end

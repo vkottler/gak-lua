@@ -3,15 +3,11 @@
 
 -- Create UI menu.
 local gak_ui =
-	GakCreateButtonContainer(UIParent, project .. " (" .. version .. ")", 4, 7)
+	GakCreateButtonContainer(UIParent, project .. " (" .. version .. ")", 4, 8)
 gak_ui:SetPoint("CENTER", UIParent, "CENTER", 0, 0)
 
 function GakToggle()
-	if gak_ui:IsShown() then
-		gak_ui:Hide()
-	else
-		gak_ui:Show()
-	end
+	GakToggleFrame(gak_ui)
 end
 
 -- Register mechanisms to show UI.
@@ -25,6 +21,28 @@ BINDING_NAME_TOGGLEGAK = "Toggle " .. project .. " Window"
 
 GakButtonsByAddon = {}
 
+local function GakRuntimeInit()
+	-- Set CVars.
+	GakSetCVars()
+
+	-- Audit layout.
+	-- GakSetLayouts()
+	GakAuditLayouts()
+
+	-- Hide some elements.
+	GakAuditZenMode()
+end
+
+local function GakSetAll()
+	GakSetKeybinds()
+
+	-- Setting action bars also sets character macros.
+	GakSetGlobalMacros()
+	GakSetActionBars()
+
+	GakRuntimeInit()
+end
+
 local function GakMain(frame)
 	-- Initialize application.
 	GakHelpHarmBarInit(frame)
@@ -37,17 +55,8 @@ local function GakMain(frame)
 	GakTargetInfoInit(frame)
 
 	-- Utility buttons.
-	GakCreateButton(frame, "Set All", 0, 6, function()
-		GakSetCVars()
-		GakSetKeybinds()
-
-		-- Setting action bars also sets character macros.
-		GakSetGlobalMacros()
-		GakSetActionBars()
-
-		GakSetLayouts()
-	end)
-	GakCreateButton(frame, "Reload", 1, 6, function()
+	GakCreateButton(frame, "Set All", 0, 7, GakSetAll)
+	GakCreateButton(frame, "Reload", 1, 7, function()
 		ConsoleExec("reloadUI")
 	end)
 
@@ -97,6 +106,8 @@ local function GakMain(frame)
 			SlashCmdList["DIMINISH"]("")
 		end
 	)
+
+	GakZenInit(frame)
 end
 
 local function GakLogin(frame)
@@ -109,11 +120,7 @@ local function GakLogin(frame)
 		-- can we set some kind of hover thing here?
 	end
 
-	-- Set CVars.
-	GakSetCVars()
-
-	-- Audit layout.
-	GakAuditLayouts()
+	GakRuntimeInit()
 end
 
 -- This pattern seems to be common.
@@ -126,10 +133,15 @@ gak_ui:SetScript("OnEvent", function(frame, event, name, ...)
 		frame:UnregisterEvent("ADDON_LOADED")
 	elseif event == "EDIT_MODE_LAYOUTS_UPDATED" then
 		-- print(select(1, ...)) always 'false' ?
+		-- This handler might not be necessary, somewhat bad UX (can't
+		-- manually switch layouts).
 		GakAuditLayouts()
+	elseif event == "PLAYER_SPECIALIZATION_CHANGED" then
+		GakRuntimeInit()
 	end
 end)
 gak_ui:RegisterEvent("ADDON_LOADED")
 gak_ui:RegisterEvent("PLAYER_LOGIN")
 gak_ui:RegisterEvent("EDIT_MODE_LAYOUTS_UPDATED")
+gak_ui:RegisterEvent("PLAYER_SPECIALIZATION_CHANGED")
 -- other options: FIRST_FRAME_RENDERED, PLAYER_ENTERING_WORLD, VARIABLES_LOADED

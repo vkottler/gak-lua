@@ -2,13 +2,31 @@
     =====================================
     generator=datazen
     version=3.2.0
-    hash=30510148df43e6e844b648bfde7f3b3d
+    hash=77579202f8465805353c20dd2ce32e99
     =====================================
 -->
 
 # Hunter Macros
 
 ([back](../README.md))
+
+3
+
+```
+#showtooltip
+/cast Kill Shot
+```
+
+---
+
+4
+
+```
+#showtooltip
+/cast Command Pet
+```
+
+---
 
 self
 
@@ -78,6 +96,15 @@ self
 ```
 #showtooltip
 /cast [@player] High Explosive Trap
+```
+
+---
+
+self
+
+```
+#showtooltip
+/cast [@player] Volley
 ```
 
 ---

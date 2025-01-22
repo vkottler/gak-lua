@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.0
--- hash=e4df5da4697a708a90093223dc58ea30
+-- hash=6e9ad75fb6a606950067aa73c1867373
 -- =====================================
 expectedCVars = {}
 expectedCVars["GamePadEnable"] = 1
@@ -46,3 +46,7 @@ expectedCVars["nameplateHideHealthAndPower"] = 1
 expectedCVars["occludedSilhouettePlayer"] = 1
 expectedCVars["combinedBags"] = 1
 expectedCVars["lossOfControl"] = 0
+expectedCVars["UnitNamePlayerPVPTitle"] = 0
+expectedCVars["UnitNamePlayerGuild"] = 0
+expectedCVars["UnitNameOwn"] = 0
+expectedCVars["UnitNameFriendlyPlayerName"] = 0

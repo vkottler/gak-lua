@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.0
-    hash=1bd5aac9afad8bf06d961a640741c338
+    hash=3a9ee80cedb329e8b0673c4a1731cec5
     =====================================
 -->
 
@@ -54,3 +54,7 @@ nameplateHideHealthAndPower | 1
 occludedSilhouettePlayer | 1
 combinedBags | 1
 lossOfControl | 0
+UnitNamePlayerPVPTitle | 0
+UnitNamePlayerGuild | 0
+UnitNameOwn | 0
+UnitNameFriendlyPlayerName | 0

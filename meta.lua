@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.0
--- hash=205e824e9dde273b4f8da34214799fdd
+-- hash=1472f26a03e2086b4b940b0bf579a306
 -- =====================================
 project = "gnomish-army-knife"
-version = "1.2.1"
+version = "1.3.0"
