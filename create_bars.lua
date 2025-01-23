@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.0
--- hash=4ef2b796b1dbeddeb9485c85db85f91c
+-- hash=51f5c8ea2a34c32cdad12a8a4ca7260c
 -- =====================================
 -- https://wowpedia.fandom.com/wiki/Action_slot
 GAK_MAX_ACTIONBAR = 180
@@ -6581,9 +6581,6 @@ end
 function GakSetActionBars()
 	-- Clear all existing bars.
 	GakClearActionBars()
-
-	-- Always set character-specific macros.
-	GakSetCharacterMacros()
 
 	-- Make sure cursor is clear.
 	ClearCursor()

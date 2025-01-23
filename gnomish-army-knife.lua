@@ -36,7 +36,7 @@ end
 local function GakSetAll()
 	GakSetKeybinds()
 
-	-- Setting action bars also sets character macros.
+	GakSetCharacterMacros()
 	GakSetGlobalMacros()
 	GakSetActionBars()
 
@@ -123,25 +123,51 @@ local function GakLogin(frame)
 	GakRuntimeInit()
 end
 
--- This pattern seems to be common.
-gak_ui:SetScript("OnEvent", function(frame, event, name, ...)
-	if event == "PLAYER_LOGIN" then
-		GakLogin(frame)
-		frame:UnregisterEvent("PLAYER_LOGIN")
-	elseif event == "ADDON_LOADED" and name == project then
+GakEventHandlers["PLAYER_LOGIN"] = function(frame)
+	GakLogin(frame)
+	frame:UnregisterEvent("PLAYER_LOGIN")
+end
+
+GakEventHandlers["ADDON_LOADED"] = function(frame, ...)
+	local args = { ... }
+	if args[1] == project then
 		GakMain(frame)
 		frame:UnregisterEvent("ADDON_LOADED")
-	elseif event == "EDIT_MODE_LAYOUTS_UPDATED" then
-		-- print(select(1, ...)) always 'false' ?
-		-- This handler might not be necessary, somewhat bad UX (can't
-		-- manually switch layouts).
-		GakAuditLayouts()
-	elseif event == "PLAYER_SPECIALIZATION_CHANGED" then
-		GakRuntimeInit()
 	end
-end)
-gak_ui:RegisterEvent("ADDON_LOADED")
-gak_ui:RegisterEvent("PLAYER_LOGIN")
-gak_ui:RegisterEvent("EDIT_MODE_LAYOUTS_UPDATED")
-gak_ui:RegisterEvent("PLAYER_SPECIALIZATION_CHANGED")
+end
+
+GakEventHandlers["EDIT_MODE_LAYOUTS_UPDATED"] = function(frame)
+	-- print(select(1, ...)) always 'false' ?
+	-- This handler might not be necessary, somewhat bad UX (can't
+	-- manually switch layouts).
+	GakAuditLayouts()
+end
+
+-- also:
+--   * ACTIVE_TALENT_GROUP_CHANGED (curr, prev)
+--   * PLAYER_PVP_TALENT_UPDATE
+--   * PLAYER_TALENT_UPDATE
+--   * SPEC_INVOLUNTARILY_CHANGED (isPet)
+--   * TALENTS_INVOLUNTARILY_RESET (isPetTalents)
+--   * SPELLS_CHANGED
+--   * PLAYER_LEVEL_UP
+--   * ACTIVE_PLAYER_SPECIALIZATION_CHANGED
+GakEventHandlers["PLAYER_SPECIALIZATION_CHANGED"] = GakRuntimeInit
+GakEventHandlers["PLAYER_LEVEL_UP"] = GakRuntimeInit
+
 -- other options: FIRST_FRAME_RENDERED, PLAYER_ENTERING_WORLD, VARIABLES_LOADED
+
+local function GakEventHandler(frame, event, ...)
+	local handler = GakEventHandlers[event]
+	if handler ~= nil then
+		GakEventHandlers[event](frame, ...)
+	else
+		print("Unhandled event:", event, ...)
+	end
+end
+
+-- Wire in event handling.
+gak_ui:SetScript("OnEvent", GakEventHandler)
+for event, _ in pairs(GakEventHandlers) do
+	gak_ui:RegisterEvent(event)
+end

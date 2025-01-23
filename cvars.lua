@@ -32,7 +32,9 @@ function GakSetCVars()
 		end
 	end
 
-	print("Attempted", count, "variable updates.")
+	if count ~= 0 then
+		print("Attempted", count, "variable updates.")
+	end
 end
 
 local function auditCVars()

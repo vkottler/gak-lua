@@ -5,9 +5,9 @@ function GakHideFrame(frame)
 	end
 end
 
-function GakToggleFrame(frame)
+function GakToggleFrame(frame, hide)
 	if frame then
-		if frame:IsShown() then
+		if frame:IsShown() or hide then
 			frame:Hide()
 		else
 			frame:Show()
@@ -33,44 +33,21 @@ function GakSetRaidTargets()
 	SetRaidTarget("party4", 4)
 end
 
-function GakAuditZenMode()
-	-- Hide player-portrait name and level.
-	PlayerName:Hide()
-	GakHideFrame(PlayerLevelText)
+function GakZenArenaFrames()
+	GakHideFrame(CompactArenaFrameMember1Name)
+	GakHideFrame(CompactArenaFrameMember2Name)
+	GakHideFrame(CompactArenaFrameMember3Name)
+end
 
-	-- Hide player-portrait party leader icon.
-	PlayerFrame.PlayerFrameContent.PlayerFrameContentContextual:Hide()
-
-	-- Hide target-portrait name and level.
-	TargetFrame.TargetFrameContent.TargetFrameContentMain.Name:Hide()
-	GakHideFrame(
-		TargetFrame.TargetFrameContent.TargetFrameContentMain.LevelText
-	)
-
-	TargetFrameToT.Name:Hide()
-
-	-- Hide target-portrait party leader icon.
-	TargetFrame.TargetFrameContent.TargetFrameContentContextual:Hide()
-
-	-- Hide 'Arena' and 'Party' titles.
-	CompactPartyFrameTitle:Hide()
-	CompactArenaFrameTitle:Hide()
-
-	QuickJoinToastButton:Hide()
-
-	-- Party frame names.
+function GakZenPartyFrames()
 	GakHideFrame(CompactPartyFrameMember1Name)
 	GakHideFrame(CompactPartyFrameMember2Name)
 	GakHideFrame(CompactPartyFrameMember3Name)
 	GakHideFrame(CompactPartyFrameMember4Name)
 	GakHideFrame(CompactPartyFrameMember5Name)
+end
 
-	-- Arena frame names.
-	GakHideFrame(CompactArenaFrameMember1Name)
-	GakHideFrame(CompactArenaFrameMember2Name)
-	GakHideFrame(CompactArenaFrameMember3Name)
-
-	-- Raid frames.
+function GakZenRaidFrames()
 	GakHideFrame(CompactRaidGroup1Member1Name)
 	GakHideFrame(CompactRaidGroup1Member2Name)
 	GakHideFrame(CompactRaidGroup1Member3Name)
@@ -120,11 +97,55 @@ function GakAuditZenMode()
 	GakHideFrame(CompactRaidGroup8Member5Name)
 end
 
+GakEventHandlers["GROUP_ROSTER_UPDATE"] = function(frame)
+	GakZenPartyFrames()
+	GakZenRaidFrames()
+end
+GakEventHandlers["RAID_ROSTER_UPDATE"] = GakEventHandlers["GROUP_ROSTER_UPDATE"]
+
+function GakAuditZenMode()
+	-- Hide player-portrait name and level.
+	PlayerName:Hide()
+	GakHideFrame(PlayerLevelText)
+
+	-- Hide player-portrait party leader icon.
+	PlayerFrame.PlayerFrameContent.PlayerFrameContentContextual:Hide()
+
+	-- Hide target-portrait name and level.
+	TargetFrame.TargetFrameContent.TargetFrameContentMain.Name:Hide()
+	GakHideFrame(
+		TargetFrame.TargetFrameContent.TargetFrameContentMain.LevelText
+	)
+
+	TargetFrameToT.Name:Hide()
+
+	-- Hide target-portrait party leader icon.
+	TargetFrame.TargetFrameContent.TargetFrameContentContextual:Hide()
+
+	-- Hide 'Arena' and 'Party' titles.
+	CompactPartyFrameTitle:Hide()
+	CompactArenaFrameTitle:Hide()
+
+	QuickJoinToastButton:Hide()
+
+	-- Need to put this in a 'PVP_' event handler.
+	GakZenArenaFrames()
+
+	GakEventHandlers["GROUP_ROSTER_UPDATE"](frame)
+end
+
 function GakZenInit(frame)
 	GakCreateButton(frame, "Audit Zen Mode", 2, 5, GakAuditZenMode)
 
 	GakCreateButton(frame, "Set Raid Targets", 2, 6, GakSetRaidTargets)
 	GakCreateButton(frame, "Clear Raid Targets", 3, 6, GakClearRaidTargets)
+
+	-- frame:RegisterEvent("GROUP_FORMED")
+	-- frame:RegisterEvent("GROUP_JOINED")
+	-- frame:RegisterEvent("GROUP_LEFT")
+	-- frame:RegisterEvent("ENTERED_DIFFERENT_INSTANCE_FROM_PARTY")
+
+	-- a lot of PVP_ events
 
 	-- Should eventually auto-hide this in ranked pvp.
 	GakCreateButton(frame, "Toggle Objectives", 1, 6, function()
