@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.0
--- hash=9d75e229379cec3c568b9c52a7668661
+-- hash=d6afcc062ba14e48cfcb17bac533c9b9
 -- =====================================
 function GakCreateGlobalMacros()
 	CreateMacro("13", "inv_misc_questionmark", [[
@@ -379,9 +379,6 @@ function GakCreateCharacterMacros()
 /cast [@player] Reversion]], 1)
 		CreateMacro("self", "inv_misc_questionmark", [[
 #showtooltip
-/cast [@player] Living Flame]], 1)
-		CreateMacro("self", "inv_misc_questionmark", [[
-#showtooltip
 /cast [@player] Verdant Embrace]], 1)
 		CreateMacro("self", "inv_misc_questionmark", [[
 #showtooltip
@@ -389,6 +386,9 @@ function GakCreateCharacterMacros()
 		CreateMacro("self", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Naturalize]], 1)
+		CreateMacro("self", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Expunge]], 1)
 		CreateMacro("self", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Cauterizing Flame]], 1)

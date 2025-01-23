@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.0
--- hash=51f5c8ea2a34c32cdad12a8a4ca7260c
+-- hash=615243d5ea12a9255d80eea158134b18
 -- =====================================
 -- https://wowpedia.fandom.com/wiki/Action_slot
 GAK_MAX_ACTIONBAR = 180
@@ -229,6 +229,182 @@ PickupMacro(120 + 14)]])
 	end
 
 	if class_str == "EVOKER" then
+		C_Spell.PickupSpell("Quell")
+		if GetCursorInfo() then
+			PlaceAction(67)
+			class_bind_count = class_bind_count + 1
+		else
+			print("(class) Couldn't bind slot 67:", [[
+C_Spell.PickupSpell("Quell")]])
+		end
+		C_Spell.PickupSpell("Sleep Walk")
+		if GetCursorInfo() then
+			PlaceAction(49)
+			class_bind_count = class_bind_count + 1
+		else
+			print("(class) Couldn't bind slot 49:", [[
+C_Spell.PickupSpell("Sleep Walk")]])
+		end
+		C_Spell.PickupSpell("Landslide")
+		if GetCursorInfo() then
+			PlaceAction(68)
+			class_bind_count = class_bind_count + 1
+		else
+			print("(class) Couldn't bind slot 68:", [[
+C_Spell.PickupSpell("Landslide")]])
+		end
+		C_Spell.PickupSpell("Nullifying Shroud")
+		if GetCursorInfo() then
+			PlaceAction(50)
+			class_bind_count = class_bind_count + 1
+		else
+			print("(class) Couldn't bind slot 50:", [[
+C_Spell.PickupSpell("Nullifying Shroud")]])
+		end
+		C_Spell.PickupSpell("Tip the Scales")
+		if GetCursorInfo() then
+			PlaceAction(26)
+			class_bind_count = class_bind_count + 1
+		else
+			print("(class) Couldn't bind slot 26:", [[
+C_Spell.PickupSpell("Tip the Scales")]])
+		end
+		PickupMacro(120 + 4)
+		if GetCursorInfo() then
+			PlaceAction(63)
+			class_bind_count = class_bind_count + 1
+		else
+			print("(class) Couldn't bind slot 63:", [[
+PickupMacro(120 + 4)]])
+		end
+		PickupMacro(120 + 3)
+		if GetCursorInfo() then
+			PlaceAction(57)
+			class_bind_count = class_bind_count + 1
+		else
+			print("(class) Couldn't bind slot 57:", [[
+PickupMacro(120 + 3)]])
+		end
+		C_Spell.PickupSpell("Fury of the Aspects")
+		if GetCursorInfo() then
+			PlaceAction(27)
+			class_bind_count = class_bind_count + 1
+		else
+			print("(class) Couldn't bind slot 27:", [[
+C_Spell.PickupSpell("Fury of the Aspects")]])
+		end
+		C_Spell.PickupSpell("Oppressing Roar")
+		if GetCursorInfo() then
+			PlaceAction(64)
+			class_bind_count = class_bind_count + 1
+		else
+			print("(class) Couldn't bind slot 64:", [[
+C_Spell.PickupSpell("Oppressing Roar")]])
+		end
+		PickupMacro(120 + 12)
+		if GetCursorInfo() then
+			PlaceAction(10)
+			class_bind_count = class_bind_count + 1
+		else
+			print("(class) Couldn't bind slot 10:", [[
+PickupMacro(120 + 12)]])
+		end
+		C_Spell.PickupSpell("Cauterizing Flame")
+		if GetCursorInfo() then
+			PlaceAction(22)
+			class_bind_count = class_bind_count + 1
+		else
+			print("(class) Couldn't bind slot 22:", [[
+C_Spell.PickupSpell("Cauterizing Flame")]])
+		end
+		C_Spell.PickupSpell("Renewing Blaze")
+		if GetCursorInfo() then
+			PlaceAction(5)
+			class_bind_count = class_bind_count + 1
+		else
+			print("(class) Couldn't bind slot 5:", [[
+C_Spell.PickupSpell("Renewing Blaze")]])
+		end
+		C_Spell.PickupSpell("Renewing Blaze")
+		if GetCursorInfo() then
+			PlaceAction(17)
+			class_bind_count = class_bind_count + 1
+		else
+			print("(class) Couldn't bind slot 17:", [[
+C_Spell.PickupSpell("Renewing Blaze")]])
+		end
+		C_Spell.PickupSpell("Tail Swipe")
+		if GetCursorInfo() then
+			PlaceAction(59)
+			class_bind_count = class_bind_count + 1
+		else
+			print("(class) Couldn't bind slot 59:", [[
+C_Spell.PickupSpell("Tail Swipe")]])
+		end
+		C_Spell.PickupSpell("Zephyr")
+		if GetCursorInfo() then
+			PlaceAction(66)
+			class_bind_count = class_bind_count + 1
+		else
+			print("(class) Couldn't bind slot 66:", [[
+C_Spell.PickupSpell("Zephyr")]])
+		end
+		C_Spell.PickupSpell("Obsidian Scales")
+		if GetCursorInfo() then
+			PlaceAction(6)
+			class_bind_count = class_bind_count + 1
+		else
+			print("(class) Couldn't bind slot 6:", [[
+C_Spell.PickupSpell("Obsidian Scales")]])
+		end
+		C_Spell.PickupSpell("Obsidian Scales")
+		if GetCursorInfo() then
+			PlaceAction(18)
+			class_bind_count = class_bind_count + 1
+		else
+			print("(class) Couldn't bind slot 18:", [[
+C_Spell.PickupSpell("Obsidian Scales")]])
+		end
+		C_Spell.PickupSpell("Time Spiral")
+		if GetCursorInfo() then
+			PlaceAction(44)
+			class_bind_count = class_bind_count + 1
+		else
+			print("(class) Couldn't bind slot 44:", [[
+C_Spell.PickupSpell("Time Spiral")]])
+		end
+		C_Spell.PickupSpell("Rescue")
+		if GetCursorInfo() then
+			PlaceAction(38)
+			class_bind_count = class_bind_count + 1
+		else
+			print("(class) Couldn't bind slot 38:", [[
+C_Spell.PickupSpell("Rescue")]])
+		end
+		C_Spell.PickupSpell("Hover")
+		if GetCursorInfo() then
+			PlaceAction(32)
+			class_bind_count = class_bind_count + 1
+		else
+			print("(class) Couldn't bind slot 32:", [[
+C_Spell.PickupSpell("Hover")]])
+		end
+		C_Spell.PickupSpell("Blessing of the Bronze")
+		if GetCursorInfo() then
+			PlaceAction(46)
+			class_bind_count = class_bind_count + 1
+		else
+			print("(class) Couldn't bind slot 46:", [[
+C_Spell.PickupSpell("Blessing of the Bronze")]])
+		end
+		C_Spell.PickupSpell("Return")
+		if GetCursorInfo() then
+			PlaceAction(47)
+			class_bind_count = class_bind_count + 1
+		else
+			print("(class) Couldn't bind slot 47:", [[
+C_Spell.PickupSpell("Return")]])
+		end
 	end
 
 	if class_str == "MAGE" then
@@ -5488,14 +5664,6 @@ C_Spell.PickupSpell("Revive")]])
 	end
 
 	if id == 1468 then
-		C_Spell.PickupSpell("Quell")
-		if GetCursorInfo() then
-			PlaceAction(67)
-			spec_bind_count = spec_bind_count + 1
-		else
-			print("(spec) Couldn't bind slot 67:", [[
-C_Spell.PickupSpell("Quell")]])
-		end
 		C_Spell.PickupSpell("Fire Breath")
 		if GetCursorInfo() then
 			PlaceAction(61)
@@ -5544,14 +5712,6 @@ C_Spell.PickupSpell("Reversion")]])
 			print("(spec) Couldn't bind slot 55:", [[
 C_Spell.PickupSpell("Disintegrate")]])
 		end
-		C_Spell.PickupSpell("Sleep Walk")
-		if GetCursorInfo() then
-			PlaceAction(49)
-			spec_bind_count = spec_bind_count + 1
-		else
-			print("(spec) Couldn't bind slot 49:", [[
-C_Spell.PickupSpell("Sleep Walk")]])
-		end
 		C_Spell.PickupSpell("Stasis")
 		if GetCursorInfo() then
 			PlaceAction(25)
@@ -5559,14 +5719,6 @@ C_Spell.PickupSpell("Sleep Walk")]])
 		else
 			print("(spec) Couldn't bind slot 25:", [[
 C_Spell.PickupSpell("Stasis")]])
-		end
-		C_Spell.PickupSpell("Landslide")
-		if GetCursorInfo() then
-			PlaceAction(68)
-			spec_bind_count = spec_bind_count + 1
-		else
-			print("(spec) Couldn't bind slot 68:", [[
-C_Spell.PickupSpell("Landslide")]])
 		end
 		C_Spell.PickupSpell("Dream Breath")
 		if GetCursorInfo() then
@@ -5592,13 +5744,13 @@ PickupMacro(120 + 5)]])
 			print("(spec) Couldn't bind slot 20:", [[
 C_Spell.PickupSpell(361469)]])
 		end
-		PickupMacro(120 + 9)
+		PickupMacro(120 + 8)
 		if GetCursorInfo() then
 			PlaceAction(2)
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot 2:", [[
-PickupMacro(120 + 9)]])
+PickupMacro(120 + 8)]])
 		end
 		C_Spell.PickupSpell("Verdant Embrace")
 		if GetCursorInfo() then
@@ -5616,37 +5768,13 @@ C_Spell.PickupSpell("Verdant Embrace")]])
 			print("(spec) Couldn't bind slot 56:", [[
 C_Spell.PickupSpell("Azure Strike")]])
 		end
-		C_Spell.PickupSpell("Nullifying Shroud")
-		if GetCursorInfo() then
-			PlaceAction(50)
-			spec_bind_count = spec_bind_count + 1
-		else
-			print("(spec) Couldn't bind slot 50:", [[
-C_Spell.PickupSpell("Nullifying Shroud")]])
-		end
-		C_Spell.PickupSpell("Tip the Scales")
-		if GetCursorInfo() then
-			PlaceAction(26)
-			spec_bind_count = spec_bind_count + 1
-		else
-			print("(spec) Couldn't bind slot 26:", [[
-C_Spell.PickupSpell("Tip the Scales")]])
-		end
-		PickupMacro(120 + 4)
-		if GetCursorInfo() then
-			PlaceAction(63)
-			spec_bind_count = spec_bind_count + 1
-		else
-			print("(spec) Couldn't bind slot 63:", [[
-PickupMacro(120 + 4)]])
-		end
-		PickupMacro(120 + 10)
+		PickupMacro(120 + 9)
 		if GetCursorInfo() then
 			PlaceAction(9)
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot 9:", [[
-PickupMacro(120 + 10)]])
+PickupMacro(120 + 9)]])
 		end
 		C_Spell.PickupSpell("Emerald Blossom")
 		if GetCursorInfo() then
@@ -5656,13 +5784,13 @@ PickupMacro(120 + 10)]])
 			print("(spec) Couldn't bind slot 21:", [[
 C_Spell.PickupSpell("Emerald Blossom")]])
 		end
-		PickupMacro(120 + 11)
+		PickupMacro(120 + 10)
 		if GetCursorInfo() then
 			PlaceAction(3)
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot 3:", [[
-PickupMacro(120 + 11)]])
+PickupMacro(120 + 10)]])
 		end
 		C_Spell.PickupSpell("Naturalize")
 		if GetCursorInfo() then
@@ -5671,38 +5799,6 @@ PickupMacro(120 + 11)]])
 		else
 			print("(spec) Couldn't bind slot 15:", [[
 C_Spell.PickupSpell("Naturalize")]])
-		end
-		PickupMacro(120 + 3)
-		if GetCursorInfo() then
-			PlaceAction(57)
-			spec_bind_count = spec_bind_count + 1
-		else
-			print("(spec) Couldn't bind slot 57:", [[
-PickupMacro(120 + 3)]])
-		end
-		C_Spell.PickupSpell("Oppressing Roar")
-		if GetCursorInfo() then
-			PlaceAction(64)
-			spec_bind_count = spec_bind_count + 1
-		else
-			print("(spec) Couldn't bind slot 64:", [[
-C_Spell.PickupSpell("Oppressing Roar")]])
-		end
-		PickupMacro(120 + 12)
-		if GetCursorInfo() then
-			PlaceAction(10)
-			spec_bind_count = spec_bind_count + 1
-		else
-			print("(spec) Couldn't bind slot 10:", [[
-PickupMacro(120 + 12)]])
-		end
-		C_Spell.PickupSpell("Cauterizing Flame")
-		if GetCursorInfo() then
-			PlaceAction(22)
-			spec_bind_count = spec_bind_count + 1
-		else
-			print("(spec) Couldn't bind slot 22:", [[
-C_Spell.PickupSpell("Cauterizing Flame")]])
 		end
 		PickupMacro(120 + 13)
 		if GetCursorInfo() then
@@ -5752,38 +5848,6 @@ C_Spell.PickupSpell("Emerald Communion")]])
 			print("(spec) Couldn't bind slot 23:", [[
 C_Spell.PickupSpell("Emerald Communion")]])
 		end
-		C_Spell.PickupSpell("Renewing Blaze")
-		if GetCursorInfo() then
-			PlaceAction(5)
-			spec_bind_count = spec_bind_count + 1
-		else
-			print("(spec) Couldn't bind slot 5:", [[
-C_Spell.PickupSpell("Renewing Blaze")]])
-		end
-		C_Spell.PickupSpell("Renewing Blaze")
-		if GetCursorInfo() then
-			PlaceAction(17)
-			spec_bind_count = spec_bind_count + 1
-		else
-			print("(spec) Couldn't bind slot 17:", [[
-C_Spell.PickupSpell("Renewing Blaze")]])
-		end
-		C_Spell.PickupSpell("Tail Swipe")
-		if GetCursorInfo() then
-			PlaceAction(59)
-			spec_bind_count = spec_bind_count + 1
-		else
-			print("(spec) Couldn't bind slot 59:", [[
-C_Spell.PickupSpell("Tail Swipe")]])
-		end
-		C_Spell.PickupSpell("Zephyr")
-		if GetCursorInfo() then
-			PlaceAction(66)
-			spec_bind_count = spec_bind_count + 1
-		else
-			print("(spec) Couldn't bind slot 66:", [[
-C_Spell.PickupSpell("Zephyr")]])
-		end
 		PickupMacro(120 + 14)
 		if GetCursorInfo() then
 			PlaceAction(12)
@@ -5800,73 +5864,185 @@ PickupMacro(120 + 14)]])
 			print("(spec) Couldn't bind slot 24:", [[
 C_Spell.PickupSpell("Time Dilation")]])
 		end
-		C_Spell.PickupSpell("Obsidian Scales")
-		if GetCursorInfo() then
-			PlaceAction(6)
-			spec_bind_count = spec_bind_count + 1
-		else
-			print("(spec) Couldn't bind slot 6:", [[
-C_Spell.PickupSpell("Obsidian Scales")]])
-		end
-		C_Spell.PickupSpell("Obsidian Scales")
-		if GetCursorInfo() then
-			PlaceAction(18)
-			spec_bind_count = spec_bind_count + 1
-		else
-			print("(spec) Couldn't bind slot 18:", [[
-C_Spell.PickupSpell("Obsidian Scales")]])
-		end
-		C_Spell.PickupSpell("Return")
+		C_Spell.PickupSpell("Mass Return")
 		if GetCursorInfo() then
 			PlaceAction(30)
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot 30:", [[
-C_Spell.PickupSpell("Return")]])
-		end
-		C_Spell.PickupSpell("Time Spiral")
-		if GetCursorInfo() then
-			PlaceAction(44)
-			spec_bind_count = spec_bind_count + 1
-		else
-			print("(spec) Couldn't bind slot 44:", [[
-C_Spell.PickupSpell("Time Spiral")]])
-		end
-		C_Spell.PickupSpell("Rescue")
-		if GetCursorInfo() then
-			PlaceAction(38)
-			spec_bind_count = spec_bind_count + 1
-		else
-			print("(spec) Couldn't bind slot 38:", [[
-C_Spell.PickupSpell("Rescue")]])
-		end
-		C_Spell.PickupSpell("Hover")
-		if GetCursorInfo() then
-			PlaceAction(32)
-			spec_bind_count = spec_bind_count + 1
-		else
-			print("(spec) Couldn't bind slot 32:", [[
-C_Spell.PickupSpell("Hover")]])
-		end
-		C_Spell.PickupSpell("Blessing of the Bronze")
-		if GetCursorInfo() then
-			PlaceAction(46)
-			spec_bind_count = spec_bind_count + 1
-		else
-			print("(spec) Couldn't bind slot 46:", [[
-C_Spell.PickupSpell("Blessing of the Bronze")]])
-		end
-		C_Spell.PickupSpell("Mass Return")
-		if GetCursorInfo() then
-			PlaceAction(47)
-			spec_bind_count = spec_bind_count + 1
-		else
-			print("(spec) Couldn't bind slot 47:", [[
 C_Spell.PickupSpell("Mass Return")]])
 		end
 	end
 
 	if id == 1467 then
+		C_Spell.PickupSpell(357208)
+		if GetCursorInfo() then
+			PlaceAction(61)
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot 61:", [[
+C_Spell.PickupSpell(357208)]])
+		end
+		PickupMacro(120 + 3)
+		if GetCursorInfo() then
+			PlaceAction(7)
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot 7:", [[
+PickupMacro(120 + 3)]])
+		end
+		PickupMacro(120 + 4)
+		if GetCursorInfo() then
+			PlaceAction(19)
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot 19:", [[
+PickupMacro(120 + 4)]])
+		end
+		C_Spell.PickupSpell("Azure Strike")
+		if GetCursorInfo() then
+			PlaceAction(1)
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot 1:", [[
+C_Spell.PickupSpell("Azure Strike")]])
+		end
+		C_Spell.PickupSpell("Azure Strike")
+		if GetCursorInfo() then
+			PlaceAction(13)
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot 13:", [[
+C_Spell.PickupSpell("Azure Strike")]])
+		end
+		C_Spell.PickupSpell("Shattering Star")
+		if GetCursorInfo() then
+			PlaceAction(55)
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot 55:", [[
+C_Spell.PickupSpell("Shattering Star")]])
+		end
+		C_Spell.PickupSpell("Dragonrage")
+		if GetCursorInfo() then
+			PlaceAction(25)
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot 25:", [[
+C_Spell.PickupSpell("Dragonrage")]])
+		end
+		C_Spell.PickupSpell(357210)
+		if GetCursorInfo() then
+			PlaceAction(62)
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot 62:", [[
+C_Spell.PickupSpell(357210)]])
+		end
+		C_Spell.PickupSpell("Pyre")
+		if GetCursorInfo() then
+			PlaceAction(8)
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot 8:", [[
+C_Spell.PickupSpell("Pyre")]])
+		end
+		C_Spell.PickupSpell("Pyre")
+		if GetCursorInfo() then
+			PlaceAction(20)
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot 20:", [[
+C_Spell.PickupSpell("Pyre")]])
+		end
+		C_Spell.PickupSpell("Disintegrate")
+		if GetCursorInfo() then
+			PlaceAction(2)
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot 2:", [[
+C_Spell.PickupSpell("Disintegrate")]])
+		end
+		C_Spell.PickupSpell("Disintegrate")
+		if GetCursorInfo() then
+			PlaceAction(14)
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot 14:", [[
+C_Spell.PickupSpell("Disintegrate")]])
+		end
+		C_Spell.PickupSpell(359073)
+		if GetCursorInfo() then
+			PlaceAction(56)
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot 56:", [[
+C_Spell.PickupSpell(359073)]])
+		end
+		PickupMacro(120 + 9)
+		if GetCursorInfo() then
+			PlaceAction(9)
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot 9:", [[
+PickupMacro(120 + 9)]])
+		end
+		C_Spell.PickupSpell("Emerald Blossom")
+		if GetCursorInfo() then
+			PlaceAction(21)
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot 21:", [[
+C_Spell.PickupSpell("Emerald Blossom")]])
+		end
+		PickupMacro(120 + 11)
+		if GetCursorInfo() then
+			PlaceAction(3)
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot 3:", [[
+PickupMacro(120 + 11)]])
+		end
+		C_Spell.PickupSpell("Expunge")
+		if GetCursorInfo() then
+			PlaceAction(15)
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot 15:", [[
+C_Spell.PickupSpell("Expunge")]])
+		end
+		PickupMacro(120 + 5)
+		if GetCursorInfo() then
+			PlaceAction(4)
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot 4:", [[
+PickupMacro(120 + 5)]])
+		end
+		C_Spell.PickupSpell("Living Flame")
+		if GetCursorInfo() then
+			PlaceAction(16)
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot 16:", [[
+C_Spell.PickupSpell("Living Flame")]])
+		end
+		PickupMacro(120 + 8)
+		if GetCursorInfo() then
+			PlaceAction(11)
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot 11:", [[
+PickupMacro(120 + 8)]])
+		end
+		C_Spell.PickupSpell("Verdant Embrace")
+		if GetCursorInfo() then
+			PlaceAction(23)
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot 23:", [[
+C_Spell.PickupSpell("Verdant Embrace")]])
+		end
 	end
 
 	if id == 256 then

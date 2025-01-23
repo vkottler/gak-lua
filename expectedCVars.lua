@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.0
--- hash=6e9ad75fb6a606950067aa73c1867373
+-- hash=e5412008ee9f570942dcc56e05d68bc8
 -- =====================================
 expectedCVars = {}
 expectedCVars["GamePadEnable"] = 1
@@ -38,9 +38,7 @@ expectedCVars["NameplatePersonalShowAlways"] = 1
 expectedCVars["nameplateSelfTopInset"] = 0.45
 expectedCVars["nameplateSelfBottomInset"] = 0.45
 expectedCVars["nameplateSelfScale"] = 1.0
-expectedCVars["nameplateShowFriends"] = 1
 expectedCVars["nameplateShowSelf"] = 1
-expectedCVars["nameplateShowEnemies"] = 1
 expectedCVars["nameplateShowDebuffsOnFriendly"] = 1
 expectedCVars["nameplateHideHealthAndPower"] = 1
 expectedCVars["occludedSilhouettePlayer"] = 1
@@ -50,3 +48,6 @@ expectedCVars["UnitNamePlayerPVPTitle"] = 0
 expectedCVars["UnitNamePlayerGuild"] = 0
 expectedCVars["UnitNameOwn"] = 0
 expectedCVars["UnitNameFriendlyPlayerName"] = 0
+expectedCVars["pvpFramesHealthText"] = "none"
+expectedCVars["raidFramesHealthText"] = "none"
+expectedCVars["showToastWindow"] = 0

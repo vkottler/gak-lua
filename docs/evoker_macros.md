@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.0
-    hash=d517284f102d0a39543af4919e4343af
+    hash=cae5c4380bb87ddd91e0c9a361877aa6
     =====================================
 -->
 
@@ -63,15 +63,6 @@ self
 
 ```
 #showtooltip
-/cast [@player] Living Flame
-```
-
----
-
-self
-
-```
-#showtooltip
 /cast [@player] Verdant Embrace
 ```
 
@@ -91,6 +82,15 @@ self
 ```
 #showtooltip
 /cast [@player] Naturalize
+```
+
+---
+
+self
+
+```
+#showtooltip
+/cast [@player] Expunge
 ```
 
 ---

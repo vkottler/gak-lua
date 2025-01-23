@@ -20,7 +20,24 @@ end
 function GakSetCVars()
 	local count = 0
 
+	-- Copy values.
+	local toCheck = {}
 	for key, val in pairs(expectedCVars) do
+		toCheck[key] = val
+	end
+
+	-- Set role-based variable values.
+	local spec_info = { GetSpecializationInfo(GetSpecialization()) }
+	local role = spec_info[5]
+	if role == "DAMAGER" then
+		toCheck["nameplateShowFriends"] = 0
+		toCheck["nameplateShowEnemies"] = 1
+	elseif role == "HEALER" then
+		toCheck["nameplateShowFriends"] = 1
+		toCheck["nameplateShowEnemies"] = 0
+	end
+
+	for key, val in pairs(toCheck) do
 		if not doesCVarMatch(key, false) then
 			count = count + 1
 
@@ -32,7 +49,7 @@ function GakSetCVars()
 		end
 	end
 
-	if count ~= 0 then
+	if count > 0 then
 		print("Attempted", count, "variable updates.")
 	end
 end

@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.0
-    hash=3a9ee80cedb329e8b0673c4a1731cec5
+    hash=ffabc006e1557e9d54a37217e94c9829
     =====================================
 -->
 
@@ -46,9 +46,7 @@ NameplatePersonalShowAlways | 1
 nameplateSelfTopInset | 0.45
 nameplateSelfBottomInset | 0.45
 nameplateSelfScale | 1.0
-nameplateShowFriends | 1
 nameplateShowSelf | 1
-nameplateShowEnemies | 1
 nameplateShowDebuffsOnFriendly | 1
 nameplateHideHealthAndPower | 1
 occludedSilhouettePlayer | 1
@@ -58,3 +56,6 @@ UnitNamePlayerPVPTitle | 0
 UnitNamePlayerGuild | 0
 UnitNameOwn | 0
 UnitNameFriendlyPlayerName | 0
+pvpFramesHealthText | `none`
+raidFramesHealthText | `none`
+showToastWindow | 0
