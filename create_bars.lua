@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.0
--- hash=615243d5ea12a9255d80eea158134b18
+-- hash=b208fb4c2f9c6a64b710b0387c94facc
 -- =====================================
 -- https://wowpedia.fandom.com/wiki/Action_slot
 GAK_MAX_ACTIONBAR = 180
@@ -206,13 +206,13 @@ C_Spell.PickupSpell("Psychic Scream")]])
 			print("(class) Couldn't bind slot 32:", [[
 C_Spell.PickupSpell("Fade")]])
 		end
-		PickupMacro(120 + 14)
+		PickupMacro(120 + 17)
 		if GetCursorInfo() then
 			PlaceAction(46)
 			class_bind_count = class_bind_count + 1
 		else
 			print("(class) Couldn't bind slot 46:", [[
-PickupMacro(120 + 14)]])
+PickupMacro(120 + 17)]])
 		end
 	end
 

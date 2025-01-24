@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.0
-    hash=cfee6a98998b9176b1a547f63e581e11
+    hash=fdd6dcfb48bff1d071735938794f3903
     =====================================
 -->
 
@@ -151,6 +151,15 @@ self
 ```
 #showtooltip
 /cast [@player] Power Word: Fortitude
+```
+
+---
+
+self
+
+```
+#showtooltip
+/cast [@player] Power Word: Radiance
 ```
 
 ---

@@ -147,6 +147,22 @@ function GakZenInit(frame)
 
 	-- a lot of PVP_ events
 
+	-- fires randomly out in the world?
+	-- ARENA_OPPONENT_UPDATE (unitToken, updateReason)
+	-- frame:RegisterEvent("ARENA_OPPONENT_UPDATE")
+	-- frame:RegisterEvent("UPDATE_BATTLEFIELD_STATUS")
+
+	frame:RegisterEvent("UPDATE_ACTIVE_BATTLEFIELD")
+	frame:RegisterEvent("UPDATE_BATTLEFIELD_SCORE")
+	frame:RegisterEvent("PVPQUEUE_ANYWHERE_SHOW")
+
+	frame:RegisterEvent("SPELLS_CHANGED")
+	frame:RegisterEvent("PLAYER_PVP_TALENT_UPDATE")
+	frame:RegisterEvent("PLAYER_TALENT_UPDATE")
+
+	-- seems to fire a lot?
+	-- frame:RegisterEvent("PVPQUEUE_ANYWHERE_UPDATE_AVAILABLE")
+
 	-- Should eventually auto-hide this in ranked pvp.
 	GakCreateButton(frame, "Toggle Objectives", 1, 6, function()
 		GakToggleFrame(ObjectiveTrackerFrame)
