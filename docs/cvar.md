@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.0
-    hash=ffabc006e1557e9d54a37217e94c9829
+    hash=2338bdeb68a1a734740fa770ef846384
     =====================================
 -->
 
@@ -59,3 +59,11 @@ UnitNameFriendlyPlayerName | 0
 pvpFramesHealthText | `none`
 raidFramesHealthText | `none`
 showToastWindow | 0
+Sound_EnableSFX | 1
+Sound_EnableMusic | 0
+Sound_EnableAmbience | 0
+Sound_EnableDialog | 0
+Sound_EnableSoundWhenGameIsInBG | 1
+Sound_MasterVolume | 1
+Sound_SFXVolume | 1
+Sound_EnableReverb | 1

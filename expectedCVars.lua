@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.0
--- hash=e5412008ee9f570942dcc56e05d68bc8
+-- hash=5601334ff1c5856f43cbb6143bb034d5
 -- =====================================
 expectedCVars = {}
 expectedCVars["GamePadEnable"] = 1
@@ -51,3 +51,11 @@ expectedCVars["UnitNameFriendlyPlayerName"] = 0
 expectedCVars["pvpFramesHealthText"] = "none"
 expectedCVars["raidFramesHealthText"] = "none"
 expectedCVars["showToastWindow"] = 0
+expectedCVars["Sound_EnableSFX"] = 1
+expectedCVars["Sound_EnableMusic"] = 0
+expectedCVars["Sound_EnableAmbience"] = 0
+expectedCVars["Sound_EnableDialog"] = 0
+expectedCVars["Sound_EnableSoundWhenGameIsInBG"] = 1
+expectedCVars["Sound_MasterVolume"] = 1
+expectedCVars["Sound_SFXVolume"] = 1
+expectedCVars["Sound_EnableReverb"] = 1
