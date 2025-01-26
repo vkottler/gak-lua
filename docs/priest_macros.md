@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.0
-    hash=fdd6dcfb48bff1d071735938794f3903
+    hash=bbe76bb041c362be828f99b969fdf91b
     =====================================
 -->
 
@@ -79,6 +79,15 @@ self
 ```
 #showtooltip
 /cast [@player] Penance
+```
+
+---
+
+self
+
+```
+#showtooltip
+/cast [@player] Shadow Crash
 ```
 
 ---

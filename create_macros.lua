@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.0
--- hash=7801e715d07bb19ad84f03be9e9c4bdf
+-- hash=354e3a7a9cb25bd7281e2b4f335b7f54
 -- =====================================
 function GakCreateGlobalMacros()
 	CreateMacro("13", "inv_misc_questionmark", [[
@@ -223,6 +223,9 @@ function GakCreateCharacterMacros()
 /cast [@player] Penance]], 1)
 		CreateMacro("self", "inv_misc_questionmark", [[
 #showtooltip
+/cast [@player] Shadow Crash]], 1)
+		CreateMacro("self", "inv_misc_questionmark", [[
+#showtooltip
 /cast [@player] Mass Dispel]], 1)
 		CreateMacro("self", "inv_misc_questionmark", [[
 #showtooltip
@@ -260,7 +263,7 @@ function GakCreateCharacterMacros()
 		CreateMacro("form", "inv_misc_questionmark", [[
 #showtooltip
 /cast !Shadowform]], 1)
-		print("Created 20", select(1, UnitClass("player")), "macros.")
+		print("Created 21", select(1, UnitClass("player")), "macros.")
 	end
 
 	if class_str == "ROGUE" then
