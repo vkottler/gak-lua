@@ -36,8 +36,10 @@ end
 local function GakSetAll()
 	GakSetKeybinds()
 
-	GakSetCharacterMacros()
 	GakSetGlobalMacros()
+
+	-- Handled when setting action bars.
+	-- GakSetCharacterMacros()
 	GakSetActionBars()
 
 	GakRuntimeInit()
