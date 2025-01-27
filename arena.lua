@@ -14,3 +14,10 @@
 -- 		end
 -- 	end
 -- end)
+
+-- Disable names on nameplates.
+hooksecurefunc("CompactUnitFrame_UpdateName", function(frame)
+	if frame.unit:find("nameplate") then
+		frame.name:SetText("")
+	end
+end)
