@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.0
--- hash=354e3a7a9cb25bd7281e2b4f335b7f54
+-- hash=0a2b705892ac6802e9ec7f88033791f6
 -- =====================================
 function GakCreateGlobalMacros()
 	CreateMacro("13", "inv_misc_questionmark", [[
@@ -482,11 +482,14 @@ function GakCreateCharacterMacros()
 /cast [@player] Blessing of Summer]], 1)
 		CreateMacro("self", "inv_misc_questionmark", [[
 #showtooltip
+/cast [@player] Blessing of Sanctuary]], 1)
+		CreateMacro("self", "inv_misc_questionmark", [[
+#showtooltip
 /cast [@player] Final Reckoning]], 1)
 		CreateMacro("self", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Holy Bulwark]], 1)
-		print("Created 15", select(1, UnitClass("player")), "macros.")
+		print("Created 16", select(1, UnitClass("player")), "macros.")
 	end
 
 	if class_str == "DRUID" then

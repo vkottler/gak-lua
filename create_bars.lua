@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.0
--- hash=bf53a4dfa0b5e98829c71478a8595a0d
+-- hash=4f00b3f553be7ef72f7009c53c9ff0fa
 -- =====================================
 -- https://wowpedia.fandom.com/wiki/Action_slot
 GAK_MAX_ACTIONBAR = 180
@@ -1580,13 +1580,13 @@ C_Spell.PickupSpell(115750)]])
 			print("(spec) Couldn't bind slot 25:", [[
 C_Spell.PickupSpell(853)]])
 		end
-		PickupMacro(120 + 16)
+		PickupMacro(120 + 17)
 		if GetCursorInfo() then
 			PlaceAction(68)
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot 68:", [[
-PickupMacro(120 + 16)]])
+PickupMacro(120 + 17)]])
 		end
 		C_Spell.PickupSpell(343721)
 		if GetCursorInfo() then
@@ -1748,6 +1748,14 @@ C_Spell.PickupSpell(403876)]])
 			print("(spec) Couldn't bind slot 17:", [[
 C_Spell.PickupSpell(403876)]])
 		end
+		PickupMacro(120 + 16)
+		if GetCursorInfo() then
+			PlaceAction(59)
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot 59:", [[
+PickupMacro(120 + 16)]])
+		end
 		C_Spell.PickupSpell(642)
 		if GetCursorInfo() then
 			PlaceAction(12)
@@ -1847,13 +1855,13 @@ C_Spell.PickupSpell("Holy Shock")]])
 			print("(spec) Couldn't bind slot 55:", [[
 C_Spell.PickupSpell("Crusader Strike")]])
 		end
-		C_Spell.PickupSpell("Blinding Light")
+		C_Spell.PickupSpell("Repentance")
 		if GetCursorInfo() then
 			PlaceAction(49)
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot 49:", [[
-C_Spell.PickupSpell("Blinding Light")]])
+C_Spell.PickupSpell("Repentance")]])
 		end
 		C_Spell.PickupSpell("Divine Toll")
 		if GetCursorInfo() then
@@ -1863,13 +1871,13 @@ C_Spell.PickupSpell("Blinding Light")]])
 			print("(spec) Couldn't bind slot 25:", [[
 C_Spell.PickupSpell("Divine Toll")]])
 		end
-		C_Spell.PickupSpell("Shield of the Righteous")
+		C_Spell.PickupSpell("Searing Glare")
 		if GetCursorInfo() then
 			PlaceAction(68)
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot 68:", [[
-C_Spell.PickupSpell("Shield of the Righteous")]])
+C_Spell.PickupSpell("Searing Glare")]])
 		end
 		C_Spell.PickupSpell("Light of Dawn")
 		if GetCursorInfo() then
@@ -1935,29 +1943,37 @@ C_Spell.PickupSpell("Blessing of Sacrifice")]])
 			print("(spec) Couldn't bind slot 26:", [[
 C_Spell.PickupSpell("Avenging Wrath")]])
 		end
-		C_Spell.PickupSpell("Beacon of Faith")
+		C_Spell.PickupSpell("Shield of the Righteous")
+		if GetCursorInfo() then
+			PlaceAction(69)
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot 69:", [[
+C_Spell.PickupSpell("Shield of the Righteous")]])
+		end
+		PickupMacro(120 + 4)
 		if GetCursorInfo() then
 			PlaceAction(63)
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot 63:", [[
-C_Spell.PickupSpell("Beacon of Faith")]])
+PickupMacro(120 + 4)]])
 		end
-		PickupMacro(120 + 8)
+		PickupMacro(120 + 13)
 		if GetCursorInfo() then
 			PlaceAction(9)
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot 9:", [[
-PickupMacro(120 + 8)]])
+PickupMacro(120 + 13)]])
 		end
-		C_Spell.PickupSpell("Beacon of Light")
+		C_Spell.PickupSpell("Blessing of Protection")
 		if GetCursorInfo() then
 			PlaceAction(21)
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot 21:", [[
-C_Spell.PickupSpell("Beacon of Light")]])
+C_Spell.PickupSpell("Blessing of Protection")]])
 		end
 		PickupMacro(120 + 9)
 		if GetCursorInfo() then
@@ -1975,13 +1991,13 @@ PickupMacro(120 + 9)]])
 			print("(spec) Couldn't bind slot 15:", [[
 C_Spell.PickupSpell("Cleanse")]])
 		end
-		C_Spell.PickupSpell("Aura Mastery")
+		PickupMacro(120 + 3)
 		if GetCursorInfo() then
 			PlaceAction(57)
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot 57:", [[
-C_Spell.PickupSpell("Aura Mastery")]])
+PickupMacro(120 + 3)]])
 		end
 		C_Spell.PickupSpell("Divine Shield")
 		if GetCursorInfo() then
@@ -2039,29 +2055,37 @@ C_Spell.PickupSpell("Consecration")]])
 			print("(spec) Couldn't bind slot 28:", [[
 C_Spell.PickupSpell("Hand of Reckoning")]])
 		end
-		PickupMacro(120 + 13)
+		C_Spell.PickupSpell("Beacon of Faith")
+		if GetCursorInfo() then
+			PlaceAction(65)
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot 65:", [[
+C_Spell.PickupSpell("Beacon of Faith")]])
+		end
+		PickupMacro(120 + 8)
 		if GetCursorInfo() then
 			PlaceAction(11)
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot 11:", [[
-PickupMacro(120 + 13)]])
+PickupMacro(120 + 8)]])
 		end
-		C_Spell.PickupSpell("Blessing of Protection")
+		C_Spell.PickupSpell("Beacon of Light")
 		if GetCursorInfo() then
 			PlaceAction(23)
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot 23:", [[
-C_Spell.PickupSpell("Blessing of Protection")]])
+C_Spell.PickupSpell("Beacon of Light")]])
 		end
-		PickupMacro(120 + 17)
+		PickupMacro(120 + 18)
 		if GetCursorInfo() then
 			PlaceAction(5)
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot 5:", [[
-PickupMacro(120 + 17)]])
+PickupMacro(120 + 18)]])
 		end
 		C_Spell.PickupSpell("Holy Bulwark")
 		if GetCursorInfo() then
@@ -2070,6 +2094,14 @@ PickupMacro(120 + 17)]])
 		else
 			print("(spec) Couldn't bind slot 17:", [[
 C_Spell.PickupSpell("Holy Bulwark")]])
+		end
+		C_Spell.PickupSpell("Aura Mastery")
+		if GetCursorInfo() then
+			PlaceAction(59)
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot 59:", [[
+C_Spell.PickupSpell("Aura Mastery")]])
 		end
 		C_Spell.PickupSpell("Intercession")
 		if GetCursorInfo() then
@@ -2126,22 +2158,6 @@ C_Spell.PickupSpell("Divine Protection")]])
 		else
 			print("(spec) Couldn't bind slot 30:", [[
 C_Spell.PickupSpell("Absolution")]])
-		end
-		PickupMacro(120 + 4)
-		if GetCursorInfo() then
-			PlaceAction(44)
-			spec_bind_count = spec_bind_count + 1
-		else
-			print("(spec) Couldn't bind slot 44:", [[
-PickupMacro(120 + 4)]])
-		end
-		PickupMacro(120 + 3)
-		if GetCursorInfo() then
-			PlaceAction(38)
-			spec_bind_count = spec_bind_count + 1
-		else
-			print("(spec) Couldn't bind slot 38:", [[
-PickupMacro(120 + 3)]])
 		end
 		C_Spell.PickupSpell("Rite of Sanctification")
 		if GetCursorInfo() then

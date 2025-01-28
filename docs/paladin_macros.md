@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.0
-    hash=b7dce3182dd1b4a47c5df6046b02e73b
+    hash=6bcf957fda664805fa0be088ce5d02de
     =====================================
 -->
 
@@ -127,6 +127,15 @@ self
 ```
 #showtooltip
 /cast [@player] Blessing of Summer
+```
+
+---
+
+self
+
+```
+#showtooltip
+/cast [@player] Blessing of Sanctuary
 ```
 
 ---
