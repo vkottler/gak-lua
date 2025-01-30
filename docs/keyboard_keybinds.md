@@ -2,13 +2,15 @@
     =====================================
     generator=datazen
     version=3.2.0
-    hash=5bf9960621914bca7fe49e7ea45b3ceb
+    hash=3e5c4bff2801bf50604fbd01d76d7f90
     =====================================
 -->
 
 # Keyboard Keybinds
 
 ([back](../README.md))
+
+Total: `110`
 
 Command | Key | Modifiers
 --------|-----|----------

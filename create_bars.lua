@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.0
--- hash=4f00b3f553be7ef72f7009c53c9ff0fa
+-- hash=d48890470f8640dba7c3b767612dc917
 -- =====================================
 -- https://wowpedia.fandom.com/wiki/Action_slot
 GAK_MAX_ACTIONBAR = 180
@@ -6258,37 +6258,37 @@ PickupMacro(120 + 17)]])
 			print("(spec) Couldn't bind slot 58:", [[
 C_Spell.PickupSpell("Renewal")]])
 		end
-		PickupMacro(120 + 27)
+		C_Spell.PickupSpell("Ironfur")
 		if GetCursorInfo() then
 			PlaceAction(11)
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot 11:", [[
-PickupMacro(120 + 27)]])
+C_Spell.PickupSpell("Ironfur")]])
 		end
-		C_Spell.PickupSpell("Remove Corruption")
+		C_Spell.PickupSpell("Ironfur")
 		if GetCursorInfo() then
 			PlaceAction(23)
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot 23:", [[
-C_Spell.PickupSpell("Remove Corruption")]])
+C_Spell.PickupSpell("Ironfur")]])
 		end
-		PickupMacro(120 + 27)
+		C_Spell.PickupSpell("Ironfur")
 		if GetCursorInfo() then
 			PlaceAction(107)
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot 107:", [[
-PickupMacro(120 + 27)]])
+C_Spell.PickupSpell("Ironfur")]])
 		end
-		PickupMacro(120 + 27)
+		C_Spell.PickupSpell("Ironfur")
 		if GetCursorInfo() then
 			PlaceAction(83)
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot 83:", [[
-PickupMacro(120 + 27)]])
+C_Spell.PickupSpell("Ironfur")]])
 		end
 		C_Spell.PickupSpell("Mangle")
 		if GetCursorInfo() then

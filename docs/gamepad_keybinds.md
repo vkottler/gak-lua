@@ -2,13 +2,15 @@
     =====================================
     generator=datazen
     version=3.2.0
-    hash=879f995a1f40c841efd0ccc8f227a841
+    hash=941705d4a6c02f4e8d23b81cc792548b
     =====================================
 -->
 
 # GamePad Keybinds
 
 ([back](../README.md))
+
+Total: `110`
 
 Command | Key | Modifiers
 --------|-----|----------

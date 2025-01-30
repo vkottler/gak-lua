@@ -2,13 +2,15 @@
     =====================================
     generator=datazen
     version=3.2.0
-    hash=68c33183677eb4ba0969134f8cd05d97
+    hash=87e28a7c9a41106a473a5810c1c0e7b0
     =====================================
 -->
 
 # [CVar](https://wowpedia.fandom.com/wiki/Console_variables)'s
 
 ([back](../README.md))
+
+Total: `61`
 
 Name | Value
 ---- | -----
