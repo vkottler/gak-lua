@@ -140,29 +140,6 @@ function GakZenInit(frame)
 	GakCreateButton(frame, "Set Raid Targets", 2, 6, GakSetRaidTargets)
 	GakCreateButton(frame, "Clear Raid Targets", 3, 6, GakClearRaidTargets)
 
-	-- frame:RegisterEvent("GROUP_FORMED")
-	-- frame:RegisterEvent("GROUP_JOINED")
-	-- frame:RegisterEvent("GROUP_LEFT")
-	-- frame:RegisterEvent("ENTERED_DIFFERENT_INSTANCE_FROM_PARTY")
-
-	-- a lot of PVP_ events
-
-	-- fires randomly out in the world?
-	-- ARENA_OPPONENT_UPDATE (unitToken, updateReason)
-	-- frame:RegisterEvent("ARENA_OPPONENT_UPDATE")
-	-- frame:RegisterEvent("UPDATE_BATTLEFIELD_STATUS")
-
-	frame:RegisterEvent("UPDATE_ACTIVE_BATTLEFIELD")
-	frame:RegisterEvent("UPDATE_BATTLEFIELD_SCORE")
-	frame:RegisterEvent("PVPQUEUE_ANYWHERE_SHOW")
-
-	frame:RegisterEvent("SPELLS_CHANGED")
-	frame:RegisterEvent("PLAYER_PVP_TALENT_UPDATE")
-	frame:RegisterEvent("PLAYER_TALENT_UPDATE")
-
-	-- seems to fire a lot?
-	-- frame:RegisterEvent("PVPQUEUE_ANYWHERE_UPDATE_AVAILABLE")
-
 	-- Should eventually auto-hide this in ranked pvp.
 	GakCreateButton(frame, "Toggle Objectives", 1, 6, function()
 		GakToggleFrame(ObjectiveTrackerFrame)
