@@ -1,6 +1,25 @@
+function GakFrameInit(frame)
+	-- Add structure for frame-hook mechanism.
+	if frame.GakHandlers == nil then
+		frame.GakHandlers = {}
+	end
+end
+
+function GakHookFrame(frame, handler, func)
+	if frame then
+		GakFrameInit(frame)
+
+		-- Protect against multiple hook registrations.
+		if frame.GakHandlers[handler] == nil then
+			frame.GakHandlers[handler] = func
+			frame:HookScript(handler, func)
+		end
+	end
+end
+
 function GakHideFrame(frame)
 	if frame then
-		frame:HookScript("OnShow", frame.Hide)
+		GakHookFrame(frame, "OnShow", frame.Hide)
 		frame:Hide()
 	end
 end

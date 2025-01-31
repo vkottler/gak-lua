@@ -1,9 +1,9 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.0
--- hash=e03a28475aba0b48437d65b77a929fea
+-- hash=bbc453c5b54793496e46febfb020b98c
 -- =====================================
 project = "gnomish-army-knife"
-version = "1.4.1"
+version = "1.4.2"
 
 GakEventHandlers = {}
