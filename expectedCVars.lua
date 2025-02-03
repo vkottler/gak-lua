@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.0
--- hash=f22438cafca6e02a99a00eca43963698
+-- hash=70132961ff5d277f5c4449adb91030da
 -- =====================================
 expectedCVars = {}
 expectedCVars["GamePadEnable"] = 1
@@ -62,6 +62,8 @@ expectedCVars["Sound_MasterVolume"] = 1
 expectedCVars["Sound_SFXVolume"] = 1
 expectedCVars["Sound_EnableReverb"] = 1
 expectedCVars["Sound_EnableEmoteSounds"] = 0
+expectedCVars["showPartyPets"] = 1
+expectedCVars["raidOptionDisplayPets"] = 1
 expectedCVars["nameplateShowFriendlyBuffs"] = 1
 expectedCVars["nameplateShowFriendlyTotems"] = 1
 expectedCVars["nameplateShowPersonalCooldowns"] = 1

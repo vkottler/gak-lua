@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.0
-    hash=87e28a7c9a41106a473a5810c1c0e7b0
+    hash=ca1868f495b9854bd2122d289ad68aa5
     =====================================
 -->
 
@@ -10,7 +10,7 @@
 
 ([back](../README.md))
 
-Total: `61`
+Total: `63`
 
 Name | Value
 ---- | -----
@@ -72,6 +72,8 @@ Sound_MasterVolume | 1
 Sound_SFXVolume | 1
 Sound_EnableReverb | 1
 Sound_EnableEmoteSounds | 0
+showPartyPets | 1
+raidOptionDisplayPets | 1
 nameplateShowFriendlyBuffs | 1
 nameplateShowFriendlyTotems | 1
 nameplateShowPersonalCooldowns | 1
