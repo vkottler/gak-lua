@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.0
-    hash=6bcf957fda664805fa0be088ce5d02de
+    hash=9ed9e872d57a668405cd42f36415707d
     =====================================
 -->
 
@@ -73,6 +73,15 @@ self
 ```
 #showtooltip
 /cast [@player] Cleanse
+```
+
+---
+
+self
+
+```
+#showtooltip
+/cast [@player] Cleanse Toxins
 ```
 
 ---
@@ -154,6 +163,15 @@ self
 ```
 #showtooltip
 /cast [@player] Holy Bulwark
+```
+
+---
+
+self
+
+```
+#showtooltip
+/cast [@player] Blessing of Spellwarding
 ```
 
 ---

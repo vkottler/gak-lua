@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.0
-    hash=ca1868f495b9854bd2122d289ad68aa5
+    hash=714c64845c804e383cee67d50d1227ca
     =====================================
 -->
 
@@ -10,7 +10,7 @@
 
 ([back](../README.md))
 
-Total: `63`
+Total: `64`
 
 Name | Value
 ---- | -----
@@ -77,3 +77,4 @@ raidOptionDisplayPets | 1
 nameplateShowFriendlyBuffs | 1
 nameplateShowFriendlyTotems | 1
 nameplateShowPersonalCooldowns | 1
+SoftTargetNameplateFriend | 0

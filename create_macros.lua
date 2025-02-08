@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.0
--- hash=0a2b705892ac6802e9ec7f88033791f6
+-- hash=0c9970595575a7e8358ce7da78bdb520
 -- =====================================
 function GakCreateGlobalMacros()
 	CreateMacro("13", "inv_misc_questionmark", [[
@@ -14,6 +14,7 @@ function GakCreateGlobalMacros()
 /stopcasting
 /cancelaura Slow Fall
 /cancelaura Levitate
+/cancelaura Enchanted Candle
 /cleartarget]])
 	CreateMacro("dis", "ability_marksmanship", [[
 /dismount
@@ -464,6 +465,9 @@ function GakCreateCharacterMacros()
 /cast [@player] Cleanse]], 1)
 		CreateMacro("self", "inv_misc_questionmark", [[
 #showtooltip
+/cast [@player] Cleanse Toxins]], 1)
+		CreateMacro("self", "inv_misc_questionmark", [[
+#showtooltip
 /cast [@player] Barrier of Faith]], 1)
 		CreateMacro("self", "inv_misc_questionmark", [[
 #showtooltip
@@ -489,7 +493,10 @@ function GakCreateCharacterMacros()
 		CreateMacro("self", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Holy Bulwark]], 1)
-		print("Created 16", select(1, UnitClass("player")), "macros.")
+		CreateMacro("self", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Blessing of Spellwarding]], 1)
+		print("Created 18", select(1, UnitClass("player")), "macros.")
 	end
 
 	if class_str == "DRUID" then

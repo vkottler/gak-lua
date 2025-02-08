@@ -2,11 +2,11 @@
     =====================================
     generator=datazen
     version=3.2.0
-    hash=26deda3cc1686e0b35ad48de4910b8c6
+    hash=bc8c50f9d11a412a8ad71551aff43b89
     =====================================
 -->
 
-# [![Gnomish Army Knife Icon](https://wow.zamimg.com/images/wow/icons/large/inv_misc_enggizmos_swissarmy.jpg)](https://www.wowhead.com/item=40772/gnomish-army-knife) gnomish-army-knife ([1.4.2](https://github.com/vkottler/gak-lua))
+# [![Gnomish Army Knife Icon](https://wow.zamimg.com/images/wow/icons/large/inv_misc_enggizmos_swissarmy.jpg)](https://www.wowhead.com/item=40772/gnomish-army-knife) gnomish-army-knife ([1.4.3](https://github.com/vkottler/gak-lua))
 
 (see above link for supplemental documentation)
 
@@ -62,7 +62,7 @@ perform. See [source repository](https://github.com/vkottler/gak-lua)
 documentation for additional details.
 
 * Keybinds: `110`
-* `CVar`'s: `63`
+* `CVar`'s: `64`
 
 ### Macros
 
@@ -77,7 +77,7 @@ Warrior | `0`
 Warlock | `8`
 Evoker | `12`
 Mage | `8`
-Paladin | `16`
+Paladin | `18`
 Druid | `26`
 Deathknight | `5`
 Shaman | `19`
@@ -136,7 +136,7 @@ Preservation Evoker | `29`
 Devastation Evoker | `29`
 Discipline Priest | `35`
 Enhancement Shaman | `44`
-Frost Mage | `0`
+Frost Mage | `49`
 Shadow Priest | `38`
 Protection Warrior | `0`
 Fire Mage | `0`
