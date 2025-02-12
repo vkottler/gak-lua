@@ -17,7 +17,9 @@
 
 -- Disable names on nameplates.
 hooksecurefunc("CompactUnitFrame_UpdateName", function(frame)
-	if frame.unit:find("nameplate") and frame.name ~= nil then
-		frame.name:SetText("")
+	if frame.unit:find("nameplate") then
+		pcall(function()
+			frame.name:SetText("")
+		end)
 	end
 end)

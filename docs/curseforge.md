@@ -2,11 +2,11 @@
     =====================================
     generator=datazen
     version=3.2.0
-    hash=bc8c50f9d11a412a8ad71551aff43b89
+    hash=4141d3ec440543a98f4287e1e7145e55
     =====================================
 -->
 
-# [![Gnomish Army Knife Icon](https://wow.zamimg.com/images/wow/icons/large/inv_misc_enggizmos_swissarmy.jpg)](https://www.wowhead.com/item=40772/gnomish-army-knife) gnomish-army-knife ([1.4.3](https://github.com/vkottler/gak-lua))
+# [![Gnomish Army Knife Icon](https://wow.zamimg.com/images/wow/icons/large/inv_misc_enggizmos_swissarmy.jpg)](https://www.wowhead.com/item=40772/gnomish-army-knife) gnomish-army-knife ([1.4.4](https://github.com/vkottler/gak-lua))
 
 (see above link for supplemental documentation)
 
@@ -74,13 +74,13 @@ Priest | `21`
 Rogue | `5`
 Monk | `9`
 Warrior | `0`
-Warlock | `8`
+Warlock | `12`
 Evoker | `12`
 Mage | `8`
 Paladin | `18`
 Druid | `26`
 Deathknight | `5`
-Shaman | `19`
+Shaman | `20`
 Hunter | `11`
 
 ### Action Bars
@@ -123,7 +123,7 @@ Havoc Demon Hunter | `0`
 Windwalker Monk | `30`
 Arcane Mage | `0`
 Elemental Shaman | `41`
-Restoration Shaman | `49`
+Restoration Shaman | `50`
 Destruction Warlock | `0`
 Augmentation Evoker | `0`
 Guardian Druid | `0`

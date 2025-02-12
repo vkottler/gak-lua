@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.0
--- hash=c2d1630505373020ee42ede9d5e2855d
+-- hash=c8d62c0b91e78c605e20f07c67d63fec
 -- =====================================
 -- https://wowpedia.fandom.com/wiki/Action_slot
 GAK_MAX_ACTIONBAR = 180
@@ -5661,13 +5661,21 @@ C_Spell.PickupSpell("Purify Spirit")]])
 			print("(spec) Couldn't bind slot 57:", [[
 C_Spell.PickupSpell("Ascendance")]])
 		end
-		C_Spell.PickupSpell("Far Sight")
+		PickupMacro(120 + 22)
 		if GetCursorInfo() then
 			PlaceAction(51)
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot 51:", [[
-C_Spell.PickupSpell("Far Sight")]])
+PickupMacro(120 + 22)]])
+		end
+		C_Spell.PickupSpell("Wind Rush Totem")
+		if GetCursorInfo() then
+			PlaceAction(27)
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot 27:", [[
+C_Spell.PickupSpell("Wind Rush Totem")]])
 		end
 		PickupMacro(120 + 18)
 		if GetCursorInfo() then
@@ -5765,13 +5773,13 @@ PickupMacro(120 + 11)]])
 			print("(spec) Couldn't bind slot 17:", [[
 C_Spell.PickupSpell("Chain Heal")]])
 		end
-		C_Spell.PickupSpell("Astral Recall")
+		C_Spell.PickupSpell("Poison Cleansing Totem")
 		if GetCursorInfo() then
 			PlaceAction(53)
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot 53:", [[
-C_Spell.PickupSpell("Astral Recall")]])
+C_Spell.PickupSpell("Poison Cleansing Totem")]])
 		end
 		C_Spell.PickupSpell("Earthliving Weapon")
 		if GetCursorInfo() then
@@ -5829,13 +5837,13 @@ C_Spell.PickupSpell("Totemic Projection")]])
 			print("(spec) Couldn't bind slot 60:", [[
 C_Spell.PickupSpell("Tremor Totem")]])
 		end
-		C_Spell.PickupSpell("Lightning Shield")
+		C_Spell.PickupSpell("Bloodlust")
 		if GetCursorInfo() then
 			PlaceAction(54)
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot 54:", [[
-C_Spell.PickupSpell("Lightning Shield")]])
+C_Spell.PickupSpell("Bloodlust")]])
 		end
 		C_Spell.PickupSpell("Tidecaller's Guard")
 		if GetCursorInfo() then

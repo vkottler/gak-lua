@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.0
-    hash=9c19068a79cca03c81972e4cd66aad38
+    hash=44e0a2a73aa20c99a9b10d57d9787520
     =====================================
 -->
 
@@ -85,6 +85,42 @@ self
 ```
 #showtooltip
 /cast [@player] Unending Breath
+```
+
+---
+
+self
+
+```
+#showtooltip
+/cast [@player] Rain of Fire
+```
+
+---
+
+self
+
+```
+#showtooltip
+/cast [@player] Shadowfury
+```
+
+---
+
+self
+
+```
+#showtooltip
+/cast [@player] Bane of Havoc
+```
+
+---
+
+self
+
+```
+#showtooltip
+/cast [@player] Summon Infernal
 ```
 
 ---

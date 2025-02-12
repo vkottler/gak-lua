@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.0
--- hash=0c9970595575a7e8358ce7da78bdb520
+-- hash=47dc0ea41739b7957f55669455109cf7
 -- =====================================
 function GakCreateGlobalMacros()
 	CreateMacro("13", "inv_misc_questionmark", [[
@@ -15,6 +15,7 @@ function GakCreateGlobalMacros()
 /cancelaura Slow Fall
 /cancelaura Levitate
 /cancelaura Enchanted Candle
+/cancelaura Alter Time
 /cleartarget]])
 	CreateMacro("dis", "ability_marksmanship", [[
 /dismount
@@ -361,7 +362,19 @@ function GakCreateCharacterMacros()
 		CreateMacro("self", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Unending Breath]], 1)
-		print("Created 8", select(1, UnitClass("player")), "macros.")
+		CreateMacro("self", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Rain of Fire]], 1)
+		CreateMacro("self", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Shadowfury]], 1)
+		CreateMacro("self", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Bane of Havoc]], 1)
+		CreateMacro("self", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Summon Infernal]], 1)
+		print("Created 12", select(1, UnitClass("player")), "macros.")
 	end
 
 	if class_str == "EVOKER" then
@@ -665,7 +678,10 @@ function GakCreateCharacterMacros()
 		CreateMacro("self", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Liquid Magma Totem]], 1)
-		print("Created 19", select(1, UnitClass("player")), "macros.")
+		CreateMacro("self1", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Wind Rush Totem]], 1)
+		print("Created 20", select(1, UnitClass("player")), "macros.")
 	end
 
 	if class_str == "HUNTER" then

@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.0
-    hash=66d46b4d25d75e59f6fd9570b13269c1
+    hash=cf9ade4f46b5c2dd5db8ef2dc18d2f80
     =====================================
 -->
 
@@ -39,6 +39,7 @@ canc
 /cancelaura Slow Fall
 /cancelaura Levitate
 /cancelaura Enchanted Candle
+/cancelaura Alter Time
 /cleartarget
 ```
 
