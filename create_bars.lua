@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.0
--- hash=c8d62c0b91e78c605e20f07c67d63fec
+-- hash=7b773fbb707f5bc3ee872b11b6c0463b
 -- =====================================
 -- https://wowpedia.fandom.com/wiki/Action_slot
 GAK_MAX_ACTIONBAR = 180
@@ -470,18 +470,10 @@ C_Spell.PickupSpell("Ring of Peace")]])
 		end
 		C_Spell.PickupSpell("Transcendence")
 		if GetCursorInfo() then
-			PlaceAction(5)
+			PlaceAction(59)
 			class_bind_count = class_bind_count + 1
 		else
-			print("(class) Couldn't bind slot 5:", [[
-C_Spell.PickupSpell("Transcendence")]])
-		end
-		C_Spell.PickupSpell("Transcendence")
-		if GetCursorInfo() then
-			PlaceAction(17)
-			class_bind_count = class_bind_count + 1
-		else
-			print("(class) Couldn't bind slot 17:", [[
+			print("(class) Couldn't bind slot 59:", [[
 C_Spell.PickupSpell("Transcendence")]])
 		end
 		PickupMacro(120 + 10)
@@ -2218,13 +2210,13 @@ PickupMacro(120 + 6)]])
 			print("(spec) Couldn't bind slot 19:", [[
 C_Spell.PickupSpell("Vivify")]])
 		end
-		PickupMacro(120 + 3)
+		PickupMacro(120 + 13)
 		if GetCursorInfo() then
 			PlaceAction(1)
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot 1:", [[
-PickupMacro(120 + 3)]])
+PickupMacro(120 + 13)]])
 		end
 		C_Spell.PickupSpell("Soothing Mist")
 		if GetCursorInfo() then
@@ -2266,13 +2258,13 @@ C_Spell.PickupSpell("Restoral")]])
 			print("(spec) Couldn't bind slot 62:", [[
 C_Spell.PickupSpell("Rising Sun Kick")]])
 		end
-		PickupMacro(120 + 4)
+		PickupMacro(120 + 8)
 		if GetCursorInfo() then
 			PlaceAction(8)
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot 8:", [[
-PickupMacro(120 + 4)]])
+PickupMacro(120 + 8)]])
 		end
 		C_Spell.PickupSpell("Enveloping Mist")
 		if GetCursorInfo() then
@@ -2306,13 +2298,13 @@ C_Spell.PickupSpell("Renewing Mist")]])
 			print("(spec) Couldn't bind slot 63:", [[
 C_Spell.PickupSpell("Tiger Palm")]])
 		end
-		PickupMacro(120 + 8)
+		PickupMacro(120 + 14)
 		if GetCursorInfo() then
 			PlaceAction(9)
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot 9:", [[
-PickupMacro(120 + 8)]])
+PickupMacro(120 + 14)]])
 		end
 		C_Spell.PickupSpell("Summon Jade Serpent Statue")
 		if GetCursorInfo() then
@@ -2345,6 +2337,30 @@ C_Spell.PickupSpell("Detox")]])
 		else
 			print("(spec) Couldn't bind slot 57:", [[
 C_Spell.PickupSpell("Mana Tea")]])
+		end
+		PickupMacro(120 + 12)
+		if GetCursorInfo() then
+			PlaceAction(5)
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot 5:", [[
+PickupMacro(120 + 12)]])
+		end
+		PickupMacro(120 + 4)
+		if GetCursorInfo() then
+			PlaceAction(17)
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot 17:", [[
+PickupMacro(120 + 4)]])
+		end
+		PickupMacro(120 + 3)
+		if GetCursorInfo() then
+			PlaceAction(66)
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot 66:", [[
+PickupMacro(120 + 3)]])
 		end
 		PickupMacro(120 + 11)
 		if GetCursorInfo() then

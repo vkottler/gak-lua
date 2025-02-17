@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.0
-    hash=9ed9e872d57a668405cd42f36415707d
+    hash=d8a4173fb18eb4951872ee626eac4043
     =====================================
 -->
 
@@ -31,10 +31,8 @@ self
 harm
 
 ```
-#showtooltip Holy Shock
-/targetenemy [help]
-/cast [harm] Holy Shock
-/cleartarget
+#showtooltip
+/cast [@anyenemy] Holy Shock
 ```
 
 ---
@@ -42,10 +40,8 @@ harm
 help
 
 ```
-#showtooltip Holy Shock
-/targetfriend [harm]
-/cast [help] Holy Shock
-/cleartarget
+#showtooltip
+/cast [@anyfriend] Holy Shock
 ```
 
 ---

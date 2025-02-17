@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.0
--- hash=47dc0ea41739b7957f55669455109cf7
+-- hash=65b8a259e37b636fcc386d01299a8aca
 -- =====================================
 function GakCreateGlobalMacros()
 	CreateMacro("13", "inv_misc_questionmark", [[
@@ -193,30 +193,20 @@ function GakCreateCharacterMacros()
 
 	if class_str == "PRIEST" then
 		CreateMacro("harm", "inv_misc_questionmark", [[
-#showtooltip Ultimate Penitence
-/targetenemy [help]
-/cast [harm] Ultimate Penitence
-/cleartarget]], 1)
+#showtooltip
+/cast [@anyenemy] Ultimate Penitence]], 1)
 		CreateMacro("harm", "inv_misc_questionmark", [[
-#showtooltip Penance
-/targetenemy [help]
-/cast [harm] Penance
-/cleartarget]], 1)
+#showtooltip
+/cast [@anyenemy] Penance]], 1)
 		CreateMacro("harm", "inv_misc_questionmark", [[
-#showtooltip Shadowfiend
-/targetenemy [help]
-/cast [harm] Shadowfiend
-/cleartarget]], 1)
+#showtooltip
+/cast [@anyenemy] Shadowfiend]], 1)
 		CreateMacro("help", "inv_misc_questionmark", [[
-#showtooltip Penance
-/targetfriend [harm]
-/cast [help] Penance
-/cleartarget]], 1)
+#showtooltip
+/cast [@anyfriend] Penance]], 1)
 		CreateMacro("help", "inv_misc_questionmark", [[
-#showtooltip Ultimate Penitence
-/targetfriend [harm]
-/cast [help] Ultimate Penitence
-/cleartarget]], 1)
+#showtooltip
+/cast [@anyfriend] Ultimate Penitence]], 1)
 		CreateMacro("self", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Purify]], 1)
@@ -323,7 +313,16 @@ function GakCreateCharacterMacros()
 		CreateMacro("self", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Life Cocoon]], 1)
-		print("Created 9", select(1, UnitClass("player")), "macros.")
+		CreateMacro("self", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Zen Spheres]], 1)
+		CreateMacro("harm", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@anyenemy] Zen Spheres]], 1)
+		CreateMacro("help", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@anyfriend] Zen Spheres]], 1)
+		print("Created 12", select(1, UnitClass("player")), "macros.")
 	end
 
 	if class_str == "WARRIOR" then
@@ -382,15 +381,11 @@ function GakCreateCharacterMacros()
 #showtooltip
 /cast [@player] Living Flame]], 1)
 		CreateMacro("harm", "inv_misc_questionmark", [[
-#showtooltip Living Flame
-/targetenemy [help]
-/cast [harm] Living Flame
-/cleartarget]], 1)
+#showtooltip
+/cast [@anyenemy] Living Flame]], 1)
 		CreateMacro("help", "inv_misc_questionmark", [[
-#showtooltip Living Flame
-/targetfriend [harm]
-/cast [help] Living Flame
-/cleartarget]], 1)
+#showtooltip
+/cast [@anyfriend] Living Flame]], 1)
 		CreateMacro("self", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Echo]], 1)
@@ -458,15 +453,11 @@ function GakCreateCharacterMacros()
 #showtooltip
 /cast [@player] Holy Shock]], 1)
 		CreateMacro("harm", "inv_misc_questionmark", [[
-#showtooltip Holy Shock
-/targetenemy [help]
-/cast [harm] Holy Shock
-/cleartarget]], 1)
+#showtooltip
+/cast [@anyenemy] Holy Shock]], 1)
 		CreateMacro("help", "inv_misc_questionmark", [[
-#showtooltip Holy Shock
-/targetfriend [harm]
-/cast [help] Holy Shock
-/cleartarget]], 1)
+#showtooltip
+/cast [@anyfriend] Holy Shock]], 1)
 		CreateMacro("self", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Holy Light]], 1)
@@ -540,10 +531,8 @@ function GakCreateCharacterMacros()
 /cast [form:4] Flap]], 1)
 		CreateMacro("help", "inv_misc_questionmark", [[
 #showtooltip Wild Charge
-/targetfriend [harm]
 /cancelform
-/cast [help] Wild Charge
-/cleartarget]], 1)
+/cast [@anyfriend] Wild Charge]], 1)
 		CreateMacro("self", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Mark of the Wild]], 1)

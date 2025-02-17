@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.0
-    hash=67396cd67a5db630e63d8a87e9832a5e
+    hash=b9b1920434fe590d69499f9f3d3bdd36
     =====================================
 -->
 
@@ -87,6 +87,33 @@ self
 ```
 #showtooltip
 /cast [@player] Life Cocoon
+```
+
+---
+
+self
+
+```
+#showtooltip
+/cast [@player] Zen Spheres
+```
+
+---
+
+harm
+
+```
+#showtooltip
+/cast [@anyenemy] Zen Spheres
+```
+
+---
+
+help
+
+```
+#showtooltip
+/cast [@anyfriend] Zen Spheres
 ```
 
 ---

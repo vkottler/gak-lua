@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.0
-    hash=84fc4b1986c5b72450d9f12f4f749db4
+    hash=dfa8d42c69ed0645dfb6e8087f9ccbae
     =====================================
 -->
 
@@ -83,10 +83,8 @@ help
 
 ```
 #showtooltip Wild Charge
-/targetfriend [harm]
 /cancelform
-/cast [help] Wild Charge
-/cleartarget
+/cast [@anyfriend] Wild Charge
 ```
 
 ---

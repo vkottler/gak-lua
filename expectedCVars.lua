@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.0
--- hash=96ca9598ed3cc40d8e51fa387f9a2869
+-- hash=83346c3af553e6b056122cf68b5ab510
 -- =====================================
 expectedCVars = {}
 expectedCVars["GamePadEnable"] = 1
@@ -68,3 +68,5 @@ expectedCVars["nameplateShowFriendlyBuffs"] = 1
 expectedCVars["nameplateShowFriendlyTotems"] = 1
 expectedCVars["nameplateShowPersonalCooldowns"] = 1
 expectedCVars["SoftTargetNameplateFriend"] = 0
+expectedCVars["nameplateMotion"] = 1
+expectedCVars["nameplateMotionSpeed"] = 0.25

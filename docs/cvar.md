@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.0
-    hash=714c64845c804e383cee67d50d1227ca
+    hash=23d3aa7d66c3eb695e19fe2bea538720
     =====================================
 -->
 
@@ -10,7 +10,7 @@
 
 ([back](../README.md))
 
-Total: `64`
+Total: `66`
 
 Name | Value
 ---- | -----
@@ -78,3 +78,5 @@ nameplateShowFriendlyBuffs | 1
 nameplateShowFriendlyTotems | 1
 nameplateShowPersonalCooldowns | 1
 SoftTargetNameplateFriend | 0
+nameplateMotion | 1
+nameplateMotionSpeed | 0.25

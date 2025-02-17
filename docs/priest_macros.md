@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.0
-    hash=bbe76bb041c362be828f99b969fdf91b
+    hash=abf54683ee5b66b4f23eb9bc527ce3d1
     =====================================
 -->
 
@@ -13,10 +13,8 @@
 harm
 
 ```
-#showtooltip Ultimate Penitence
-/targetenemy [help]
-/cast [harm] Ultimate Penitence
-/cleartarget
+#showtooltip
+/cast [@anyenemy] Ultimate Penitence
 ```
 
 ---
@@ -24,10 +22,8 @@ harm
 harm
 
 ```
-#showtooltip Penance
-/targetenemy [help]
-/cast [harm] Penance
-/cleartarget
+#showtooltip
+/cast [@anyenemy] Penance
 ```
 
 ---
@@ -35,10 +31,8 @@ harm
 harm
 
 ```
-#showtooltip Shadowfiend
-/targetenemy [help]
-/cast [harm] Shadowfiend
-/cleartarget
+#showtooltip
+/cast [@anyenemy] Shadowfiend
 ```
 
 ---
@@ -46,10 +40,8 @@ harm
 help
 
 ```
-#showtooltip Penance
-/targetfriend [harm]
-/cast [help] Penance
-/cleartarget
+#showtooltip
+/cast [@anyfriend] Penance
 ```
 
 ---
@@ -57,10 +49,8 @@ help
 help
 
 ```
-#showtooltip Ultimate Penitence
-/targetfriend [harm]
-/cast [help] Ultimate Penitence
-/cleartarget
+#showtooltip
+/cast [@anyfriend] Ultimate Penitence
 ```
 
 ---

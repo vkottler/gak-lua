@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.0
-    hash=cae5c4380bb87ddd91e0c9a361877aa6
+    hash=72fb53bc39195c6b32e6e78dd558e38a
     =====================================
 -->
 
@@ -22,10 +22,8 @@ self
 harm
 
 ```
-#showtooltip Living Flame
-/targetenemy [help]
-/cast [harm] Living Flame
-/cleartarget
+#showtooltip
+/cast [@anyenemy] Living Flame
 ```
 
 ---
@@ -33,10 +31,8 @@ harm
 help
 
 ```
-#showtooltip Living Flame
-/targetfriend [harm]
-/cast [help] Living Flame
-/cleartarget
+#showtooltip
+/cast [@anyfriend] Living Flame
 ```
 
 ---

@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.0
-    hash=4141d3ec440543a98f4287e1e7145e55
+    hash=f46abedf10b005e6069bac4e84143220
     =====================================
 -->
 
@@ -62,7 +62,7 @@ perform. See [source repository](https://github.com/vkottler/gak-lua)
 documentation for additional details.
 
 * Keybinds: `110`
-* `CVar`'s: `64`
+* `CVar`'s: `66`
 
 ### Macros
 
@@ -72,7 +72,7 @@ Shared | `9`
 Demonhunter | `3`
 Priest | `21`
 Rogue | `5`
-Monk | `9`
+Monk | `12`
 Warrior | `0`
 Warlock | `12`
 Evoker | `12`
@@ -91,7 +91,7 @@ Global | `20`
 Demonhunter | `0`
 Priest | `19`
 Rogue | `0`
-Monk | `22`
+Monk | `21`
 Warrior | `0`
 Warlock | `0`
 Evoker | `22`
@@ -106,7 +106,7 @@ Demonology Warlock | `0`
 Beast Mastery Hunter | `52`
 Retribution Paladin | `45`
 Holy Paladin | `48`
-Mistweaver Monk | `32`
+Mistweaver Monk | `34`
 Affliction Warlock | `58`
 Marksmanship Hunter | `48`
 Unholy Death Knight | `0`
