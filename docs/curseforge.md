@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.0
-    hash=f46abedf10b005e6069bac4e84143220
+    hash=4942da36ada588892dbd1d7dae5b9fe8
     =====================================
 -->
 
@@ -62,7 +62,7 @@ perform. See [source repository](https://github.com/vkottler/gak-lua)
 documentation for additional details.
 
 * Keybinds: `110`
-* `CVar`'s: `66`
+* `CVar`'s: `68`
 
 ### Macros
 
@@ -71,7 +71,7 @@ Type | Count
 Shared | `9`
 Demonhunter | `3`
 Priest | `21`
-Rogue | `5`
+Rogue | `7`
 Monk | `12`
 Warrior | `0`
 Warlock | `12`

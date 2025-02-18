@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.0
--- hash=65b8a259e37b636fcc386d01299a8aca
+-- hash=55795167fe8237cac9dcf4f015ba2e97
 -- =====================================
 function GakCreateGlobalMacros()
 	CreateMacro("13", "inv_misc_questionmark", [[
@@ -282,7 +282,13 @@ function GakCreateCharacterMacros()
 /targetenemyplayer
 /cast Sap
 /stopattack]], 1)
-		print("Created 5", select(1, UnitClass("player")), "macros.")
+		CreateMacro("harm", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@anyenemy] Shadowstep]], 1)
+		CreateMacro("help", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@anyfriend] Shadowstep]], 1)
+		print("Created 7", select(1, UnitClass("player")), "macros.")
 	end
 
 	if class_str == "MONK" then

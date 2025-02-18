@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.0
-    hash=8d51c6530008a98cb5ca8b67935a155d
+    hash=19f78df1a8ef27ed0be5f76e7f716b44
     =====================================
 -->
 
@@ -59,6 +59,24 @@ ssap
 /targetenemyplayer
 /cast Sap
 /stopattack
+```
+
+---
+
+harm
+
+```
+#showtooltip
+/cast [@anyenemy] Shadowstep
+```
+
+---
+
+help
+
+```
+#showtooltip
+/cast [@anyfriend] Shadowstep
 ```
 
 ---
