@@ -2,11 +2,11 @@
     =====================================
     generator=datazen
     version=3.2.0
-    hash=4942da36ada588892dbd1d7dae5b9fe8
+    hash=1bec9ed454e1c37b2933aa5cc66665cb
     =====================================
 -->
 
-# [![Gnomish Army Knife Icon](https://wow.zamimg.com/images/wow/icons/large/inv_misc_enggizmos_swissarmy.jpg)](https://www.wowhead.com/item=40772/gnomish-army-knife) gnomish-army-knife ([1.4.4](https://github.com/vkottler/gak-lua))
+# [![Gnomish Army Knife Icon](https://wow.zamimg.com/images/wow/icons/large/inv_misc_enggizmos_swissarmy.jpg)](https://www.wowhead.com/item=40772/gnomish-army-knife) gnomish-army-knife ([1.5.0](https://github.com/vkottler/gak-lua))
 
 (see above link for supplemental documentation)
 

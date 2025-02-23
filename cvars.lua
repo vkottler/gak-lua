@@ -37,6 +37,22 @@ function GakSetCVars()
 		toCheck["nameplateShowEnemies"] = 0
 	end
 
+	-- Initial values.
+	toCheck["UnitNameFriendlyPlayerName"] = 0
+	toCheck["UnitNameEnemyPlayerName"] = 0
+
+	-- Arena-specific values.
+	if IsActiveBattlefieldArena() then
+		-- So healers start with all nameplates up.
+		toCheck["nameplateShowEnemies"] = 1
+
+		-- For p1-4 and a1-3 text.
+		toCheck["UnitNameFriendlyPlayerName"] = 1
+		toCheck["UnitNameEnemyPlayerName"] = 1
+	end
+
+	-- Need to also enable p1-4 for group content (how to condition this?)
+
 	for key, val in pairs(toCheck) do
 		if not doesCVarMatch(key, false) then
 			count = count + 1

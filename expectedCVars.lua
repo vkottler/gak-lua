@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.0
--- hash=74f3c36566f41a7160825aa3e9f7394b
+-- hash=359a1edd0d36b8eabfd64ab4abd7ddca
 -- =====================================
 expectedCVars = {}
 expectedCVars["GamePadEnable"] = 1
@@ -47,7 +47,6 @@ expectedCVars["lossOfControl"] = 0
 expectedCVars["UnitNamePlayerPVPTitle"] = 0
 expectedCVars["UnitNamePlayerGuild"] = 0
 expectedCVars["UnitNameOwn"] = 0
-expectedCVars["UnitNameFriendlyPlayerName"] = 0
 expectedCVars["UnitNameNPC"] = 0
 expectedCVars["UnitNameInteractiveNPC"] = 1
 expectedCVars["pvpFramesHealthText"] = "none"
@@ -72,3 +71,4 @@ expectedCVars["nameplateMotion"] = 1
 expectedCVars["nameplateMotionSpeed"] = 0.05
 expectedCVars["nameplateOverlapH"] = 0.6
 expectedCVars["nameplateOverlapV"] = 0.6
+expectedCVars["GamePadOverlapMouseMs"] = 0

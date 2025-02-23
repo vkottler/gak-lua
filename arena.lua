@@ -1,25 +1,34 @@
--- enable/disable combat log based on event registration (enter/leave arena
--- etc.)
--- https://wowpedia.fandom.com/wiki/API_LoggingCombat
-
--- arena names, any way to get spec name? and also do party?
--- hooksecurefunc("CompactUnitFrame_UpdateName", function(F)
--- 	if IsActiveBattlefieldArena() and F.unit:find("nameplate") then
--- 		for i = 1, 5 do
--- 			if UnitIsUnit(F.unit, "arena" .. i) then
--- 				F.name:SetText(i)
--- 				F.name:SetTextColor(1, 1, 0)
--- 				break
--- 			end
--- 		end
--- 	end
--- end)
-
 -- Disable names on nameplates.
 hooksecurefunc("CompactUnitFrame_UpdateName", function(frame)
 	if frame.unit:find("nameplate") then
+		local text = ""
+
+		-- Handle party1-4.
+		for i = 1, 4 do
+			if UnitIsUnit(frame.unit, "party" .. i) then
+				text = "p" .. i
+				pcall(function()
+					frame.name:SetTextColor(0, 1, 0)
+				end)
+				break
+			end
+		end
+
+		-- Handle arena1-3.
+		if text == "" and IsActiveBattlefieldArena() then
+			for i = 1, 3 do
+				if UnitIsUnit(frame.unit, "arena" .. i) then
+					text = "a" .. i
+					pcall(function()
+						frame.name:SetTextColor(1, 0, 0)
+					end)
+					break
+				end
+			end
+		end
+
 		pcall(function()
-			frame.name:SetText("")
+			frame.name:SetText(text)
 		end)
 	end
 end)

@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.0
-    hash=ca04324e3ad524b9f6436d6b5e2a2a63
+    hash=7119047ac19ffec6068c0f59d02aae28
     =====================================
 -->
 
@@ -57,7 +57,6 @@ lossOfControl | 0
 UnitNamePlayerPVPTitle | 0
 UnitNamePlayerGuild | 0
 UnitNameOwn | 0
-UnitNameFriendlyPlayerName | 0
 UnitNameNPC | 0
 UnitNameInteractiveNPC | 1
 pvpFramesHealthText | `none`
@@ -82,3 +81,4 @@ nameplateMotion | 1
 nameplateMotionSpeed | 0.05
 nameplateOverlapH | 0.6
 nameplateOverlapV | 0.6
+GamePadOverlapMouseMs | 0
