@@ -31,6 +31,17 @@ local function GakRuntimeInit()
 
 	-- Hide some elements.
 	GakAuditZenMode()
+
+	-- Arena-specific actions.
+	if IsActiveBattlefieldArena() then
+		-- Disable chat.
+		if not C_SocialRestrictions.IsChatDisabled() then
+			C_SocialRestrictions.SetChatDisabled(true)
+		end
+
+		-- Mark teammates (will only work if party leader).
+		GakSetRaidTargets()
+	end
 end
 
 local function GakSetAll()
