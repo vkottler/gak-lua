@@ -40,6 +40,8 @@ local function GakRuntimeInit()
 		end
 
 		-- Mark teammates (will only work if party leader).
+		-- should also do this on an event (teammate joining, need to
+		-- find a suitable one)
 		GakSetRaidTargets()
 	end
 end
