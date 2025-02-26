@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.0
-    hash=7119047ac19ffec6068c0f59d02aae28
+    hash=bb597ede8a0a40fdf711d873a4298f51
     =====================================
 -->
 
@@ -10,7 +10,7 @@
 
 ([back](../README.md))
 
-Total: `68`
+Total: `70`
 
 Name | Value
 ---- | -----
@@ -20,6 +20,9 @@ GamePadEmulateShift | `PADLSHOULDER`
 GamePadEmulateCtrl | `PADLTRIGGER`
 GamePadRunThreshold | 0
 GamePadCameraYawSpeed | 1.75
+GamePadOverlapMouseMs | 50
+GamePadCursorForTargeting | 2
+GamePadCursorAutoDisableSticks | 1
 AutoPushSpellToActionBar | 0
 advancedCombatLogging | 1
 autoLootDefault | 1
@@ -81,4 +84,3 @@ nameplateMotion | 1
 nameplateMotionSpeed | 0.05
 nameplateOverlapH | 0.6
 nameplateOverlapV | 0.6
-GamePadOverlapMouseMs | 0
