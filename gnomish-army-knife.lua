@@ -21,6 +21,32 @@ BINDING_NAME_TOGGLEGAK = "Toggle " .. project .. " Window"
 
 GakButtonsByAddon = {}
 
+local function GakHandleInstance()
+	-- Arena-specific actions.
+	if IsActiveBattlefieldArena() then
+		GakDisableChat()
+
+		-- Mark teammates (will only work if party leader).
+		-- should also do this on an event (teammate joining, need to
+		-- find a suitable one)
+		GakSetRaidTargets()
+
+		-- Turn on combat logging.
+		LoggingCombat(true)
+	else
+		GakEnableChat()
+
+		-- Disable combat logging.
+		LoggingCombat(false)
+	end
+
+	-- Using this while figuring out how to build business logic around
+	-- instance info.
+	local info = { GetInstanceInfo() }
+	print("Instance name: '" .. info[1] .. "'.")
+	print("Instance type: '" .. info[2] .. "'.")
+end
+
 local function GakRuntimeInit()
 	-- Set CVars.
 	GakSetCVars()
@@ -32,18 +58,8 @@ local function GakRuntimeInit()
 	-- Hide some elements.
 	GakAuditZenMode()
 
-	-- Arena-specific actions.
-	if IsActiveBattlefieldArena() then
-		-- Disable chat.
-		if not C_SocialRestrictions.IsChatDisabled() then
-			C_SocialRestrictions.SetChatDisabled(true)
-		end
-
-		-- Mark teammates (will only work if party leader).
-		-- should also do this on an event (teammate joining, need to
-		-- find a suitable one)
-		GakSetRaidTargets()
-	end
+	-- Instance-specific actions.
+	GakHandleInstance()
 end
 
 local function GakSetAll()

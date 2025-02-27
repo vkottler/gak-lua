@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.0
--- hash=d2a49fcd515001b3fd2eef434bfa9e44
+-- hash=a506e1b3e62f1bdbceb8f9cdbc15e48a
 -- =====================================
 expectedCVars = {}
 expectedCVars["GamePadEnable"] = 1
@@ -13,6 +13,8 @@ expectedCVars["GamePadCameraYawSpeed"] = 1.75
 expectedCVars["GamePadOverlapMouseMs"] = 50
 expectedCVars["GamePadCursorForTargeting"] = 2
 expectedCVars["GamePadCursorAutoDisableSticks"] = 1
+expectedCVars["GamePadCursorSpeedMax"] = 2
+expectedCVars["GamePadCursorSpeedStart"] = 0.5
 expectedCVars["AutoPushSpellToActionBar"] = 0
 expectedCVars["advancedCombatLogging"] = 1
 expectedCVars["autoLootDefault"] = 1
@@ -24,7 +26,6 @@ expectedCVars["SoftTargetInteract"] = 3
 expectedCVars["SoftTargetIconFriend"] = 1
 expectedCVars["SoftTargetNameplateInteract"] = 1
 expectedCVars["scriptErrors"] = 1
-expectedCVars["scriptWarnings"] = 1
 expectedCVars["floatingCombatTextCombatDamage"] = 0
 expectedCVars["floatingCombatTextCombatHealing"] = 0
 expectedCVars["cameraSmoothStyle"] = 1

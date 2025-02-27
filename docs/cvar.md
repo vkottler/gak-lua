@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.0
-    hash=bb597ede8a0a40fdf711d873a4298f51
+    hash=4868299729eb0c0d3c112cc30c4dcb53
     =====================================
 -->
 
@@ -10,7 +10,7 @@
 
 ([back](../README.md))
 
-Total: `70`
+Total: `71`
 
 Name | Value
 ---- | -----
@@ -23,6 +23,8 @@ GamePadCameraYawSpeed | 1.75
 GamePadOverlapMouseMs | 50
 GamePadCursorForTargeting | 2
 GamePadCursorAutoDisableSticks | 1
+GamePadCursorSpeedMax | 2
+GamePadCursorSpeedStart | 0.5
 AutoPushSpellToActionBar | 0
 advancedCombatLogging | 1
 autoLootDefault | 1
@@ -34,7 +36,6 @@ SoftTargetInteract | 3
 SoftTargetIconFriend | 1
 SoftTargetNameplateInteract | 1
 scriptErrors | 1
-scriptWarnings | 1
 floatingCombatTextCombatDamage | 0
 floatingCombatTextCombatHealing | 0
 cameraSmoothStyle | 1

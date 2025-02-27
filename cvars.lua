@@ -29,12 +29,14 @@ function GakSetCVars()
 	-- Set role-based variable values.
 	local spec_info = { GetSpecializationInfo(GetSpecialization()) }
 	local role = spec_info[5]
-	if role == "DAMAGER" then
+	if role == "DAMAGER" or role == "TANK" then
 		toCheck["nameplateShowFriends"] = 0
 		toCheck["nameplateShowEnemies"] = 1
+		toCheck["SoftTargetForce"] = 1
 	elseif role == "HEALER" then
 		toCheck["nameplateShowFriends"] = 1
 		toCheck["nameplateShowEnemies"] = 0
+		toCheck["SoftTargetForce"] = 2
 	end
 
 	-- Initial values.
