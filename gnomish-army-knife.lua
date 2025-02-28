@@ -22,10 +22,17 @@ BINDING_NAME_TOGGLEGAK = "Toggle " .. project .. " Window"
 GakButtonsByAddon = {}
 
 local function GakHandleInstance()
+	local info = { GetInstanceInfo() }
+
+	-- Disable chat in pvp.
+	if info[2] == "pvp" or IsActiveBattlefieldArena() then
+		GakDisableChat()
+	else
+		GakEnableChat()
+	end
+
 	-- Arena-specific actions.
 	if IsActiveBattlefieldArena() then
-		GakDisableChat()
-
 		-- Mark teammates (will only work if party leader).
 		-- should also do this on an event (teammate joining, need to
 		-- find a suitable one)
@@ -34,17 +41,9 @@ local function GakHandleInstance()
 		-- Turn on combat logging.
 		LoggingCombat(true)
 	else
-		GakEnableChat()
-
 		-- Disable combat logging.
 		LoggingCombat(false)
 	end
-
-	-- Using this while figuring out how to build business logic around
-	-- instance info.
-	local info = { GetInstanceInfo() }
-	print("Instance name: '" .. info[1] .. "'.")
-	print("Instance type: '" .. info[2] .. "'.")
 end
 
 local function GakRuntimeInit()
