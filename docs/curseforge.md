@@ -2,11 +2,11 @@
     =====================================
     generator=datazen
     version=3.2.0
-    hash=cedb45a1dbffed9ec2944bf12cbd94b6
+    hash=d3079280581038fecee8c48d8b183a5c
     =====================================
 -->
 
-# [![Gnomish Army Knife Icon](https://wow.zamimg.com/images/wow/icons/large/inv_misc_enggizmos_swissarmy.jpg)](https://www.wowhead.com/item=40772/gnomish-army-knife) gnomish-army-knife ([1.5.5](https://github.com/vkottler/gak-lua))
+# [![Gnomish Army Knife Icon](https://wow.zamimg.com/images/wow/icons/large/inv_misc_enggizmos_swissarmy.jpg)](https://www.wowhead.com/item=40772/gnomish-army-knife) gnomish-army-knife ([1.5.6](https://github.com/vkottler/gak-lua))
 
 (see above link for supplemental documentation)
 
@@ -69,7 +69,7 @@ documentation for additional details.
 Type | Count
 -----|------
 Shared | `9`
-Demonhunter | `3`
+Demonhunter | `5`
 Priest | `21`
 Rogue | `7`
 Monk | `12`
@@ -119,7 +119,7 @@ Blood Death Knight | `0`
 Fury Warrior | `42`
 Vengeance Demon Hunter | `0`
 Arms Warrior | `0`
-Havoc Demon Hunter | `0`
+Havoc Demon Hunter | `50`
 Windwalker Monk | `30`
 Arcane Mage | `0`
 Elemental Shaman | `41`

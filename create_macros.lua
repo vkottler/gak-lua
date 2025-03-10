@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.0
--- hash=55795167fe8237cac9dcf4f015ba2e97
+-- hash=2753327df743433d95ee62cfc05f3014
 -- =====================================
 function GakCreateGlobalMacros()
 	CreateMacro("13", "inv_misc_questionmark", [[
@@ -28,6 +28,7 @@ function GakCreateGlobalMacros()
 #showtooltip
 /use Healthstone]])
 	CreateMacro("mana", "inv_drink_milk_01", [[
+/cleartarget
 /use Conjured Mana Bun
 /use Quicksilver Sipper]])
 	CreateMacro("pet", "inv_leatherworking_70_petleash", [[
@@ -188,7 +189,14 @@ function GakCreateCharacterMacros()
 		CreateMacro("self", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Sigil of Flame]], 1)
-		print("Created 3", select(1, UnitClass("player")), "macros.")
+		CreateMacro("self", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Sigil of Spite]], 1)
+		CreateMacro("badge", "inv_misc_questionmark", [[
+#showtooltip Eye Beam
+/use 14
+/cast Eye Beam]], 1)
+		print("Created 5", select(1, UnitClass("player")), "macros.")
 	end
 
 	if class_str == "PRIEST" then

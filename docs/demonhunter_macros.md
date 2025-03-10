@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.0
-    hash=3c0a47840fcdc6f084e106892f28c485
+    hash=685e7f4a0dc81cfbd847013c01f52d8a
     =====================================
 -->
 
@@ -33,6 +33,25 @@ self
 ```
 #showtooltip
 /cast [@player] Sigil of Flame
+```
+
+---
+
+self
+
+```
+#showtooltip
+/cast [@player] Sigil of Spite
+```
+
+---
+
+badge
+
+```
+#showtooltip Eye Beam
+/use 14
+/cast Eye Beam
 ```
 
 ---
