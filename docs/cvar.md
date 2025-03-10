@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.0
-    hash=4868299729eb0c0d3c112cc30c4dcb53
+    hash=dd7b3c17182ecdefd84a79ad21b08612
     =====================================
 -->
 
@@ -10,7 +10,7 @@
 
 ([back](../README.md))
 
-Total: `71`
+Total: `72`
 
 Name | Value
 ---- | -----
@@ -19,9 +19,10 @@ GamePadEmulateAlt | `PADPADDLE2`
 GamePadEmulateShift | `PADLSHOULDER`
 GamePadEmulateCtrl | `PADLTRIGGER`
 GamePadRunThreshold | 0
-GamePadCameraYawSpeed | 1.75
+GamePadCameraYawSpeed | 3.0
+GamePadCameraPitchSpeed | 2.0
 GamePadOverlapMouseMs | 50
-GamePadCursorForTargeting | 2
+GamePadCursorForTargeting | 0
 GamePadCursorAutoDisableSticks | 1
 GamePadCursorSpeedMax | 2
 GamePadCursorSpeedStart | 0.5
