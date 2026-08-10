@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.4
--- hash=480e78c7b6d4f70693c3279ea040dd91
+-- hash=e5f2943ce3c1fd6b730e4c8271a8861f
 -- =====================================
 
 -- https://wowpedia.fandom.com/wiki/Action_slot
@@ -14086,7 +14086,7 @@ s "Chaos Nova"]])
 			print("(spec) Couldn't bind slot L2_R1:", [[
 m eb14]])
 		end
-		C_Spell.PickupSpell("Essence Break")
+		C_Spell.PickupSpell("Illidan's Grasp")
 		if GetCursorInfo() then
 			-- L2_R2
 			PlaceAction(62)
@@ -14097,7 +14097,7 @@ m eb14]])
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot L2_R2:", [[
-s "Essence Break"]])
+s "Illidan's Grasp"]])
 		end
 		C_Spell.PickupSpell("Rain From Above")
 		if GetCursorInfo() then
@@ -14111,6 +14111,19 @@ s "Essence Break"]])
 		else
 			print("(spec) Couldn't bind slot L2_S:", [[
 s "Rain From Above"]])
+		end
+		C_Spell.PickupSpell("Essence Break")
+		if GetCursorInfo() then
+			-- P2_S
+			PlaceAction(57)
+			if GetCursorInfo() then
+				print("wrote over existing action in slot 'P2_S'")
+				ClearCursor()
+			end
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot P2_S:", [[
+s "Essence Break"]])
 		end
 		C_Spell.PickupSpell("Reverse Magic")
 		if GetCursorInfo() then
