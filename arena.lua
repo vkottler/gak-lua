@@ -16,12 +16,12 @@ local function GakHandleFrameBorder(frame)
 		if not health.bgTextureGak then
 			GakHideFrame(health.bgTexture)
 			local newFrame = CreateFrame("Frame", nil, frame.HealthBarsContainer)
-			local newTex = frame:CreateTexture()
+			local newTex = frame:CreateTexture(nil, "BACKGROUND")
 			newTex:SetAllPoints()
-			newTex:SetVertexOffset(UPPER_LEFT_VERTEX, 15, 25)
-			newTex:SetVertexOffset(UPPER_RIGHT_VERTEX, -15, 25)
-			newTex:SetVertexOffset(LOWER_LEFT_VERTEX, 15, 25)
-			newTex:SetVertexOffset(LOWER_RIGHT_VERTEX, -15, 25)
+			newTex:SetVertexOffset(UPPER_LEFT_VERTEX, 17, 23)
+			newTex:SetVertexOffset(UPPER_RIGHT_VERTEX, -17, 23)
+			newTex:SetVertexOffset(LOWER_LEFT_VERTEX, 17, 27)
+			newTex:SetVertexOffset(LOWER_RIGHT_VERTEX, -17, 27)
 
 			health.bgTextureGak = newTex
 		end
