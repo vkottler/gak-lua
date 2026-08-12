@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.4
-    hash=d050e4536909d1b014e79b95e5ab93bb
+    hash=4c983827fc7f5c942d2be317b2a1169e
     =====================================
 -->
 
@@ -10,7 +10,7 @@
 
 ([back](../README.md))
 
-Total: `113`
+Total: `112`
 
 Command | Key | Modifiers
 --------|-----|----------
@@ -46,7 +46,6 @@ CAMERAZOOMOUT | PADLSTICK | PADLSHOULDER
 CAMERAZOOMIN | PADRSTICK | PADLSHOULDER
 TOGGLESHEATH | PADLSTICK | PADLTRIGGER
 TOGGLEUI | PADRSTICK | PADLTRIGGER
-CENTERCAMERA | PADLSTICK | PADLTRIGGER, PADLSHOULDER
 MACRO gc | PADRSTICK | PADLTRIGGER, PADLSHOULDER
 TOGGLEFPS | PADLSTICK | PADPADDLE2, PADLSHOULDER
 SCREENSHOT | PADRSTICK | PADPADDLE2, PADLSHOULDER

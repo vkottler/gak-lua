@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.4
-    hash=c81a9b4624dd2fbe0f97798d05765233
+    hash=6425e19ebfac1d7f8a3dc03682fd49b1
     =====================================
 -->
 
@@ -10,7 +10,7 @@
 
 ([back](../README.md))
 
-Total: `113`
+Total: `112`
 
 Command | Key | Modifiers
 --------|-----|----------
@@ -46,7 +46,6 @@ CAMERAZOOMOUT | T | SHIFT
 CAMERAZOOMIN | V | SHIFT
 TOGGLESHEATH | T | CTRL
 TOGGLEUI | V | CTRL
-CENTERCAMERA | T | CTRL, SHIFT
 MACRO gc | V | CTRL, SHIFT
 TOGGLEFPS | T | ALT, SHIFT
 SCREENSHOT | V | ALT, SHIFT

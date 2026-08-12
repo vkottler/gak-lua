@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.4
-    hash=2354042ecf638a258e34b31b1b029680
+    hash=28a3e466199fd33c9cccc2de836c8449
     =====================================
 -->
 
@@ -61,7 +61,7 @@ Some data that may help convey the scope of state mutations this addon can
 perform. See [source repository](https://github.com/vkottler/gak-lua)
 documentation for additional details.
 
-* Keybinds: `113`
+* Keybinds: `112`
 * `CVar`'s: `105`
 * UI Layouts (`7`): `1280x800` `1920x1080` `2560x1440` `2560x1600` `3440x1440` `3840x2160` `5120x1440`
 ### Macros

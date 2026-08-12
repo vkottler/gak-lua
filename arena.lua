@@ -12,9 +12,13 @@ end
 
 local function removeNames(frame)
 	if frame.unit:find("nameplate") then
+		-- Remove name text.
 		pcall(function()
 			frame.name:SetText("")
 		end)
+
+		-- Remove cast bar text.
+		GakHideFrame(frame.CastBarsContainer.castBar.Text)
 
 		local health = frame.HealthBarsContainer.healthBar
 
