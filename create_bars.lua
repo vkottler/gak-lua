@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.4
--- hash=c3f82ab55777ccb5b9887498c89d1602
+-- hash=2533876855ebd1327826aba707fc1754
 -- =====================================
 
 -- https://wowpedia.fandom.com/wiki/Action_slot
@@ -1204,19 +1204,6 @@ m ffs]])
 			print("(class) Couldn't bind slot L2_P3:", [[
 m prow]])
 		end
-		C_Spell.PickupSpell("Symbiotic Relationship")
-		if GetCursorInfo() then
-			-- L2_R
-			PlaceAction(42)
-			if GetCursorInfo() then
-				print("wrote over existing action in slot 'L2_R'")
-				ClearCursor()
-			end
-			class_bind_count = class_bind_count + 1
-		else
-			print("(class) Couldn't bind slot L2_R:", [[
-s "Symbiotic Relationship"]])
-		end
 		C_Spell.PickupSpell("Typhoon")
 		if GetCursorInfo() then
 			-- L2_R1
@@ -1255,6 +1242,19 @@ m root]])
 		else
 			print("(class) Couldn't bind slot L2_T:", [[
 m ffr]])
+		end
+		C_Spell.PickupSpell("Symbiotic Relationship")
+		if GetCursorInfo() then
+			-- L2_U
+			PlaceAction(41)
+			if GetCursorInfo() then
+				print("wrote over existing action in slot 'L2_U'")
+				ClearCursor()
+			end
+			class_bind_count = class_bind_count + 1
+		else
+			print("(class) Couldn't bind slot L2_U:", [[
+s "Symbiotic Relationship"]])
 		end
 		C_Spell.PickupSpell("Heart of the Wild")
 		if GetCursorInfo() then
@@ -13995,7 +13995,7 @@ s "Life Cocoon"]])
 	end
 
 	if id == 577 then
-		C_Spell.PickupSpell("Demon's Bite")
+		C_Spell.PickupSpell("Essence Break")
 		if GetCursorInfo() then
 			-- L1_P2_R2
 			PlaceAction(26)
@@ -14006,7 +14006,7 @@ s "Life Cocoon"]])
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot L1_P2_R2:", [[
-s "Demon's Bite"]])
+s "Essence Break"]])
 		end
 		C_Spell.PickupSpell("Immolation Aura")
 		if GetCursorInfo() then
@@ -14112,7 +14112,7 @@ s "Illidan's Grasp"]])
 			print("(spec) Couldn't bind slot L2_S:", [[
 s "Rain From Above"]])
 		end
-		C_Spell.PickupSpell("Essence Break")
+		C_Spell.PickupSpell("Reverse Magic")
 		if GetCursorInfo() then
 			-- P2_S
 			PlaceAction(57)
@@ -14123,19 +14123,6 @@ s "Rain From Above"]])
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot P2_S:", [[
-s "Essence Break"]])
-		end
-		C_Spell.PickupSpell("Reverse Magic")
-		if GetCursorInfo() then
-			-- P2_X
-			PlaceAction(58)
-			if GetCursorInfo() then
-				print("wrote over existing action in slot 'P2_X'")
-				ClearCursor()
-			end
-			spec_bind_count = spec_bind_count + 1
-		else
-			print("(spec) Couldn't bind slot P2_X:", [[
 s "Reverse Magic"]])
 		end
 		C_Spell.PickupSpell("Felblade")
