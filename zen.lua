@@ -555,8 +555,8 @@ end
 
 hooksecurefunc("CompactUnitFrame_OnLoad", function(frame)
 	-- Hide cast bar text.
-	if frame and frame.castBar then
-		GakHideFrame(frame.castBar.Text)
+	if frame and frame.CastBarsContainer.castBar then
+		GakHideFrame(frame.CastBarsContainer.castBar.Text)
 	end
 end)
 

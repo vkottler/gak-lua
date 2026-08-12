@@ -40,7 +40,7 @@ end
 local function GakRuntimeInit()
 	-- seems this might need to be added as a secure hook, if nameplate
 	-- settings menu is opened this will get set back to some default
-	C_NamePlate.SetNamePlateSize(90, 1)  -- height param does nothing?
+	C_NamePlate.SetNamePlateSize(90, 25)
 
 	-- Hide some elements.
 	GakAuditZenMode()
