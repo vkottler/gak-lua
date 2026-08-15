@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.4
--- hash=2533876855ebd1327826aba707fc1754
+-- hash=dd10d1bf9e053c4720bad8d5fed21f4e
 -- =====================================
 
 -- https://wowpedia.fandom.com/wiki/Action_slot
@@ -1204,6 +1204,19 @@ m ffs]])
 			print("(class) Couldn't bind slot L2_P3:", [[
 m prow]])
 		end
+		C_Spell.PickupSpell("Symbiotic Relationship")
+		if GetCursorInfo() then
+			-- L2_R
+			PlaceAction(42)
+			if GetCursorInfo() then
+				print("wrote over existing action in slot 'L2_R'")
+				ClearCursor()
+			end
+			class_bind_count = class_bind_count + 1
+		else
+			print("(class) Couldn't bind slot L2_R:", [[
+s "Symbiotic Relationship"]])
+		end
 		C_Spell.PickupSpell("Typhoon")
 		if GetCursorInfo() then
 			-- L2_R1
@@ -1242,19 +1255,6 @@ m root]])
 		else
 			print("(class) Couldn't bind slot L2_T:", [[
 m ffr]])
-		end
-		C_Spell.PickupSpell("Symbiotic Relationship")
-		if GetCursorInfo() then
-			-- L2_U
-			PlaceAction(41)
-			if GetCursorInfo() then
-				print("wrote over existing action in slot 'L2_U'")
-				ClearCursor()
-			end
-			class_bind_count = class_bind_count + 1
-		else
-			print("(class) Couldn't bind slot L2_U:", [[
-s "Symbiotic Relationship"]])
 		end
 		C_Spell.PickupSpell("Heart of the Wild")
 		if GetCursorInfo() then

@@ -438,9 +438,11 @@ local function GakZenPopups()
 		return
 	end
 
-	if not ObjectiveTrackerFrame.isCollapsed then
-		ObjectiveTrackerFrame:ToggleCollapsed()
-	end
+	-- needs to move to secure context
+	-- if not ObjectiveTrackerFrame.isCollapsed then
+	-- 	ObjectiveTrackerFrame:ToggleCollapsed()
+	-- end
+
 	GakHideFrame(ObjectiveTrackerFrame.Header)
 
 	GakHideFrame(MainStatusTrackingBarContainer)
