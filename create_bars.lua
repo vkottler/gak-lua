@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.4
--- hash=dd10d1bf9e053c4720bad8d5fed21f4e
+-- hash=752e39b46bb9f7e0d833d74179dfe1a4
 -- =====================================
 
 -- https://wowpedia.fandom.com/wiki/Action_slot
@@ -13151,6 +13151,19 @@ m srof]])
 			print("(spec) Couldn't bind slot L1_R2_2:", [[
 s "Rain of Fire"]])
 		end
+		C_Spell.PickupSpell(80240)
+		if GetCursorInfo() then
+			-- L2_L1_R2
+			PlaceAction(68)
+			if GetCursorInfo() then
+				print("wrote over existing action in slot 'L2_L1_R2'")
+				ClearCursor()
+			end
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot L2_L1_R2:", [[
+s 80240]])
+		end
 		C_Spell.PickupSpell("Channel Demonfire")
 		if GetCursorInfo() then
 			-- L2_L1_X
@@ -13216,7 +13229,7 @@ s "Soul Fire"]])
 			print("(spec) Couldn't bind slot P2_R1:", [[
 m inc]])
 		end
-		C_Spell.PickupSpell("Havoc")
+		PickupMacro("sboh")
 		if GetCursorInfo() then
 			-- P2_S
 			PlaceAction(57)
@@ -13227,7 +13240,7 @@ m inc]])
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot P2_S:", [[
-s "Havoc"]])
+m sboh]])
 		end
 		C_Spell.PickupSpell("Immolate")
 		if GetCursorInfo() then

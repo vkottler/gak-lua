@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.4
-    hash=a6f4746d46bb87129b3e92bb1b705222
+    hash=a9528438a25da9e2ed4f9cdb70ec5550
     =====================================
 -->
 
@@ -145,6 +145,15 @@ dtr
 #showtooltip Summon Demonic Tyrant
 /cast Blood Fury
 /cast Summon Demonic Tyrant
+```
+
+---
+
+sboh
+
+```
+#showtooltip
+/cast [noknown:Bane of Havoc] Havoc; [@player] Havoc
 ```
 
 ---

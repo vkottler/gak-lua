@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.4
-    hash=a964a7d1770d1dfb5c07bb624cf05bdb
+    hash=a7c8028d91fab76f332c5a2736983523
     =====================================
 -->
 
@@ -72,7 +72,7 @@ raidFramesDisplayOnlyHealerPowerBars | 1
 raidFramesDisplayPowerBars | 1
 raidFramesHealthText | `none`
 raidOptionDisplayPets | 1
-RAIDsettingsEnabled | 0
+RAIDsettingsEnabled | 1
 ReplaceMyPlayerPortrait | 1
 ReplaceOtherPlayerPortraits | 1
 rotateMinimap | 0

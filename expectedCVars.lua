@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.4
--- hash=596db0ef799ea2be05c2d375624f7466
+-- hash=8c258f299c1cbdf807fef09410ecc018
 -- =====================================
 expectedCVars = {}
 expectedCVars["ActionButtonUseKeyHeldSpell"] = 1
@@ -62,7 +62,7 @@ expectedCVars["raidFramesDisplayOnlyHealerPowerBars"] = 1
 expectedCVars["raidFramesDisplayPowerBars"] = 1
 expectedCVars["raidFramesHealthText"] = "none"
 expectedCVars["raidOptionDisplayPets"] = 1
-expectedCVars["RAIDsettingsEnabled"] = 0
+expectedCVars["RAIDsettingsEnabled"] = 1
 expectedCVars["ReplaceMyPlayerPortrait"] = 1
 expectedCVars["ReplaceOtherPlayerPortraits"] = 1
 expectedCVars["rotateMinimap"] = 0

@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.4
--- hash=9a7bfa4be003dc2c44fc1b20ee32809e
+-- hash=17baabbed1e2b77159005f8036a0bff2
 -- =====================================
 function GakCreateGlobalMacros()
 	CreateMacro("ah", "inv_brontsaurusmountspecial", [[
@@ -961,6 +961,9 @@ function GakCreateCharacterMacros()
 		CreateMacro("ips", "inv_misc_questionmark", [[
 #showtooltip
 /cast [known:Implosion] Implosion; Power Siphon]], true)
+		CreateMacro("sboh", "inv_misc_questionmark", [[
+#showtooltip
+/cast [noknown:Bane of Havoc] Havoc; [@player] Havoc]], true)
 		CreateMacro("sca", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Cataclysm]], true)
@@ -979,7 +982,7 @@ function GakCreateCharacterMacros()
 		CreateMacro("sstone", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Soulstone]], true)
-		print("Created 15", select(1, UnitClass("player")), "macros.")
+		print("Created 16", select(1, UnitClass("player")), "macros.")
 	end
 
 	if class_str == "WARRIOR" then
