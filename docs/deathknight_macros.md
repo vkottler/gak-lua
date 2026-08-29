@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.4
-    hash=d8186369308679c5dbf5b5a581caa60b
+    hash=81835c3d483a01134a2ce86371e04207
     =====================================
 -->
 
@@ -15,6 +15,15 @@ sdad
 ```
 #showtooltip
 /cast [@player] Death and Decay
+```
+
+---
+
+sds
+
+```
+#showtooltip
+/cast [@player] Dark Simulacrum
 ```
 
 ---

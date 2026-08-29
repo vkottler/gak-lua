@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.4
-    hash=9f058bdac7dedd52d2441536b7f9d570
+    hash=9ccc948a0cf8a4283c9aa2675c6001da
     =====================================
 -->
 
@@ -15,6 +15,15 @@ sai
 ```
 #showtooltip
 /cast [@player] Arcane Intellect
+```
+
+---
+
+siw
+
+```
+#showtooltip
+/cast [@player] Ice Wall
 ```
 
 ---

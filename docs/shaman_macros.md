@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.4
-    hash=50ee2e4adcafd109c5f44f917a8dd4bc
+    hash=393b53d1ca2e92b74c16bd4d42a91d7b
     =====================================
 -->
 
@@ -168,6 +168,15 @@ ses
 ```
 #showtooltip
 /cast [@player] Earth Shield
+```
+
+---
+
+seq
+
+```
+#showtooltip
+/cast [@player] Earthquake
 ```
 
 ---

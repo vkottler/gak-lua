@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.4
-    hash=435485ac87a65ebc0f6947108c22e56b
+    hash=7c8c0933fa6e7657ca0e267226bf92bd
     =====================================
 -->
 
@@ -23,7 +23,7 @@ prow
 
 ```
 #showtooltip Prowl
-/cast [nocombat] !Prowl
+/cast !Prowl
 /changeactionbar 1
 ```
 

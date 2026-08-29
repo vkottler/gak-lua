@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.4
-    hash=6e6e6e297f7a5e049eeb117e9399ca0c
+    hash=a55f4a2499ff62bfdc0c2d96490e187a
     =====================================
 -->
 
@@ -69,17 +69,17 @@ documentation for additional details.
 Type | Count
 -----|------
 Shared | `21`
-Deathknight | `6`
+Deathknight | `7`
 Demonhunter | `6`
 Druid | `28`
 Evoker | `18`
 Hunter | `19`
-Mage | `15`
+Mage | `16`
 Monk | `15`
 Paladin | `21`
 Priest | `28`
 Rogue | `11`
-Shaman | `21`
+Shaman | `22`
 Warlock | `16`
 Warrior | `9`
 
@@ -88,12 +88,12 @@ Warrior | `9`
 Type | Action Count
 -----|-------------
 Global | `20`
-Deathknight | `28`
+Deathknight | `29`
 Demonhunter | `18`
 Druid | `41`
 Evoker | `28`
 Hunter | `39`
-Mage | `28`
+Mage | `29`
 Monk | `18`
 Paladin | `24`
 Priest | `24`
@@ -132,7 +132,7 @@ Windwalker Monk | `31`
 Mistweaver Monk | `23`
 Havoc Demon Hunter | `16`
 Vengeance Demon Hunter | `0`
-Arcane Mage | `15`
+Arcane Mage | `16`
 Fire Mage | `14`
 Frost Mage | `17`
 Holy Paladin | `29`

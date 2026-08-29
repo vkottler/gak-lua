@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.4
--- hash=17baabbed1e2b77159005f8036a0bff2
+-- hash=2b59ec693ffde9b13e259ff96728a608
 -- =====================================
 function GakCreateGlobalMacros()
 	CreateMacro("ah", "inv_brontsaurusmountspecial", [[
@@ -32,11 +32,10 @@ function GakCreateGlobalMacros()
 	CreateMacro("gak", "inv_misc_enggizmos_swissarmy", [[
 /gnomish-army-knife]])
 	CreateMacro("gc", "creatureportrait_creature_iceblock", [[
+/cqs
 /stopcasting
 /cancelaura Slow Fall
-/cancelaura Levitate
-/cancelaura Enchanted Candle
-/cancelaura Alter Time]])
+/cancelaura Levitate]])
 	CreateMacro("gg", "achievement_bg_takexflags_ab", [[
 /run LeaveBattlefield()]])
 	CreateMacro("hs", "inv_misc_questionmark", [[
@@ -303,7 +302,10 @@ function GakCreateCharacterMacros()
 		CreateMacro("sdc", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Death Coil]], true)
-		print("Created 6", select(1, UnitClass("player")), "macros.")
+		CreateMacro("sds", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Dark Simulacrum]], true)
+		print("Created 7", select(1, UnitClass("player")), "macros.")
 	end
 
 	if class_str == "DEMONHUNTER" then
@@ -380,7 +382,7 @@ function GakCreateCharacterMacros()
 /cast [@player] Mark of the Wild]], true)
 		CreateMacro("prow", "inv_misc_questionmark", [[
 #showtooltip Prowl
-/cast [nocombat] !Prowl
+/cast !Prowl
 /changeactionbar 1]], true)
 		CreateMacro("root", "inv_misc_questionmark", [[
 #showtooltip
@@ -583,6 +585,9 @@ function GakCreateCharacterMacros()
 		CreateMacro("sfs", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Flamestrike]], true)
+		CreateMacro("siw", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Ice Wall]], true)
 		CreateMacro("smet", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Meteor]], true)
@@ -602,7 +607,7 @@ function GakCreateCharacterMacros()
 #showtooltip Touch of the Magi
 /cast Blood Fury
 /cast Touch of the Magi]], true)
-		print("Created 15", select(1, UnitClass("player")), "macros.")
+		print("Created 16", select(1, UnitClass("player")), "macros.")
 	end
 
 	if class_str == "MONK" then
@@ -884,6 +889,9 @@ function GakCreateCharacterMacros()
 		CreateMacro("sct", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Capacitor Totem]], true)
+		CreateMacro("seq", "inv_misc_questionmark", [[
+#showtooltip
+/cast [@player] Earthquake]], true)
 		CreateMacro("ses", "inv_misc_questionmark", [[
 #showtooltip
 /cast [@player] Earth Shield]], true)
@@ -926,7 +934,7 @@ function GakCreateCharacterMacros()
 		CreateMacro("ttpc", "inv_misc_questionmark", [[
 #showtooltip
 /cast [known:Tremor Totem] Tremor Totem; Poison Cleansing Totem]], true)
-		print("Created 21", select(1, UnitClass("player")), "macros.")
+		print("Created 22", select(1, UnitClass("player")), "macros.")
 	end
 
 	if class_str == "WARLOCK" then

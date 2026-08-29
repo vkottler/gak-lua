@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.4
-    hash=6003d0f5915602f5ff2ab5333b1d8532
+    hash=5d2a7861fd60dd3157257c7cb439c12a
     =====================================
 -->
 
@@ -35,11 +35,10 @@ t14
 gc
 
 ```
+/cqs
 /stopcasting
 /cancelaura Slow Fall
 /cancelaura Levitate
-/cancelaura Enchanted Candle
-/cancelaura Alter Time
 ```
 
 ---
