@@ -108,20 +108,22 @@ function GakSetCVars()
 		toCheck["graphicsOutlineMode"] = 2
 	end
 
-	-- Set role-based variable values.
-	local spec_info = { GetSpecializationInfo(GetSpecialization()) }
-	local role = spec_info[5]
-	if role == "DAMAGER" or role == "TANK" then
-		toCheck["SoftTargetForce"] = 1
-	elseif role == "HEALER" then
-		toCheck["SoftTargetForce"] = 2
-	end
-
 	-- Initial values.
 	toCheck["UnitNameFriendlyPlayerName"] = 0
 	toCheck["UnitNameEnemyPlayerName"] = 0
 	toCheck["nameplateShowFriendlyPlayers"] = 1
 	toCheck["nameplateShowEnemies"] = 1
+
+	-- Set role-based variable values.
+	local spec_info = { GetSpecializationInfo(GetSpecialization()) }
+	local role = spec_info[5]
+	if role == "DAMAGER" or role == "TANK" then
+		toCheck["SoftTargetForce"] = 1
+		toCheck["nameplateShowFriendlyPlayers"] = 0
+	elseif role == "HEALER" then
+		toCheck["SoftTargetForce"] = 2
+		toCheck["nameplateShowEnemies"] = 0
+	end
 
 	-- Arena-specific values.
 	if IsActiveBattlefieldArena() then
