@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.4
--- hash=8c258f299c1cbdf807fef09410ecc018
+-- hash=4b2dacbac9c8a9bb71723cb263ae2cb4
 -- =====================================
 expectedCVars = {}
 expectedCVars["ActionButtonUseKeyHeldSpell"] = 1
@@ -21,6 +21,7 @@ expectedCVars["damageMeterEnabled"] = 0
 expectedCVars["enableMultiActionBars"] = 15
 expectedCVars["enablePings"] = 0
 expectedCVars["externalDefensivesEnabled"] = 1
+expectedCVars["ffxDeath"] = 0
 expectedCVars["GamePadCameraPitchSpeed"] = 2.0
 expectedCVars["GamePadCameraYawSpeed"] = 3.0
 expectedCVars["GamePadCursorAutoDisableSticks"] = 1
@@ -61,6 +62,7 @@ expectedCVars["raidFramesDisplayClassColor"] = 1
 expectedCVars["raidFramesDisplayOnlyHealerPowerBars"] = 1
 expectedCVars["raidFramesDisplayPowerBars"] = 1
 expectedCVars["raidFramesHealthText"] = "none"
+expectedCVars["RAIDgraphicsQuality"] = 1
 expectedCVars["raidOptionDisplayPets"] = 1
 expectedCVars["RAIDsettingsEnabled"] = 1
 expectedCVars["ReplaceMyPlayerPortrait"] = 1
@@ -91,7 +93,7 @@ expectedCVars["Sound_EnableSoundWhenGameIsInBG"] = 1
 expectedCVars["Sound_MasterVolume"] = 1
 expectedCVars["Sound_SFXVolume"] = 1
 expectedCVars["spellBookHidePassives"] = 1
-expectedCVars["spellDiminishPVPOnlyTriggerableByMe"] = 1
+expectedCVars["spellDiminishPVPOnlyTriggerableByMe"] = 0
 expectedCVars["statusText"] = 0
 expectedCVars["statusTextDisplay"] = "NONE"
 expectedCVars["synchronizeConfig"] = 0

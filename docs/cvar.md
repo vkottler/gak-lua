@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.4
-    hash=a7c8028d91fab76f332c5a2736983523
+    hash=0b2ba7db222803ea7aab03afef73fe95
     =====================================
 -->
 
@@ -10,7 +10,7 @@
 
 ([back](../README.md))
 
-Total: `105`
+Total: `107`
 
 Name | Value
 ---- | -----
@@ -31,6 +31,7 @@ damageMeterEnabled | 0
 enableMultiActionBars | 15
 enablePings | 0
 externalDefensivesEnabled | 1
+ffxDeath | 0
 GamePadCameraPitchSpeed | 2.0
 GamePadCameraYawSpeed | 3.0
 GamePadCursorAutoDisableSticks | 1
@@ -71,6 +72,7 @@ raidFramesDisplayClassColor | 1
 raidFramesDisplayOnlyHealerPowerBars | 1
 raidFramesDisplayPowerBars | 1
 raidFramesHealthText | `none`
+RAIDgraphicsQuality | 1
 raidOptionDisplayPets | 1
 RAIDsettingsEnabled | 1
 ReplaceMyPlayerPortrait | 1
@@ -101,7 +103,7 @@ Sound_EnableSoundWhenGameIsInBG | 1
 Sound_MasterVolume | 1
 Sound_SFXVolume | 1
 spellBookHidePassives | 1
-spellDiminishPVPOnlyTriggerableByMe | 1
+spellDiminishPVPOnlyTriggerableByMe | 0
 statusText | 0
 statusTextDisplay | `NONE`
 synchronizeConfig | 0
